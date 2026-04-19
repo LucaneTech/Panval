@@ -14,19 +14,16 @@ export default function NotFoundPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="w-20 h-20 bg-primary rounded-sm flex items-center justify-center mx-auto mb-8">
-              <span className="font-heading text-3xl font-bold text-accent">P</span>
-            </div>
             <h1 className="font-heading text-8xl font-bold text-primary/20 mb-4">404</h1>
             <h2 className="font-heading text-2xl font-bold text-base-content mb-3">Page introuvable</h2>
             <p className="text-base-content/55 font-body mb-8 max-w-sm mx-auto">
               La page que vous recherchez n'existe pas ou a été déplacée.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Link to="/" className="btn btn-primary rounded-sm font-body font-medium uppercase tracking-wider text-sm px-6">
+              <Link to="/" className="btn btn-primary rounded-md font-body font-medium uppercase tracking-wider text-sm px-6">
                 <Home size={15} className="mr-2" /> Accueil
               </Link>
-              <button onClick={() => history.back()} className="btn btn-outline btn-primary rounded-sm font-body font-medium uppercase tracking-wider text-sm px-6">
+              <button onClick={() => history.back()} className="btn btn-outline btn-primary rounded-md font-body font-medium uppercase tracking-wider text-sm px-6">
                 <ArrowLeft size={15} className="mr-2" /> Retour
               </button>
             </div>

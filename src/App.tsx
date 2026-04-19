@@ -23,8 +23,11 @@ export default function App() {
             <Route path="/cep" element={<CepPage />} />
             <Route path="/nos-clients" element={<ClientsPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="*" element={<NotFoundPage />} />
+             <Route path="*" element={<NotFoundPage />} />
+            
           </Routes>
+
+       
         </PageLayout>
       </BrowserRouter>
     </HelmetProvider>

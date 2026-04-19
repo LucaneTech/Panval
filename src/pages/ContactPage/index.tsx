@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail, Globe, Clock, CheckCircle, AlertCircle, Loader2 } 
 import PageHero from '@/components/layout/PageHero'
 import SectionTitle from '@/components/ui/SectionTitle'
 import { useContactForm } from '@/hooks/useContactForm'
-import { CONTACT_EMAIL, CONTACT_PHONE_1, CONTACT_PHONE_2, CONTACT_ADDRESS } from '@/utils/constants'
+import { CONTACT_EMAIL, CONTACT_PHONE_1, CONTACT_PHONE_2, CONTACT_ADDRESS, SITE_URL } from '@/utils/constants'
 
 export default function ContactPage() {
   const { form, onSubmit, status, setStatus } = useContactForm()
@@ -155,7 +155,7 @@ export default function ContactPage() {
                   { icon: MapPin, content: CONTACT_ADDRESS },
                   { icon: Phone, content: `${CONTACT_PHONE_1}\n${CONTACT_PHONE_2}` },
                   { icon: Mail, content: CONTACT_EMAIL },
-                  { icon: Globe, content: 'www.panvalgroupe.com' },
+                  { icon: Globe, content: SITE_URL.replace(/^https?:\/\//, '') },
                   { icon: Clock, content: 'Lundi — Vendredi · 8h00 — 18h00' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">

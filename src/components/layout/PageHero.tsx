@@ -20,7 +20,7 @@ export default function PageHero({ title, subtitle, image, breadcrumbs = [] }: P
       className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"
       style={{
         backgroundImage: image
-          ? `linear-gradient(135deg, rgba(13,32,53,0.96) 0%, rgba(26,58,90,0.92) 100%), url(${image})`
+          ? `linear-gradient(135deg, rgba(13,32,53,0.97) 0%, rgba(26,58,90,0.93) 60%, rgba(192,57,43,0.15) 100%), url(${image})`
           : 'linear-gradient(135deg, #0d2035 0%, #1a3a5a 100%)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',

@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react'
 import { navItems } from '@/data/navigation.data'
-import { CONTACT_EMAIL, CONTACT_PHONE_1, CONTACT_PHONE_2, CONTACT_ADDRESS, RCCM } from '@/utils/constants'
+import { CONTACT_EMAIL, CONTACT_PHONE_1, CONTACT_PHONE_2, CONTACT_ADDRESS, RCCM, SITE_URL } from '@/utils/constants'
 import { motion } from 'framer-motion'
+
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -98,8 +99,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <ExternalLink size={15} className="text-accent shrink-0" />
-                <a href="https://panvalgroupe.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/60 hover:text-accent transition-colors">
-                  www.panvalgroupe.com
+                <a href={SITE_URL} target="_blank" rel="noopener noreferrer" className="text-sm text-white/60 hover:text-accent transition-colors">
+                  {SITE_URL.replace(/^https?:\/\//, '')}
                 </a>
               </li>
             </ul>
