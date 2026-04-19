@@ -57,14 +57,14 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-auto">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-             <motion.img
-              src="images/logo.png"
-              alt="Logo Panval Consilium"
-              className="w-24 sm:w-28 md:w-32 h-auto object-contain"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.2 }}
-            />
-             
+              <motion.img
+                src="images/logo.png"
+                alt="Logo Panval Consilium"
+                className="w-24 sm:w-28 md:w-32 h-auto object-contain"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+              />
+
             </Link>
 
             {/* Desktop nav */}
@@ -78,8 +78,8 @@ export default function Navbar() {
                     isActive(item.path)
                       ? 'text-accent bg-accent/10'
                       : scrolled
-                      ? 'text-base-content/70 hover:text-primary hover:bg-base-200'
-                      : 'text-white/80 hover:text-white hover:bg-white/10'
+                        ? 'text-base-content/70 hover:text-primary hover:bg-base-200'
+                        : 'text-white/80 hover:text-white hover:bg-white/10'
                   )}
                 >
                   {item.label}
@@ -99,8 +99,8 @@ export default function Navbar() {
               >
                 {theme === 'panvallight' ? <Moon size={16} /> : <Sun size={16} />}
               </button>
-             
-              <Button to="/contact" label="Nous contacter" variant="secondary"  className='hidden md:flex border border-white/40'/>
+
+              <Button to="/contact" label="Nous contacter" variant="secondary" className='hidden md:flex border border-white/40' />
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className={cn(
@@ -135,12 +135,18 @@ export default function Navbar() {
               className="fixed top-0 right-0 bottom-0 z-50 w-72 bg-base-100 shadow-2xl flex flex-col lg:hidden"
             >
               <div className="flex items-center justify-between p-5 border-b border-base-300">
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-sm bg-primary flex items-center justify-center">
-                    <span className="font-heading text-lg font-bold text-accent">P</span>
-                  </div>
-                  <span className="font-heading font-semibold text-sm text-base-content">Panval Consilium</span>
-                </div>
+                {/* <div className="flex items-center gap-3">
+                  <Link to="/" className="flex items-center gap-3 group">
+                    <motion.img
+                      src="images/logo.png"
+                      alt="Logo Panval Consilium"
+                      className="w-12 h-auto object-contain"
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.2 }}
+                    />
+
+                  </Link>
+                </div> */}
                 <button onClick={() => setIsOpen(false)} className="btn btn-ghost btn-sm btn-circle">
                   <X size={18} />
                 </button>
