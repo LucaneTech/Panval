@@ -33,7 +33,7 @@ export default function ContactPage() {
               <SectionTitle eyebrow="Formulaire" title="Envoyez-nous votre demande" />
 
               {status === 'success' && (
-                <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="mt-6 p-4 bg-success/10 border border-success/30 rounded-sm flex items-start gap-3">
+                <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="mt-6 p-4 bg-success/10 border border-success/30 rounded-md flex items-start gap-3">
                   <CheckCircle size={18} className="text-success mt-0.5 shrink-0" />
                   <div>
                     <p className="font-body font-semibold text-sm text-success">Message envoyé avec succès !</p>
@@ -44,7 +44,7 @@ export default function ContactPage() {
               )}
 
               {status === 'error' && (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-6 p-4 bg-error/10 border border-error/30 rounded-sm flex items-start gap-3">
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-6 p-4 bg-error/10 border border-error/30 rounded-md flex items-start gap-3">
                   <AlertCircle size={18} className="text-error mt-0.5 shrink-0" />
                   <p className="text-sm text-error font-body">Une erreur s'est produite. Veuillez réessayer ou nous contacter directement par téléphone.</p>
                 </motion.div>
@@ -55,12 +55,12 @@ export default function ContactPage() {
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Nom complet *</label>
-                      <input {...register('fullName')} placeholder="Jean Dupont" className={`input input-bordered w-full rounded-sm text-sm font-body ${errors.fullName ? 'input-error' : ''}`} />
+                      <input {...register('fullName')} placeholder="Jean Dupont" className={`input input-bordered w-full rounded-md text-sm font-body ${errors.fullName ? 'input-error' : ''}`} />
                       {errors.fullName && <p className="text-xs text-error mt-1 font-body">{errors.fullName.message}</p>}
                     </div>
                     <div>
                       <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Entreprise *</label>
-                      <input {...register('company')} placeholder="Ma Société" className={`input input-bordered w-full rounded-sm text-sm font-body ${errors.company ? 'input-error' : ''}`} />
+                      <input {...register('company')} placeholder="Ma Société" className={`input input-bordered w-full rounded-md text-sm font-body ${errors.company ? 'input-error' : ''}`} />
                       {errors.company && <p className="text-xs text-error mt-1 font-body">{errors.company.message}</p>}
                     </div>
                   </div>
@@ -68,25 +68,25 @@ export default function ContactPage() {
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Fonction *</label>
-                      <input {...register('role')} placeholder="Directeur Général" className={`input input-bordered w-full rounded-sm text-sm font-body ${errors.role ? 'input-error' : ''}`} />
+                      <input {...register('role')} placeholder="Directeur Général" className={`input input-bordered w-full rounded-md text-sm font-body ${errors.role ? 'input-error' : ''}`} />
                       {errors.role && <p className="text-xs text-error mt-1 font-body">{errors.role.message}</p>}
                     </div>
                     <div>
                       <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Téléphone *</label>
-                      <input {...register('phone')} placeholder="+242 06 000 00 00" className={`input input-bordered w-full rounded-sm text-sm font-body ${errors.phone ? 'input-error' : ''}`} />
+                      <input {...register('phone')} placeholder="+242 06 000 00 00" className={`input input-bordered w-full rounded-md text-sm font-body ${errors.phone ? 'input-error' : ''}`} />
                       {errors.phone && <p className="text-xs text-error mt-1 font-body">{errors.phone.message}</p>}
                     </div>
                   </div>
 
                   <div>
                     <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Email *</label>
-                    <input {...register('email')} type="email" placeholder="votre@email.com" className={`input input-bordered w-full rounded-sm text-sm font-body ${errors.email ? 'input-error' : ''}`} />
+                    <input {...register('email')} type="email" placeholder="votre@email.com" className={`input input-bordered w-full rounded-md text-sm font-body ${errors.email ? 'input-error' : ''}`} />
                     {errors.email && <p className="text-xs text-error mt-1 font-body">{errors.email.message}</p>}
                   </div>
 
                   <div>
                     <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Objet de la demande *</label>
-                    <select {...register('subject')} className={`select select-bordered w-full rounded-sm text-sm font-body ${errors.subject ? 'select-error' : ''}`}>
+                    <select {...register('subject')} className={`select select-bordered w-full rounded-md text-sm font-body ${errors.subject ? 'select-error' : ''}`}>
                       <option value="">Sélectionnez un objet</option>
                       <option value="diagnostic">Diagnostic offert (2h)</option>
                       <option value="rdv">Prise de rendez-vous</option>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                         { val: 'etudes', label: 'Études & Diagnostics' },
                         { val: 'cep', label: 'Conciergerie (CEP)' },
                       ].map(s => (
-                        <label key={s.val} className={`flex items-center gap-2 px-4 py-2.5 rounded-sm border cursor-pointer text-sm font-body transition-all ${selectedServices.includes(s.val as 'formation' | 'etudes' | 'cep') ? 'border-primary bg-primary/10 text-primary font-medium' : 'border-base-300 text-base-content/60 hover:border-base-content/30'}`}>
+                        <label key={s.val} className={`flex items-center gap-2 px-4 py-2.5 rounded-md border cursor-pointer text-sm font-body transition-all ${selectedServices.includes(s.val as 'formation' | 'etudes' | 'cep') ? 'border-primary bg-primary/10 text-primary font-medium' : 'border-base-300 text-base-content/60 hover:border-base-content/30'}`}>
                           <input type="checkbox" value={s.val} {...register('services')} className="hidden" />
                           {s.label}
                         </label>
@@ -115,14 +115,14 @@ export default function ContactPage() {
 
                   <div>
                     <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Message *</label>
-                    <textarea {...register('message')} rows={5} placeholder="Décrivez votre besoin, votre contexte ou vos questions..." className={`textarea textarea-bordered w-full rounded-sm text-sm font-body resize-none ${errors.message ? 'textarea-error' : ''}`} />
+                    <textarea {...register('message')} rows={5} placeholder="Décrivez votre besoin, votre contexte ou vos questions..." className={`textarea textarea-bordered w-full rounded-md text-sm font-body resize-none ${errors.message ? 'textarea-error' : ''}`} />
                     {errors.message && <p className="text-xs text-error mt-1 font-body">{errors.message.message}</p>}
                   </div>
 
                   <button
                     type="submit"
                     disabled={status === 'loading'}
-                    className="btn btn-primary w-full rounded-sm font-body font-medium uppercase tracking-wider text-sm"
+                    className="btn btn-primary w-full rounded-md font-body font-medium uppercase tracking-wider text-sm"
                   >
                     {status === 'loading' ? (
                       <><Loader2 size={16} className="animate-spin mr-2" /> Envoi en cours…</>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-primary rounded-sm p-7 text-white"
+                className="bg-primary rounded-md p-7 text-white"
               >
                 <p className="text-accent text-xs font-body font-semibold uppercase tracking-widest mb-3">Offre de bienvenue</p>
                 <h3 className="font-heading text-2xl font-bold mb-3">Diagnostic offert — 2h</h3>
@@ -149,7 +149,7 @@ export default function ContactPage() {
               </motion.div>
 
               {/* Contact info */}
-              <div className="bg-base-200 border border-base-300 rounded-sm p-7 space-y-5">
+              <div className="bg-base-200 border border-base-300 rounded-md p-7 space-y-5">
                 <h4 className="font-heading font-bold text-base-content">Nos coordonnées</h4>
                 {[
                   { icon: MapPin, content: CONTACT_ADDRESS },
@@ -166,7 +166,7 @@ export default function ContactPage() {
               </div>
 
               {/* Map placeholder */}
-              <div className="rounded-sm overflow-hidden border border-base-300 h-48 bg-base-200 flex items-center justify-center">
+              <div className="rounded-md overflow-hidden border border-base-300 h-48 bg-base-200 flex items-center justify-center">
                 <div className="text-center">
                   <MapPin size={28} className="text-primary/30 mx-auto mb-2" />
                   <p className="text-xs text-base-content/40 font-body">Les Jardins de MPILA</p>

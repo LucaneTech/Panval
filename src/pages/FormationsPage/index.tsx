@@ -13,7 +13,7 @@ function ModuleAccordion({ modules }: { modules: typeof formationGroups[0]['modu
   return (
     <div className="space-y-2 mt-6">
       {modules.map(mod => (
-        <div key={mod.id} className="border border-base-300 rounded-sm overflow-hidden">
+        <div key={mod.id} className="border border-base-300 rounded-md overflow-hidden">
           <button
             onClick={() => setOpen(open === mod.id ? null : mod.id)}
             className="w-full flex items-center justify-between px-5 py-4 text-left bg-base-100 hover:bg-base-200 transition-colors"
@@ -44,7 +44,7 @@ function ModuleAccordion({ modules }: { modules: typeof formationGroups[0]['modu
                       </li>
                     ))}
                   </ul>
-                  <div className="flex items-start gap-2 p-3 bg-primary/5 border border-primary/15 rounded-sm">
+                  <div className="flex items-start gap-2 p-3 bg-primary/5 border border-primary/15 rounded-md">
                     <span className="text-primary text-xs font-semibold font-body uppercase tracking-wider shrink-0">Bénéfices :</span>
                     <span className="text-xs text-base-content/60 font-body">{mod.benefits}</span>
                   </div>
@@ -97,7 +97,7 @@ export default function FormationsPage() {
               <button
                 key={g.id}
                 onClick={() => setActiveGroup(g.id)}
-                className={`px-5 py-2.5 rounded-sm text-xs font-body font-semibold uppercase tracking-wider transition-all duration-200 ${
+                className={`px-5 py-2.5 rounded-md text-xs font-body font-semibold uppercase tracking-wider transition-all duration-200 ${
                   activeGroup === g.id
                     ? 'bg-primary text-white shadow-md'
                     : 'bg-base-200 text-base-content/60 hover:bg-base-300'
@@ -120,7 +120,7 @@ export default function FormationsPage() {
             >
               {/* Left: info */}
               <div className="md:col-span-2">
-                <div className="rounded-sm overflow-hidden aspect-video mb-5">
+                <div className="rounded-md overflow-hidden aspect-video mb-5">
                   <img src={current.image} alt={current.subtitle} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="font-heading text-xl font-bold text-base-content mb-2">{current.subtitle}</h3>
@@ -160,9 +160,9 @@ export default function FormationsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className="bg-base-100 border border-base-300 rounded-sm p-6 text-center hover:shadow-md hover:border-primary/30 transition-all"
+                className="bg-base-100 border border-base-300 rounded-md p-6 text-center hover:shadow-md hover:border-primary/30 transition-all"
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-md flex items-center justify-center mx-auto mb-4">
                   <f.icon size={20} className="text-primary" />
                 </div>
                 <h4 className="font-heading font-bold text-sm text-base-content mb-1">{f.label}</h4>

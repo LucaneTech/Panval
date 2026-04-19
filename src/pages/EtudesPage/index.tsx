@@ -44,10 +44,10 @@ export default function EtudesPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: (i % 8) * 0.06 }}
-                  className="group bg-base-100 border border-base-300 rounded-sm p-5 hover:shadow-md hover:border-primary/30 transition-all"
+                  className="group bg-base-100 border border-base-300 rounded-md p-5 hover:shadow-md hover:border-primary/30 transition-all"
                 >
-                  <div className="w-10 h-10 bg-primary/8 group-hover:bg-primary rounded-sm flex items-center justify-center mb-4 transition-colors">
-                    <Icon size={17} className="text-primary group-hover:text-white transition-colors" />
+                  <div className="w-10 h-10 bg-primary/8 group-hover:bg-primary rounded-md flex items-center shadow-lg  justify-center mb-4 transition-colors">
+                    <Icon size={17} className="text-primary  group-hover:text-white transition-colors" />
                   </div>
                   <h4 className="font-heading font-bold text-sm text-base-content mb-2 leading-snug">{s.title}</h4>
                   <p className="text-xs text-base-content/55 font-body leading-relaxed">{s.description}</p>
@@ -78,7 +78,7 @@ export default function EtudesPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.12 }}
-                  className="bg-white/5 border border-white/10 rounded-sm p-7 text-center hover:bg-white/8 transition-colors"
+                  className="bg-white/5 border border-white/10 rounded-md p-7 text-center hover:bg-white/8 transition-colors"
                 >
                   <div className="w-14 h-14 bg-accent/15 rounded-full flex items-center justify-center mx-auto mb-5">
                     <Icon size={24} className="text-accent" />
@@ -109,7 +109,7 @@ export default function EtudesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className="bg-base-100 border border-base-300 rounded-sm p-6 text-center"
+                className="bg-base-100 border border-base-300 rounded-md p-6 text-center"
               >
                 <p className="font-heading text-4xl font-bold text-primary mb-1">{r.val}</p>
                 <p className="text-xs font-body font-semibold uppercase tracking-wider text-accent mb-2">{r.label}</p>

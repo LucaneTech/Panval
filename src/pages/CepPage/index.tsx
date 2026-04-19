@@ -47,7 +47,7 @@ export default function CepPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.08 }}
-                    className="flex gap-3 p-4 bg-base-200 rounded-sm border border-base-300"
+                    className="flex gap-3 p-4 bg-base-200 rounded-md border border-base-300"
                   >
                     <b.icon size={16} className="text-accent mt-0.5 shrink-0" />
                     <div>
@@ -62,7 +62,7 @@ export default function CepPage() {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative rounded-sm overflow-hidden aspect-[4/3]"
+              className="relative rounded-md overflow-hidden aspect-[4/3]"
             >
               <img
                 src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80"
@@ -87,7 +87,7 @@ export default function CepPage() {
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
-                className={`flex items-center gap-2 px-6 py-3 rounded-sm text-sm font-body font-medium uppercase tracking-wider transition-all ${
+                className={`flex items-center gap-2 px-6 py-3 rounded-md text-sm font-body font-medium uppercase tracking-wider transition-all ${
                   activeTab === tab.key ? 'bg-primary text-white shadow-md' : 'bg-base-100 border border-base-300 text-base-content/60 hover:bg-base-300'
                 }`}
               >
@@ -102,7 +102,7 @@ export default function CepPage() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.06 }}
-                className="bg-base-100 border border-base-300 rounded-sm p-5 hover:shadow-md hover:border-primary/30 transition-all group"
+                className="bg-base-100 border border-base-300 rounded-md p-5 hover:shadow-md hover:border-primary/30 transition-all group"
               >
                 <div className="flex items-start gap-3">
                   <CheckCircle size={16} className="text-accent mt-0.5 shrink-0" />
@@ -129,12 +129,12 @@ export default function CepPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="relative bg-base-200 border border-base-300 rounded-sm p-6"
+                className="relative bg-base-200 border border-base-300 rounded-md p-6"
               >
                 {i < cepSteps.length - 1 && (
                   <div className="hidden lg:block absolute top-8 -right-2.5 w-5 h-px bg-base-300" />
                 )}
-                <div className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center mb-4">
+                <div className="w-10 h-10 bg-primary rounded-md flex items-center justify-center mb-4">
                   <span className="font-mono font-bold text-sm text-white">{String(step.step).padStart(2, '0')}</span>
                 </div>
                 <h4 className="font-heading font-bold text-base-content mb-1">{step.title}</h4>

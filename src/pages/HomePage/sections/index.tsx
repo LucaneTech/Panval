@@ -195,7 +195,7 @@ export function WhyChooseUs() {
               alt="Excellence stratégique"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">
               <blockquote className="font-heading text-white text-lg font-semibold italic leading-snug">
                 "Apporter de la clarté là où règne la confusion, de la méthode là où domine l'improvisation."

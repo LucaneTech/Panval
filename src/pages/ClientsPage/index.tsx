@@ -52,7 +52,7 @@ export default function ClientsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-base-200 border border-base-300 rounded-sm p-7 text-center"
+                className="bg-base-200 border border-base-300 rounded-md p-7 text-center"
               >
                 <div className={`font-heading text-5xl font-bold ${s.color} mb-1`}>
                   <AnimatedCounter value={s.value} suffix={s.suffix} />
@@ -82,7 +82,7 @@ export default function ClientsPage() {
               <button
                 key={f.key}
                 onClick={() => setFilter(f.key)}
-                className={`px-5 py-2 rounded-sm text-xs font-body font-semibold uppercase tracking-wider transition-all ${
+                className={`px-5 py-2 rounded-md text-xs font-body font-semibold uppercase tracking-wider transition-all ${
                   filter === f.key ? 'bg-primary text-white' : 'bg-base-200 border border-base-300 text-base-content/60 hover:bg-base-300'
                 }`}
               >
@@ -97,7 +97,7 @@ export default function ClientsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: (i % 6) * 0.07 }}
-                className="bg-base-200 border border-base-300 rounded-sm p-6 hover:shadow-md transition-shadow flex flex-col"
+                className="bg-base-200 border border-base-300 rounded-md p-6 hover:shadow-md transition-shadow flex flex-col"
               >
                 <div className="flex gap-1 mb-3">
                   {[...Array(5)].map((_, k) => <Star key={k} size={11} className="fill-accent text-accent" />)}
@@ -145,7 +145,7 @@ export default function ClientsPage() {
                   >
                     <td className="py-4 px-4 font-semibold text-base-content">{o.service}</td>
                     <td className="py-4 px-4">
-                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">{o.goal}</span>
+                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-md">{o.goal}</span>
                     </td>
                     <td className="py-4 px-4 text-base-content/60 text-xs">{o.target}</td>
                   </motion.tr>
@@ -165,7 +165,7 @@ export default function ClientsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className="bg-base-100 border border-base-300 rounded-sm p-5 text-center"
+                className="bg-base-100 border border-base-300 rounded-md p-5 text-center"
               >
                 <p className="font-heading text-2xl font-bold text-primary mb-1">{kpi.val}</p>
                 <p className="text-xs text-base-content/50 font-body">{kpi.label}</p>
