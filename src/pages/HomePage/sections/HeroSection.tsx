@@ -66,7 +66,7 @@ export default function HeroSection() {
           >
             Panval Consilium International accompagne les dirigeants, cadres et organisations
             vers une performance durable grâce à la formation stratégique, l'intelligence
-            économique et la conciergerie d'entreprise.
+            économique.
           </motion.p>
 
           {/* CTA buttons */}
