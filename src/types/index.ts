@@ -60,6 +60,10 @@ export interface TeamMember {
   bio: string
   image: string
   initials: string
+  insight: {
+    title: string
+    excerpt: string
+  }
 }
 
 // ─── Témoignages ──────────────────────────────────────────────────────────────
@@ -78,6 +82,7 @@ export interface Partner {
   id: string
   name: string
   category: 'partenaire' | 'client'
+  logo?:string
 }
 
 // ─── Stats ────────────────────────────────────────────────────────────────────

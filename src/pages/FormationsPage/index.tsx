@@ -162,7 +162,7 @@ export default function FormationsPage() {
                 transition={{ delay: i * 0.08 }}
                 className="bg-base-100 border border-base-300 rounded-md p-6 text-center hover:shadow-md hover:border-primary/30 transition-all"
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-md flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-md  flex items-center justify-center mx-auto mb-4">
                   <f.icon size={20} className="text-primary" />
                 </div>
                 <h4 className="font-heading font-bold text-sm text-base-content mb-1">{f.label}</h4>

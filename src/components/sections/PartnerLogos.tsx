@@ -9,7 +9,7 @@ export default function PartnerLogos() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-center text-xs font-body font-semibold uppercase tracking-[0.2em] text-base-content/40 mb-10"
+          className="text-center text-sm text-yellow-500 font-body font-semibold uppercase tracking-[0.2em] text-base-content/40 mb-10"
         >
           Ils nous font confiance
         </motion.p>

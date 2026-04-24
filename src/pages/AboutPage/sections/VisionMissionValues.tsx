@@ -18,10 +18,10 @@ export default function VisionMissionValues() {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-white/5 border border-white/10 rounded-md p-8"
+              className="bg-white/5 border border-gray-100/20 rounded-md p-8"
             >
-              <div className="w-10 h-10 rounded-md bg-accent/20 flex items-center justify-center mb-5">
-                <Target size={20} className="text-accent" />
+               <div className="w-10 h-10 rounded-md border border-gray-100/20 bg-accent/20 flex items-center justify-center mb-5">
+                <Target size={20} className="text-white" />
               </div>
               <h3 className="font-heading text-2xl font-bold text-white mb-4">Notre Vision</h3>
               <div className="h-0.5 w-10 bg-accent mb-5" />
@@ -34,10 +34,10 @@ export default function VisionMissionValues() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.12 }}
-              className="bg-white/5 border border-white/10 rounded-md p-8"
+              className="bg-white/5 border border-gray-100/20 rounded-md p-8"
             >
-              <div className="w-10 h-10 rounded-md bg-accent/20 flex items-center justify-center mb-5">
-                <Star size={20} className="text-accent" />
+              <div className="w-10 h-10 rounded-md border border-gray-100/20 bg-accent/20 flex items-center justify-center mb-5">
+                <Star size={20} className="text-white" />
               </div>
               <h3 className="font-heading text-2xl font-bold text-white mb-4">Notre Mission</h3>
               <div className="h-0.5 w-10 bg-accent mb-5" />
@@ -82,9 +82,9 @@ export default function VisionMissionValues() {
                     <div className="w-10 h-10 rounded-md bg-primary/10 group-hover:bg-primary transition-colors flex items-center justify-center">
                       <Icon size={18} className="text-primary group-hover:text-white transition-colors" />
                     </div>
-                    <span className="font-mono text-2xl font-bold text-base-content/10 group-hover:text-accent/30 transition-colors">{v.number}</span>
+                    <span className="font-mono text-2xl text-gray-500 font-bold duration-300 group-hover:text-yellow-400  transition-colors">{v.number}</span>
                   </div>
-                  <h4 className="font-heading font-bold text-base-content text-base mb-2">{v.title}</h4>
+                  <h4 className="font-heading font-semibold text-yellow-400  text-base mb-2">{v.title}</h4>
                   <p className="text-base-content/55 font-body text-xs leading-relaxed">{v.description}</p>
                 </motion.div>
               )

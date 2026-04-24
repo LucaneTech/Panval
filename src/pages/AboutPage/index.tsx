@@ -16,7 +16,9 @@ export default function AboutPage() {
       </Helmet>
       <PageHero
         title="À propos de nous"
-        subtitle="Un cabinet pensé pour accompagner les décideurs dans la compréhension de leur environnement et la prise de décisions stratégiques éclairées."
+        subtitle="Panval Consilium International est un cabinet de conseil et de services
+stratégiques spécialisé dans l’accompagnement des entreprises publiques et
+privées, des organisations et des particuliers ayant des responsabilités."
         image="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80"
         breadcrumbs={[{ label: 'À propos' }]}
       />

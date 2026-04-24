@@ -28,8 +28,8 @@ export default function Footer() {
 
           
             <p className="text-sm leading-relaxed text-white/60 mb-5">
-              Cabinet d'excellence spécialisé en formation opérationnelle, études de marché et conciergerie stratégique.
-            </p>
+  Cabinet d'excellence spécialisé en formation opérationnelle, études de marché et accompagnement stratégique global.
+</p>
             <p className="text-[11px] text-white/40 font-mono">RCCM : {RCCM}</p>
           </div>
 
@@ -59,7 +59,7 @@ export default function Footer() {
                 { label: 'Formations stratégiques', path: '/formations' },
                 { label: 'Études de marché', path: '/etudes' },
                 { label: 'Diagnostics institutionnels', path: '/etudes' },
-                { label: 'Conciergerie d\'entreprise', path: '/cep' },
+                { label: 'Accompagnement d\'entreprise', path: '/cep' },
                 { label: 'Coaching dirigeants', path: '/cep' },
                 { label: 'Intelligence économique', path: '/etudes' },
               ].map(s => (

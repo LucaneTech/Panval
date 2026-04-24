@@ -16,16 +16,11 @@ export const testimonials: Testimonial[] = [
 ]
 
 export const partners: Partner[] = [
-  { id: 'p1', name: 'MTN', category: 'partenaire' },
-  { id: 'p2', name: 'AIRTEL', category: 'partenaire' },
-  { id: 'p3', name: 'IBIS Groupe', category: 'client' },
-  { id: 'p4', name: 'Black Mutual', category: 'client' },
-  { id: 'p5', name: 'Black Pillars', category: 'partenaire' },
-  { id: 'p6', name: 'Finance Investis', category: 'client' },
-  { id: 'p7', name: 'VALP PRESTIGE', category: 'client' },
-  { id: 'p8', name: 'AG Groupe', category: 'client' },
-  { id: 'p9', name: 'BANOS', category: 'client' },
-  { id: 'p10', name: 'Lincon Groupe', category: 'client' },
-  { id: 'p11', name: 'Fister Alicol', category: 'client' },
-  { id: 'p12', name: 'Premium Conciergerie', category: 'partenaire' },
+  { id: 'p1', name: 'HERMON – EXIMIA', category: 'partenaire' },
+  { id: 'p2', name: 'GLOBAL LAND BUSINESS', category: 'partenaire' },
+  { id: 'p3', name: 'GLOBAL EMPIRE CONGO', category: 'partenaire' },
+  { id: 'p4', name: 'IBIS Groupe', category: 'client' },
+  { id: 'p5', name: 'MTN', category: 'client' },
+  { id: 'p6', name: 'AIRTEL', category: 'client' },
+  
 ]

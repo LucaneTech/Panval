@@ -4,18 +4,38 @@ export const teamMembers: TeamMember[] = [
   {
     id: 'tpc',
     name: 'TCHIAMA Paijos Clauva',
-    role: 'Administrateur Général',
+    role: 'Fondateur – Formateur transdisciplinaire & Visionnaire',
     bio: "Fondateur et visionnaire de Panval Consilium International, TCHIAMA Paijos Clauva œuvre depuis plus de cinq ans pour bâtir un cabinet de référence africaine. Sa conviction : la performance durable repose sur la qualité de l'information, la pertinence de la stratégie et la maîtrise de l'action.",
     image: '',
     initials: 'TPC',
+    insight: {
+      title: "Pourquoi la transdisciplinarité est l'avenir du conseil en Afrique",
+      excerpt: "La complexité des défis africains ne peut être résolue par une approche mono-disciplinaire. L'avenir appartient à ceux qui savent croiser les regards, les méthodes et les expertises pour construire des solutions véritablement adaptées aux réalités locales.",
+    },
   },
   {
-    id: 'js',
-    name: 'Jules SANGOMA',
-    role: 'Directeur des Opérations',
-    bio: "Expert en stratégie et développement organisationnel, Jules SANGOMA coordonne l'ensemble des opérations et veille à la qualité des interventions. Son engagement : transformer les défis de nos clients en opportunités de croissance mesurable.",
+    id: 'mat',
+    name: 'MANANGA Abraham Toussaint',
+    role: 'Directeur du Développement Stratégique et des Affaires Juridiques',
+    bio: "Expert en droit des affaires et en stratégie organisationnelle, MANANGA Abraham Toussaint pilote le développement stratégique du cabinet et les questions juridiques complexes. Sa mission : transformer la complexité réglementaire en avantage compétitif pour les clients.",
     image: '',
-    initials: 'JS',
+    initials: 'MAT',
+    insight: {
+      title: "Transformer la complexité juridique en avantage compétitif",
+      excerpt: "Dans un environnement réglementaire en constante évolution, la maîtrise des enjeux juridiques n'est plus une contrainte mais un levier stratégique. Notre approche proactive permet aux organisations d'anticiper et de transformer les contraintes en opportunités.",
+    },
+  },
+  {
+    id: 'fpk',
+    name: 'FERNANDES Peters Ketsia Manuella',
+    role: 'Directrice des Opérations et des Projets',
+    bio: "Spécialiste en gestion de projets et en optimisation opérationnelle, Fernandes Peters Ketsia Manuella assure la coordination et l'efficacité des interventions du cabinet. Son approche : allier rigueur méthodologique et agilité pour garantir des résultats mesurables et durables.",
+    image: '',
+    initials: 'FPK',
+    insight: {
+      title: "L'agilité opérationnelle comme levier de croissance durable",
+      excerpt: "La performance durable ne se décrète pas, elle se construit au quotidien par des processus agiles et une équipe alignée. Notre mission est d'accompagner les organisations vers une excellence opérationnelle qui libère le potentiel de croissance.",
+    },
   },
 ]
 

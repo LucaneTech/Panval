@@ -96,13 +96,13 @@ const services = [
     link: '/etudes',
     color: 'bg-crimson-500',
   },
-  {
-    icon: Briefcase,
-    title: 'Conciergerie d\'Entreprise',
-    description: 'Accompagnement personnalisé des dirigeants : gestion des priorités, assistance stratégique, coordination institutionnelle et support de haut niveau.',
-    link: '/cep',
-    color: 'bg-gold-500',
-  },
+{
+  icon: Briefcase,
+  title: 'Conseil & Accompagnement Stratégique',
+  description: 'Accompagnement des dirigeants dans la prise de décision, le pilotage stratégique, la transformation organisationnelle et l’amélioration durable des performances.',
+  link: '/cep',
+  color: 'bg-gold-500',
+}
 ]
 
 export function ServicesGrid() {

@@ -14,14 +14,14 @@ export default function CepPage() {
   return (
     <>
       <Helmet>
-        <title>Conciergerie d'Entreprise — Panval Consilium International</title>
-        <meta name="description" content="Service de conciergerie stratégique pour dirigeants et organisations. Libérez-vous des tâches secondaires pour vous concentrer sur l'essentiel." />
+        <title>Accompagnement Stratégique Global — Panval Consilium International</title>
+        <meta name="description" content="Accompagnement stratégique global pour dirigeants et organisations. Libérez votre potentiel de leadership et concentrez-vous sur la vision et la prise de décision stratégique." />
       </Helmet>
       <PageHero
-        title="Conciergerie d'Entreprise & Accompagnement"
+        title="Accompagnement Stratégique Global"
         subtitle="Libérer les dirigeants et cadres des tâches secondaires afin de leur permettre de se concentrer sur le leadership, la vision et la prise de décision stratégique."
         image="https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&w=1400&q=80"
-        breadcrumbs={[{ label: 'Conciergerie (CEP)' }]}
+        breadcrumbs={[{ label: 'Accompagnement Stratégique' }]}
       />
 
       {/* Intro */}
@@ -32,7 +32,7 @@ export default function CepPage() {
               <SectionTitle
                 eyebrow="Notre finalité"
                 title="Un dirigeant libéré est un dirigeant performant"
-                subtitle="Notre service de conciergerie institutionnelle prend en charge tout ce qui détourne le dirigeant de sa mission essentielle."
+                subtitle="Notre accompagnement stratégique global prend en charge tout ce qui détourne le dirigeant de sa mission essentielle."
               />
               <div className="mt-8 grid grid-cols-2 gap-4">
                 {[
@@ -66,7 +66,7 @@ export default function CepPage() {
             >
               <img
                 src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80"
-                alt="Conciergerie stratégique"
+                alt="Accompagnement stratégique"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/40 to-transparent" />
@@ -87,9 +87,8 @@ export default function CepPage() {
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
-                className={`flex items-center gap-2 px-6 py-3 rounded-md text-sm font-body font-medium uppercase tracking-wider transition-all ${
-                  activeTab === tab.key ? 'bg-primary text-white shadow-md' : 'bg-base-100 border border-base-300 text-base-content/60 hover:bg-base-300'
-                }`}
+                className={`flex items-center gap-2 px-6 py-3 rounded-md text-sm font-body font-medium uppercase tracking-wider transition-all ${activeTab === tab.key ? 'bg-primary text-white shadow-md' : 'bg-base-100 border border-base-300 text-base-content/60 hover:bg-base-300'
+                  }`}
               >
                 <tab.icon size={15} /> {tab.label}
               </button>
@@ -147,9 +146,9 @@ export default function CepPage() {
       </section>
 
       <CtaBanner
-        title="Un dirigeant libéré est un dirigeant performant"
-        subtitle="Démarrons avec un cadrage de 1h30 offert pour comprendre vos besoins."
-        primaryLabel="Demander un cadrage offert"
+        title="Un accompagnement stratégique pour une performance durable"
+        subtitle="Diagnostic stratégique — À partir de 100€ / 118 USD / 65 000 FCFA. Contactez-nous pour démarrer."
+        primaryLabel="Demander un diagnostic"
         secondaryLabel="Voir nos formations"
         secondaryTo="/formations"
       />

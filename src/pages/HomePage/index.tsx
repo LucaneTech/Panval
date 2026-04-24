@@ -7,6 +7,7 @@ import HomeTestimonials from './sections/HomeTestimonials'
 import StatsStrip from '@/components/sections/StatsStrip'
 import PartnerLogos from '@/components/sections/PartnerLogos'
 import { CtaBanner } from '@/components/sections/CtaBanner'
+import VisionMission from './sections/VisionMission'
 
 export default function HomePage() {
   return (
@@ -17,6 +18,8 @@ export default function HomePage() {
       </Helmet>
       <HeroSection />
       <AboutSnippet />
+    
+      <VisionMission/>
       <StatsStrip />
       <ServicesGrid />
       <WhyChooseUs />

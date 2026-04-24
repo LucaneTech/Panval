@@ -14,7 +14,7 @@ interface CtaBannerProps {
 
 export function CtaBanner({
   title = 'Prêt à transformer votre organisation ?',
-  subtitle = 'Un diagnostic offert de 2h, sans engagement. Parlons de votre projet.',
+  subtitle = 'Diagnostic stratégique premium — 100€ | 118 USD | 65 000 FCFA. Offrez-vous une analyse experte de votre organisation.',
   primaryLabel = 'Demander un diagnostic',
   primaryTo = '/contact',
   secondaryLabel = 'Nos services',

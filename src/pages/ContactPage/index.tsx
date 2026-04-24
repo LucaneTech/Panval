@@ -15,11 +15,11 @@ export default function ContactPage() {
     <>
       <Helmet>
         <title>Contact — Panval Consilium International</title>
-        <meta name="description" content="Contactez Panval Consilium International. Diagnostic offert de 2h. Brazzaville, République du Congo." />
+        <meta name="description" content="Contactez Panval Consilium International. Diagnostic Stratégique. Brazzaville, République du Congo." />
       </Helmet>
       <PageHero
         title="Parlons de votre projet"
-        subtitle="Un diagnostic offert de 2h, sans engagement. Notre équipe vous répond dans les 24h."
+        subtitle="Un diagnostic en un clic. Notre équipe vous répond dans les 24h."
         image="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1400&q=80"
         breadcrumbs={[{ label: 'Contact' }]}
       />
@@ -88,7 +88,7 @@ export default function ContactPage() {
                     <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Objet de la demande *</label>
                     <select {...register('subject')} className={`select select-bordered w-full rounded-md text-sm font-body ${errors.subject ? 'select-error' : ''}`}>
                       <option value="">Sélectionnez un objet</option>
-                      <option value="diagnostic">Diagnostic offert (2h)</option>
+                      <option value="diagnostic">Diagnostic Stratégique</option>
                       <option value="rdv">Prise de rendez-vous</option>
                       <option value="devis">Demande de devis</option>
                       <option value="autre">Autre</option>
@@ -135,18 +135,23 @@ export default function ContactPage() {
             {/* Info — 2 cols */}
             <div className="lg:col-span-2 space-y-6">
               {/* Highlight card */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="bg-primary rounded-md p-7 text-white"
-              >
-                <p className="text-accent text-xs font-body font-semibold uppercase tracking-widest mb-3">Offre de bienvenue</p>
-                <h3 className="font-heading text-2xl font-bold mb-3">Diagnostic offert — 2h</h3>
-                <p className="text-white/65 font-body text-sm leading-relaxed">
-                  Une session de 2h offerte, sans engagement, pour analyser votre situation et identifier les leviers d'action prioritaires.
-                </p>
-              </motion.div>
+             <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  className="bg-primary rounded-md p-7 text-white"
+>
+  <p className="text-accent text-xs font-body font-semibold uppercase tracking-widest mb-3">Diagnostic Premium</p>
+  <h3 className="font-heading text-2xl font-bold mb-3">Diagnostic stratégique</h3>
+  <p className="text-white/65 font-body text-sm leading-relaxed">
+    Une analyse experte en profondeur — À partir de 100€ / 118 USD / 65 000 FCFA. Une prestation à forte valeur ajoutée pour sécuriser vos décisions.
+  </p>
+  <div className="mt-4 flex items-center gap-2">
+    <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">100€</span>
+    <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">118 USD</span>
+    <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">65 000 FCFA</span>
+  </div>
+</motion.div>
 
               {/* Contact info */}
               <div className="bg-base-200 border border-base-300 rounded-md p-7 space-y-5">
@@ -169,8 +174,8 @@ export default function ContactPage() {
               <div className="rounded-md overflow-hidden border border-base-300 h-48 bg-base-200 flex items-center justify-center">
                 <div className="text-center">
                   <MapPin size={28} className="text-primary/30 mx-auto mb-2" />
-                  <p className="text-xs text-base-content/40 font-body">Les Jardins de MPILA</p>
-                  <p className="text-xs text-base-content/30 font-body">Brazzaville, Congo</p>
+                  <p className="text-xs text-base-content/40 font-body">Zone Industrielle</p>
+                  <p className="text-xs text-base-content/30 font-body">Pointe-Noire, Congo</p>
                 </div>
               </div>
             </div>

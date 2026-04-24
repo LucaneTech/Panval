@@ -46,10 +46,10 @@ export default function EtudesPage() {
                   transition={{ delay: (i % 8) * 0.06 }}
                   className="group bg-base-100 border border-base-300 rounded-md p-5 hover:shadow-md hover:border-primary/30 transition-all"
                 >
-                  <div className="w-10 h-10 bg-primary/8 group-hover:bg-primary rounded-md flex items-center shadow-lg  justify-center mb-4 transition-colors">
+                  <div className="w-10 h-10 bg-primary/8 border border-gray-400/20 shadow-lg group-hover:bg-primary rounded-md flex items-center  justify-center mb-4 transition-colors">
                     <Icon size={17} className="text-primary  group-hover:text-white transition-colors" />
                   </div>
-                  <h4 className="font-heading font-bold text-sm text-base-content mb-2 leading-snug">{s.title}</h4>
+                  <p className=" text-accent font-bold text-sm  mb-2">{s.title}</p>
                   <p className="text-xs text-base-content/55 font-body leading-relaxed">{s.description}</p>
                 </motion.div>
               )
@@ -80,7 +80,7 @@ export default function EtudesPage() {
                   transition={{ delay: i * 0.12 }}
                   className="bg-white/5 border border-white/10 rounded-md p-7 text-center hover:bg-white/8 transition-colors"
                 >
-                  <div className="w-14 h-14 bg-accent/15 rounded-full flex items-center justify-center mx-auto mb-5">
+                  <div className="w-14 h-14 bg-accent/15 border border-white/20 rounded-full flex items-center justify-center mx-auto mb-5">
                     <Icon size={24} className="text-accent" />
                   </div>
                   <h4 className="font-heading font-bold text-white text-lg mb-3">{m.title}</h4>

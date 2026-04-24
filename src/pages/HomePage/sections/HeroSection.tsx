@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import Button from '@/components/ui/Button'
+import { Link } from 'react-router-dom'
 
 export default function HeroSection() {
   return (
@@ -52,9 +53,14 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.15 }}
             className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6"
           >
-            Éclairer.{' '}
-            <span className="text-accent">Structurer.</span>{' '}
-            Libérer.
+             <Link to="/etudes">Savoir{' - '}</Link>
+            
+            <span className="text-accent">
+              <Link to="/a-propos">Penser.{' '}</Link>
+              </span>
+              <br/>
+               <Link to="/cep">Faire.</Link>
+
           </motion.h1>
 
           {/* Subtitle */}
@@ -79,7 +85,7 @@ export default function HeroSection() {
           
 
             <Button to="/formations" label="Découvrir nos formations" variant="primary" icon={<ArrowRight size={15} className="ml-2" />} />
-            <Button to="/contact" label="Diagnostic offert — 2h" variant="outline" />
+            <Button to="/contact" label="Diagnostic stratégique" variant="outline" />
           </motion.div>
 
           {/* Stats row */}

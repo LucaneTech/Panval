@@ -60,7 +60,7 @@ export default function Navbar() {
               <motion.img
                 src="images/logo.png"
                 alt="Logo Panval Consilium"
-                className="w-24 sm:w-28 md:w-32 h-auto object-contain"
+                className="w-24 sm:w-28 md:w-36 h-auto object-cover"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               />
@@ -100,7 +100,7 @@ export default function Navbar() {
                 {theme === 'panvallight' ? <Moon size={16} /> : <Sun size={16} />}
               </button>
 
-              <Button to="/contact" label="Nous contacter" variant="secondary" className='hidden md:flex border border-white/40' />
+              <Button to="/contact" label="Diagnostic premium" variant="secondary" className='hidden md:flex border border-white/40' />
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className={cn(
@@ -175,7 +175,7 @@ export default function Navbar() {
               </div>
               <div className="p-4 border-t border-base-300">
                 <Link to="/contact" className="btn btn-primary w-full rounded-sm text-sm uppercase tracking-wider font-body">
-                  Nous contacter
+                  Diagnostic premium
                 </Link>
               </div>
             </motion.nav>
