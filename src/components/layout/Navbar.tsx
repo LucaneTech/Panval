@@ -56,7 +56,7 @@ export default function Navbar() {
         <div className="container-custom">
           <div className="flex items-center justify-between h-auto">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-3 group">
+            <Link to="/">
               <motion.img
                 src="images/logo.png"
                 alt="Logo Panval Consilium"
