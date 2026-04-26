@@ -103,7 +103,7 @@ export default function ClientsPage() {
                   {[...Array(5)].map((_, k) => <Star key={k} size={11} className="fill-accent text-accent" />)}
                 </div>
                 <p className="text-base-content/65 font-body text-sm leading-relaxed italic flex-1 mb-5">
-                  "{t.quote}"
+                  "{t.quote.fr}"
                 </p>
                 <div className="pt-4 border-t border-base-300 flex items-center gap-3">
                   <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-xs font-heading font-bold text-primary shrink-0">
@@ -111,7 +111,7 @@ export default function ClientsPage() {
                   </div>
                   <div>
                     <p className="font-body font-semibold text-sm text-base-content">{t.company}</p>
-                    <p className="text-xs text-base-content/40 font-body">{t.sector} · {t.category === 'partenaire' ? 'Partenaire' : 'Client'}</p>
+                    <p className="text-xs text-base-content/40 font-body">{t.sector.fr} · {t.category === 'partenaire' ? 'Partenaire' : 'Client'}</p>
                   </div>
                 </div>
               </motion.div>

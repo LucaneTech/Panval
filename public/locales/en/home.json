@@ -1,0 +1,118 @@
+{
+  "hero": {
+    "eyebrow": "Strategic Excellence",
+    "title": "Know - Think. Act.",
+    "subtitle": "Panval Consilium International supports leaders, executives and organizations toward sustainable performance.",
+        "stats": {
+        "organizations": "Organizations trained",
+        "organisations": "Organizations supported",
+        "pillars": "Service pillars",
+        "experience": "Years of experience"
+        }
+  },
+  "cta": {
+    "trainings": "Discover our trainings",
+    "contact": "Strategic diagnostic"
+  },
+  
+
+  "about": {
+    "eyebrow": "About us",
+    "title": "A strategic partner for your success",
+    "subtitle": "Panval Consilium International is a consulting firm specialized in supporting organizations and leaders.",
+    "experience": "{{count}}+ years of excellence",
+    "items": [
+      "Tailored strategic training programs",
+      "Market studies and institutional diagnostics",
+      "Strategic support",
+      "Career development consulting"
+    ],
+    "cta": "Learn more"
+  },
+
+  "services": {
+    "eyebrow": "Our services",
+    "title": "Three pillars for your excellence",
+    "subtitle": "Integrated and result-oriented solutions.",
+    "discover": "Discover",
+    "items": [
+      {
+        "title": "Strategic Training",
+        "description": "Programs covering strategy, leadership and transformation."
+      },
+      {
+        "title": "Studies & Diagnostics",
+        "description": "Market research and organizational diagnostics."
+      },
+      {
+        "title": "Strategic Consulting",
+        "description": "Support for decision-making and performance improvement."
+      }
+    ]
+  },
+
+  "why": {
+    "eyebrow": "Why choose us",
+    "title": "Strategic rigor for real impact",
+    "items": [
+      {
+        "title": "Operational excellence",
+        "desc": "Rigorous and results-driven execution."
+      },
+      {
+        "title": "Full confidentiality",
+        "desc": "Absolute protection of sensitive data."
+      },
+      {
+        "title": "Tailor-made",
+        "desc": "Solutions adapted to your context."
+      },
+      {
+        "title": "African & international vision",
+        "desc": "Local expertise with global standards."
+      }
+    ],
+    "quote": "Bringing clarity where confusion exists.",
+    "author": "General Management"
+  },
+
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What our clients say",
+    "cta": "View all testimonials"
+  },
+  "missionVision": {
+    "eyebrow": "Our purpose",
+    "title": "Mission & Vision",
+    "subtitle": "The strategic foundations guiding all our actions",
+
+    "mission": {
+      "title": "Our Mission",
+      "intro": "To support organizations and leaders by providing:",
+      "items": [
+        "Strategic and professional training to develop leadership and key skills",
+        "Reliable market studies and diagnostics to support decision-making",
+        "Tailored strategic support services to optimize performance"
+      ],
+      "quote": "All aimed at maximizing performance, cohesion, and long-term value for each client."
+    },
+
+    "vision": {
+      "title": "Our Vision",
+      "intro": "To become an internationally recognized firm known for:",
+      "items": [
+        "Excellence in training",
+        "Reliability of market research",
+        "Innovation in strategic solutions"
+      ],
+      "objective": "Ultimate goal: Contribute sustainably to the performance and competitiveness of our clients."
+    },
+
+    "footer": "Mission & Vision — The foundation of our commitment"
+  },
+   "partners": {
+    "eyebrow": "They trust us"
+  
+  }
+
+}

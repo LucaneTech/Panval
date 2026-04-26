@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "Awaken ambitions, reveal potentials",
+    "subtitle": "A supportive, neutral and action-oriented approach",
+    "breadcrumbs": ["Career Development Counseling"]
+  },
+  "intro": {
+    "eyebrow": "Why CEP",
+    "title": "Build and secure the professional future",
+    "points": [
+      "Career Development Counseling (CEP) is a personalized support scheme that enables each employee to actively steer their professional path.",
+      "Our approach, both supportive and demanding, helps talents succeed in transitions, develop employability and find lasting meaning in their careers."
+    ]
+  },
+  "steps": {
+    "eyebrow": "Our methodology",
+    "title": "Typical CEP journey",
+    "subtitle": "A structured support in 4 stages, adapted to each profile and objective",
+    "items": [
+      { "num": "01", "title": "Framing", "duration": "1h30", "desc": "In-depth analysis of the situation and the beneficiary's specific needs." },
+      { "num": "02", "title": "Exploration", "duration": "2-4 sessions", "desc": "Comprehensive diagnostic of skills, values, motivations and potential barriers." },
+      { "num": "03", "title": "Construction", "duration": "1-2 sessions", "desc": "Formalization of a concrete and personalized action plan." },
+      { "num": "04", "title": "Follow-up", "duration": "3-6 months", "desc": "Step-by-step support, adjustments and evaluation of results." }
+    ]
+  },
+  "services": {
+    "eyebrow": "Our Services",
+    "title": "For Individuals & For Companies",
+    "items": [
+      { "title": "Skills assessments", "description": "In-depth analysis of professional and personal abilities to reveal hidden potential." },
+      { "title": "Potential evaluations", "description": "Identification of high-potential talents to anticipate evolution and succession." },
+      { "title": "Group workshops", "description": "Collaborative sessions for networking and professional development." },
+      { "title": "Mobility support", "description": "Personalized support for internal and external transitions." }
+    ]
+  },
+  "cta": {
+    "title": "Ready to develop your talents?",
+    "subtitle": "Get a premium diagnostic to assess your CEP needs",
+    "primaryLabel": "Request a quote",
+    "secondaryLabel": "See studies"
+  }
+}

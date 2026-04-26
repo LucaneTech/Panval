@@ -1,32 +1,75 @@
-import type { Stat } from '@/types'
+export type Lang = 'fr' | 'en' | 'ar'
 
-export const stats: Stat[] = [
+export interface StatItem {
+  id: string
+  value: number
+  suffix?: string
+  label: Record<Lang, string>
+  description: Record<Lang, string>
+}
+
+export const stats: StatItem[] = [
   {
-    id: 'formations',
+    id: 's1',
     value: 2250,
     suffix: '+',
-    label: 'Personnes formées',
-    description: 'Depuis 2021',
+    label: {
+      fr: 'Organisations formées',
+      en: 'Organizations trained',
+      ar: 'المنظمات التي تم تكوينها'
+    },
+    description: {
+      fr: 'Entreprises et institutions accompagnées',
+      en: 'Companies and institutions supported',
+      ar: 'شركات ومؤسسات تمت مرافقتها'
+    }
   },
+
   {
-    id: 'organisations',
+    id: 's2',
     value: 250,
     suffix: '+',
-    label: 'Organisations accompagnées',
-    description: 'Secteurs public & privé',
+    label: {
+      fr: 'Organisations accompagnées',
+      en: 'Organizations supported',
+      ar: 'المنظمات المدعومة'
+    },
+    description: {
+      fr: 'Clients satisfaits de nos services',
+      en: 'Satisfied clients using our services',
+      ar: 'عملاء راضون عن خدماتنا'
+    }
   },
+
   {
-    id: 'services',
+    id: 's3',
     value: 3,
     suffix: '',
-    label: 'Piliers de services',
-    description: 'Formations · Études · CEP',
+    label: {
+      fr: 'Piliers de services',
+      en: 'Service pillars',
+      ar: 'ركائز الخدمات'
+    },
+    description: {
+      fr: 'Formations, études et conseil stratégique',
+      en: 'Training, studies and strategic consulting',
+      ar: 'التكوين والدراسات والاستشارات الاستراتيجية'
+    }
   },
+
   {
-    id: 'satisfaction',
-    value: 98,
-    suffix: '%',
-    label: 'Taux de satisfaction',
-    description: 'Clients fidèles',
-  },
+    id: 's4',
+    value: 5,
+    suffix: '+',
+    label: {
+      fr: "Années d'expérience",
+      en: 'Years of experience',
+      ar: 'سنوات من الخبرة'
+    },
+    description: {
+      fr: 'Expertise stratégique consolidée',
+      en: 'Consolidated strategic expertise',
+      ar: 'خبرة استراتيجية متراكمة'
+    }
+  }
 ]

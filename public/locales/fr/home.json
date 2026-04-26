@@ -1,0 +1,118 @@
+{
+  "hero": {
+    "eyebrow": "Cabinet d'Excellence Stratégique",
+    "title": "Savoir - Penser. Faire.",
+    "subtitle": "Panval Consilium International accompagne les dirigeants, cadres et organisations vers une performance durable",
+    "stats": {
+      "organizations": "Organisations formées",
+      "organisations": "Organisations accompagnées",
+      "pillars": "Piliers de services",
+      "experience": "Années d'expérience"
+    }
+  },
+  "cta": {
+    "trainings": "Découvrir nos formations",
+    "contact": "Diagnostic stratégique"
+  },
+
+
+  "about": {
+    "eyebrow": "Qui sommes-nous",
+    "title": "Un allié stratégique au service de votre réussite",
+    "subtitle": "Panval Consilium International est un cabinet de conseil et de services stratégiques spécialisé dans l'accompagnement des entreprises publiques et privées, des organisations et des particuliers.",
+    "experience": "{{count}}+ ans d'excellence",
+    "items": [
+      "Formations professionnelles et stratégiques sur mesure",
+      "Études de marché et diagnostics institutionnels rigoureux",
+      "Accompagnement stratégique",
+      "Conseil en évolution professionnelle (CEP)"
+    ],
+    "cta": "En savoir plus"
+  },
+
+  "services": {
+    "eyebrow": "Nos services",
+    "title": "Trois piliers pour votre excellence",
+    "subtitle": "Des solutions intégrées, personnalisées et orientées résultats pour accompagner chaque étape de votre développement.",
+    "discover": "Découvrir",
+    "items": [
+      {
+        "title": "Formations Stratégiques",
+        "description": "4 groupes de formation couvrant la stratégie, le leadership, la transformation organisationnelle et la communication institutionnelle."
+      },
+      {
+        "title": "Études & Diagnostics",
+        "description": "20 prestations d'analyse : études de marché, diagnostics organisationnels, audits de gouvernance, veille stratégique et évaluations d'impact."
+      },
+      {
+        "title": "Conseil & Accompagnement Stratégique",
+        "description": "Accompagnement des dirigeants dans la prise de décision, le pilotage stratégique et la transformation organisationnelle."
+      }
+    ]
+  },
+
+  "why": {
+    "eyebrow": "Pourquoi nous choisir",
+    "title": "La rigueur stratégique au service de votre impact",
+    "items": [
+      {
+        "title": "Excellence opérationnelle",
+        "desc": "Chaque intervention est conduite avec rigueur et sens du résultat."
+      },
+      {
+        "title": "Confidentialité totale",
+        "desc": "Protection absolue de vos informations stratégiques."
+      },
+      {
+        "title": "Sur mesure",
+        "desc": "Des solutions adaptées à vos réalités spécifiques."
+      },
+      {
+        "title": "Vision africaine & internationale",
+        "desc": "Expertise locale avec standards internationaux."
+      }
+    ],
+    "quote": "Apporter de la clarté là où règne la confusion.",
+    "author": "Direction Générale"
+  },
+
+  "testimonials": {
+    "eyebrow": "Témoignages",
+    "title": "Ce que disent nos clients",
+    "cta": "Voir tous les témoignages"
+  },
+  
+  "missionVision": {
+    "eyebrow": "Notre raison d'être",
+    "title": "Mission & Vision",
+    "subtitle": "Les fondements stratégiques qui guident chacune de nos actions",
+
+    "mission": {
+      "title": "Notre Mission",
+      "intro": "Accompagner les entreprises, organisations et dirigeants en leur fournissant :",
+      "items": [
+        "Des formations stratégiques et professionnelles pour développer le leadership et les compétences clés",
+        "Des études de marché et diagnostics fiables pour éclairer les décisions stratégiques",
+        "Des services d’accompagnement stratégique sur mesure pour optimiser la performance"
+      ],
+      "quote": "Le tout visant à maximiser la performance, la cohésion et la valeur durable pour chaque client."
+    },
+
+    "vision": {
+      "title": "Notre Vision",
+      "intro": "Être un cabinet de référence internationale reconnu pour :",
+      "items": [
+        "L'excellence de ses formations",
+        "La fiabilité de ses études de marché",
+        "L'innovation de ses solutions stratégiques"
+      ],
+      "objective": "Objectif ultime : Contribuer durablement à la performance et à la compétitivité de ses clients."
+    },
+
+    "footer": "Mission & Vision — Les fondements de notre engagement"
+  },
+   "partners": {
+    "eyebrow": "Ils nous font confiance"
+  
+  }
+}

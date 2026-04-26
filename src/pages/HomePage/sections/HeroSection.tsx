@@ -2,9 +2,10 @@ import { motion } from 'framer-motion'
 
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import Button from '@/components/ui/Button'
-import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 export default function HeroSection() {
+  const { t } = useTranslation('home')
   return (
     <section
       className="relative min-h-screen flex items-center overflow-hidden py-8 sm:py-12 md:py-16"
@@ -42,7 +43,7 @@ export default function HeroSection() {
           >
             <div className="w-10 h-px bg-accent" />
             <span className="text-accent text-xs font-body font-semibold uppercase tracking-[0.25em]">
-              Cabinet d'Excellence Stratégique
+              {t('hero.eyebrow')}
             </span>
           </motion.div>
 
@@ -53,13 +54,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.15 }}
             className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6"
           >
-             <Link to="/etudes">Savoir{' - '}</Link>
-            
-            <span className="text-accent">
-              <Link to="/a-propos">Penser.{' '}</Link>
-              </span>
-              <br/>
-               <Link to="/cep">Faire.</Link>
+            {t('hero.title')}
 
           </motion.h1>
 
@@ -70,9 +65,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-white/65 text-lg md:text-xl font-body leading-relaxed mb-10 max-w-2xl"
           >
-            Panval Consilium International accompagne les dirigeants, cadres et organisations
-            vers une performance durable grâce à la formation stratégique, l'intelligence
-            économique.
+            {t('hero.subtitle')}
           </motion.p>
 
           {/* CTA buttons */}
@@ -82,10 +75,10 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.45 }}
             className="flex flex-wrap gap-4"
           >
-          
 
-            <Button to="/formations" label="Découvrir nos formations" variant="primary" icon={<ArrowRight size={15} className="ml-2" />} />
-            <Button to="/contact" label="Diagnostic stratégique" variant="outline" />
+
+            <Button to="/formations" label={t('cta.trainings')} variant="primary" icon={<ArrowRight size={15} className="ml-2" />} />
+            <Button to="/contact" label={t('cta.contact')} variant="outline" />
           </motion.div>
 
           {/* Stats row */}
@@ -96,14 +89,16 @@ export default function HeroSection() {
             className="flex flex-wrap gap-8 mt-16 p-8 border-t border-white/10"
           >
             {[
-              { val: '2 250+', label: 'Personnes formées' },
-              { val: '250+', label: 'Organisations' },
-              { val: '3', label: 'Piliers de services' },
-              { val: '5 ans', label: "D'expérience" },
-            ].map(s => (
-              <div key={s.label}>
-                <p className="font-heading text-2xl font-bold text-accent">{s.val}</p>
-                <p className="text-white/50 text-xs font-body uppercase tracking-wider">{s.label}</p>
+              { value: '2 250+', key: 'organizations' },
+              { value: '250+', key: 'organisations' },
+              { value: '3', key: 'pillars' },
+              { value: '5 ans', key: 'experience' }
+            ].map(stat => (
+              <div key={stat.key}>
+                <p className="font-heading text-2xl font-bold text-accent">{stat.value}</p>
+                <p className="text-white/50 text-xs font-body uppercase tracking-wider">
+                  {t(`hero.stats.${stat.key}`)}
+                </p>
               </div>
             ))}
           </motion.div>

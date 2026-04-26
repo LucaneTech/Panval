@@ -1,0 +1,20 @@
+{
+  "footer": {
+    "brand": {
+      "description": "Excellence consulting firm specialized in operational training, market research and strategic support.",
+      "rights": "All rights reserved.",
+      "tagline": "Illuminate · Structure · Empower"
+    },
+    "navigation": "Navigation",
+    "services": "Services",
+    "contact": "Contact",
+    "servicesList": {
+      "s1": "Strategic training",
+      "s2": "Market research",
+      "s3": "Institutional diagnostics",
+      "s4": "Business support",
+      "s5": "Executive coaching",
+      "s6": "Economic intelligence"
+    }
+  }
+}

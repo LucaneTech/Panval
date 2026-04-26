@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "formations": "Trainings",
+    "accompagnement": {
+      "title": "Support",
+      "strategy": "Strategic Support",
+      "cep": "Career Evolution Consulting (CEP)"
+    },
+    "etudes": "Studies",
+    "clients": "Clients",
+    "contact": "Contact"
+  },
+  "cta": {
+    "diagnostic": "Premium diagnostic"
+  },
+  "language": {
+    "label": "Language",
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "title": "Parlons de votre projet",
+    "subtitle": "Un diagnostic en un clic. Notre équipe vous répond dans les 24h.",
+    "breadcrumbs": ["Contact"]
+  },
+  "form": {
+    "eyebrow": "Formulaire",
+    "title": "Envoyez-nous votre demande",
+    "labels": {
+      "fullName": "Nom complet *",
+      "company": "Entreprise *",
+      "role": "Fonction *",
+      "phone": "Téléphone *",
+      "email": "Email *",
+      "subject": "Objet de la demande *",
+      "services": "Service(s) concerné(s) *",
+      "message": "Message *"
+    },
+    "placeholders": {
+      "fullName": "Jean Dupont",
+      "company": "Ma Société",
+      "role": "Directeur Général",
+      "phone": "+242 06 000 00 00",
+      "email": "votre@email.com",
+      "message": "Décrivez votre besoin, votre contexte ou vos questions..."
+    },
+    "subjectOptions": {
+      "empty": "Sélectionnez un objet",
+      "diagnostic": "Diagnostic Stratégique",
+      "rdv": "Prise de rendez-vous",
+      "devis": "Demande de devis",
+      "autre": "Autre"
+    },
+    "serviceLabels": {
+      "formation": "Formations",
+      "etudes": "Études & Diagnostics",
+      "cep": "Conciergerie (CEP)"
+    },
+    "buttons": {
+      "send": "Envoyer ma demande",
+      "sending": "Envoi en cours…",
+      "sendAnother": "Envoyer une autre demande"
+    },
+    "status": {
+      "successTitle": "Message envoyé avec succès !",
+      "successDesc": "Notre équipe vous contactera dans les 24h ouvrées.",
+      "error": "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement par téléphone."
+    }
+  },
+  "contactInfo": {
+    "title": "Nos coordonnées",
+    "workingHours": "Lundi — Vendredi · 8h00 — 18h00",
+    "diagnosticPremium": {
+      "label": "Diagnostic Premium",
+      "title": "Diagnostic stratégique",
+      "desc": "Une analyse experte en profondeur — À partir de 100€ / 118 USD / 65 000 FCFA. Une prestation à forte valeur ajoutée pour sécuriser vos décisions."
+    }
+  }
+}

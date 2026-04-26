@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "معلومات عنا",
+    "formations": "التدريبات",
+    "accompagnement": {
+      "title": "الدعم",
+      "strategy": "الدعم الاستراتيجي",
+      "cep": "استشارات التطور المهني (CEP)"
+    },
+    "etudes": "دراسات",
+    "clients": "العملاء",
+    "contact": "اتصل"
+  },
+  "cta": {
+    "diagnostic": "تشخيص مميز"
+  },
+  "language": {
+    "label": "اللغة",
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  }
+}

@@ -174,11 +174,6 @@ export default function FormationsPage() {
       </section>
 
       <CtaBanner
-        title="Besoin d'une formation sur mesure ?"
-        subtitle="Contactez-nous pour un devis personnalisé adapté à vos équipes et vos enjeux."
-        primaryLabel="Demander un devis"
-        secondaryLabel="Voir les études"
-        secondaryTo="/etudes"
       />
     </>
   )

@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
 import { partners } from '@/data/testimonials.data'
+import { useTranslation } from 'react-i18next'
 
 export default function PartnerLogos() {
+  const { t } = useTranslation('home')
+
   return (
     <section className="section-padding bg-base-200">
       <div className="container-custom">
@@ -11,7 +14,7 @@ export default function PartnerLogos() {
           viewport={{ once: true }}
           className="text-center text-sm text-yellow-500 font-body font-semibold uppercase tracking-[0.2em] text-base-content/40 mb-10"
         >
-          Ils nous font confiance
+          {t('partners.eyebrow')}
         </motion.p>
         <div className="flex flex-wrap justify-center gap-4">
           {partners.map((p, i) => (

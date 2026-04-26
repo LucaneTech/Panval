@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Nos Clients & Partenaires",
+    "subtitle": "Ils nous font confiance depuis 2021. Plus de 2 250 personnes et organisations accompagnées vers l'excellence.",
+    "breadcrumbs": ["Nos clients"]
+  },
+  "stats": {
+    "eyebrow": "Réalisations 2021–2025",
+    "title": "Notre impact en chiffres"
+  },
+  "testimonials": {
+    "eyebrow": "Témoignages",
+    "title": "Ce qu'ils disent de nous",
+    "filters": { "all": "Tous", "entreprise": "Entreprises privées", "partenaire": "Sponsors & Partenaires" }
+  },
+  "perspectives": {
+    "eyebrow": "Perspectives",
+    "title": "Objectifs & estimations pour 2026"
+  }
+}

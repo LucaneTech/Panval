@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Studies & Strategic Diagnostics",
+    "subtitle": "Informing strategic decisions through managerial intelligence based on analysis, data and an understanding of African and international contexts.",
+    "breadcrumbs": ["Studies & Diagnostics"]
+  },
+  "services": {
+    "eyebrow": "Our services",
+    "title": "20 analysis and strategic support services",
+    "subtitle": "A complete offering to inform, diagnose and guide all your strategic decisions."
+  },
+  "methodologies": {
+    "eyebrow": "Methodologies",
+    "title": "Our rigorous approach",
+    "subtitle": "We combine proven methods to ensure reliable analyses and actionable recommendations."
+  },
+  "results": {
+    "eyebrow": "Expected outcomes",
+    "title": "What our analyses bring you"
+  },
+  "cta": {
+    "askStudy": "Request a quote",
+    "seeCEP": "Discover CEP"
+  }
+}

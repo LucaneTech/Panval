@@ -1,0 +1,99 @@
+{
+  "hero": {
+    "title": "À propos de nous",
+    "subtitle": "Panval Consilium International est un cabinet de conseil et de services stratégiques spécialisé dans l’accompagnement des entreprises publiques et privées, des organisations et des particuliers ayant des responsabilités.",
+    "breadcrumbs": ["À propos"]
+  },
+
+
+  "admin": {
+    "eyebrow": "Mot de l'Administrateur Général",
+    "name": "TCHIAMA Paijos Clauva",
+    "role": "Directeur Général",
+    "portraitAlt": "TCHIAMA Paijos Clauva — Directeur Général de Panval Consilium International",
+    "paragraphs": [
+      "Dans un monde marqué par l'incertitude, la complexité et une concurrence accrue, la réussite des entreprises et des institutions ne repose plus uniquement sur les moyens financiers ou techniques, mais sur la qualité de l'information, la pertinence de la stratégie et la maîtrise de l'action.",
+      "C'est dans cette conviction qu'est né Panval Consilium International : un cabinet pensé pour accompagner les décideurs dans la compréhension de leur environnement, l'anticipation des risques et la prise de décisions stratégiques éclairées.",
+      "Notre ambition est claire : apporter de la clarté là où règne la confusion, de la méthode là où dominent l'improvisation, et de la rigueur stratégique là où les enjeux sont élevés.",
+      "À travers nos trois trépieds : le conseil stratégique et l'intelligence économique, la formation stratégique, et l'accompagnement global des entreprises et institutions, nous nous engageons à être un partenaire de confiance, capable d'allier vision, expertise et action concrète.",
+      "Panval Consilium International se veut plus qu'un prestataire : un allié stratégique au service de la décision, de la compétence et de l'impact durable.",
+      "Je remercie l'ensemble de nos partenaires, clients et collaborateurs pour la confiance accordée, et réaffirme notre engagement à œuvrer avec excellence, intégrité et responsabilité, au service du développement des organisations et des territoires."
+    ],
+    "signature": {
+      "name": "TCHIAMA Paijos Clauva",
+      "role": "Directeur Général — Panval Consilium International"
+    }
+  },
+  "visionMission": {
+    "visionTitle": "Notre Vision",
+    "visionText": "Être un cabinet de référence internationale reconnu pour l'excellence de ses formations, la fiabilité de ses études de marché et l'innovation de ses services de conciergerie, afin de contribuer durablement à la performance et à la compétitivité de ses clients.",
+    "missionTitle": "Notre Mission",
+    "missionPoints": [
+      "Des formations stratégiques et professionnelles pour développer le leadership et les compétences clés",
+      "Des études de marché et diagnostics fiables pour éclairer les décisions stratégiques",
+      "Des services de conciergerie sur mesure pour optimiser le fonctionnement quotidien"
+    ]
+  },
+  "values": {
+    "eyebrow": "Nos valeurs",
+    "title": "Ce qui nous guide au quotidien"
+  },
+  "timeline": {
+    "eyebrow": "Notre parcours",
+    "title": "De 2021 à aujourd'hui",
+    "subtitle": "Une trajectoire de croissance construite sur l'excellence et la confiance."
+  },
+  "methodology": {
+    "eyebrow": "Notre méthodologie",
+    "title": "Un cadre commun pour nos 3 secteurs",
+    "subtitle": "Notre approche repose sur un triptyque structurant qui garantit la cohérence et l'efficacité de chacune de nos interventions.",
+    "steps": [
+      { "num": "01", "title": "Réflexion profonde", "desc": "Analyse stratégique rigoureuse. Compréhension fine des enjeux humains et institutionnels." },
+      { "num": "02", "title": "Action structurée", "desc": "Outils pratiques, concrets et applicables. Solutions adaptées aux réalités locales et internationales." },
+      { "num": "03", "title": "Transformation durable", "desc": "Accompagnement dans la durée. Suivi, évaluation et ajustements continus." }
+    ]
+  },
+  "timeline": {
+  "eyebrow": "Notre parcours",
+  "title": "De 2021 à aujourd'hui",
+  "subtitle": "Une trajectoire de croissance construite sur l'excellence et la confiance.",
+  "events": [
+    {
+      "year": "2021",
+      "title": "Lancement des activités",
+      "description": "Démarrage des premières formations à Brazzaville, République du Congo. Structuration des 3 piliers de services."
+    },
+    {
+      "year": "2022",
+      "title": "Expansion sectorielle",
+      "description": "Déploiement des études de marché et diagnostics stratégiques. Premiers grands comptes : secteur financier et télécoms."
+    },
+    {
+      "year": "2023",
+      "title": "Reconnaissance internationale",
+      "description": "Accompagnement des organisations internationales. Partenariats avec MTN, Airtel et grandes institutions."
+    },
+    {
+      "year": "2024",
+      "title": "Croissance & impact",
+      "description": "Plus de 1 500 personnes formées. Lancement du service de conciergerie institutionnelle."
+    },
+    {
+      "year": "2025",
+      "title": "Consolidation",
+      "description": "2 250 personnes formées. 250+ organisations accompagnées. Positionnement comme cabinet de référence africaine."
+    },
+    {
+      "year": "2026",
+      "title": "Ambitions 2026",
+      "description": "150 nouvelles organisations en formation. 120 missions d'études. 80 dirigeants accompagnés en conciergerie."
+    }
+  ]
+},
+  "team": {
+    "eyebrow": "Notre équipe dirigeante",
+    "title": "L'expertise au service de votre réussite",
+    "subtitle": "Des professionnels multidisciplinaires engagés pour votre performance durable",
+    "insightButton": "Lire son Insight"
+  }
+}

@@ -315,11 +315,7 @@ export default function CEP() {
     
 
        <CtaBanner
-              title=" Prêt à faire évoluer vos talents ?"
-              subtitle="Bénéficiez d'un diagnostic premium pour évaluer vos besoins en accompagnement CEP"
-              primaryLabel="Demander un devis"
-              secondaryLabel="Voir les études"
-              secondaryTo="/etudes"
+             
             />
     </>
   )

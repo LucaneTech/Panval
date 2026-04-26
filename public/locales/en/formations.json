@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Strategic Trainings",
+    "subtitle": "Supporting leaders, managers and teams to build key competencies and drive sustainable organizational progress.",
+    "breadcrumbs": ["Trainings"]
+  },
+  "programs": {
+    "eyebrow": "Our programs",
+    "title": "4 structured training groups",
+    "subtitle": "Each group addresses a specific strategic axis, with concrete modules and measurable benefits.",
+    "publicLabel": "Target audience",
+    "modulesAvailable": "modules available",
+    "formatsEyebrow": "Modalities",
+    "formatsTitle": "Intervention formats",
+    "cta": {
+      "requestQuote": "Request a quote",
+      "seeStudies": "See studies"
+    }
+  }
+}

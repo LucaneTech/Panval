@@ -1,6 +1,7 @@
 // ─── Navigation ───────────────────────────────────────────────────────────────
 export interface NavItem {
   label: string
+  labelKey?: string
   path?: string
   children?: NavItem[]
 }

@@ -146,11 +146,7 @@ export default function AccompagnementStrategique() {
       </section>
 
       <CtaBanner
-        title="Un accompagnement stratégique pour une performance durable"
-        subtitle="Diagnostic stratégique — À partir de 100€ / 118 USD / 65 000 FCFA. Contactez-nous pour démarrer."
-        primaryLabel="Demander un diagnostic"
-        secondaryLabel="Voir nos formations"
-        secondaryTo="/formations"
+       
       />
     </>
   )

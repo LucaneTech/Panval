@@ -1,18 +1,29 @@
 import type { NavItem } from '@/types'
 
 export const navItems: NavItem[] = [
-  { label: 'Accueil', path: '/' },
-  { label: 'À propos', path: '/a-propos' },
-  
-  { label: 'Formations', path: '/formations' },
-  { 
+  { label: 'Accueil', labelKey: 'nav.home', path: '/' },
+  { label: 'À propos', labelKey: 'nav.about', path: '/a-propos' },
+
+  { label: 'Formations', labelKey: 'nav.formations', path: '/formations' },
+
+  {
     label: 'Accompagnement',
+    labelKey: 'nav.accompagnement.title',
     children: [
-      { label: 'Accompagnement Stratégique', path: '/accompagnement-strategique' },
-      { label: 'Conseil en Évolution Professionnelle (CEP)', path: '/conseil-evolution-professionnelle' },
+      {
+        label: 'Accompagnement Stratégique',
+        labelKey: 'nav.accompagnement.strategy',
+        path: '/accompagnement-strategique'
+      },
+      {
+        label: 'CEP',
+        labelKey: 'nav.accompagnement.cep',
+        path: '/conseil-evolution-professionnelle'
+      }
     ]
   },
-  { label: 'Études', path: '/etudes' },
-  { label: 'Nos clients', path: '/nos-clients' },
-  { label: 'Contact', path: '/contact' },
+
+  { label: 'Études', labelKey: 'nav.etudes', path: '/etudes' },
+  { label: 'Nos clients', labelKey: 'nav.clients', path: '/nos-clients' },
+  { label: 'Contact', labelKey: 'nav.contact', path: '/contact' },
 ]

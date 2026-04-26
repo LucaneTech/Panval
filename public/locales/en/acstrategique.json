@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "title": "Global Strategic Support",
+    "subtitle": "Freeing leaders and managers from secondary tasks so they can focus on leadership, vision and strategic decision-making.",
+    "breadcrumbs": ["Strategic Support"]
+  },
+  "intro": {
+    "eyebrow": "Our purpose",
+    "title": "A freed leader is a high-performing leader",
+    "subtitle": "Our global strategic support handles everything that distracts leaders from their core mission."
+  },
+  "benefits": {
+    "eyebrow": "CEP services",
+    "title": "A comprehensive offering for leaders and organizations",
+    "tabs": ["For leaders", "For organizations"]
+  },
+  "cta": {
+    "contactUs": "Contact us",
+    "learnMore": "Learn more"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "title": "Accompagnement Stratégique Global",
+    "subtitle": "Libérer les dirigeants et cadres des tâches secondaires afin de leur permettre de se concentrer sur le leadership, la vision et la prise de décision stratégique.",
+    "breadcrumbs": ["Accompagnement Stratégique"]
+  },
+  "intro": {
+    "eyebrow": "Notre finalité",
+    "title": "Un dirigeant libéré est un dirigeant performant",
+    "subtitle": "Notre accompagnement stratégique global prend en charge tout ce qui détourne le dirigeant de sa mission essentielle."
+  },
+  "benefits": {
+    "eyebrow": "Nos services CEP",
+    "title": "Une offre complète pour dirigeants et organisations",
+    "tabs": ["Pour les dirigeants", "Pour les organisations"]
+  },
+  "cta": {
+    "contactUs": "Nous contacter",
+    "learnMore": "En savoir plus"
+  }
+}

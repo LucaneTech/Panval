@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Formations Stratégiques",
+    "subtitle": "Accompagner les dirigeants, cadres et équipes, structurer les compétences clés et faire progresser durablement les organisations.",
+    "breadcrumbs": ["Formations"]
+  },
+  "programs": {
+    "eyebrow": "Nos programmes",
+    "title": "4 groupes de formations structurées",
+    "subtitle": "Chaque groupe adresse un axe stratégique précis, avec des modules concrets et des bénéfices mesurables.",
+    "publicLabel": "Public cible",
+    "modulesAvailable": "modules disponibles",
+    "formatsEyebrow": "Modalités",
+    "formatsTitle": "Formats d'intervention",
+    "cta": {
+      "requestQuote": "Demander un devis",
+      "seeStudies": "Voir les études"
+    }
+  }
+}

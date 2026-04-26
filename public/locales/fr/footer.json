@@ -1,0 +1,20 @@
+{
+  "footer": {
+    "brand": {
+      "description": "Cabinet d'excellence spécialisé en formation opérationnelle, études de marché et accompagnement stratégique global.",
+      "rights": "Tous droits réservés.",
+      "tagline": "Éclairer · Structurer · Libérer"
+    },
+    "navigation": "Navigation",
+    "services": "Services",
+    "contact": "Contact",
+    "servicesList": {
+      "s1": "Formations stratégiques",
+      "s2": "Études de marché",
+      "s3": "Diagnostics institutionnels",
+      "s4": "Accompagnement d'entreprise",
+      "s5": "Coaching dirigeants",
+      "s6": "Intelligence économique"
+    }
+  }
+}

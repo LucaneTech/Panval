@@ -121,11 +121,7 @@ export default function EtudesPage() {
       </section>
 
       <CtaBanner
-        title="Besoin d'une étude ou d'un diagnostic ?"
-        subtitle="Parlons de vos enjeux. Nous définissons ensemble la meilleure approche analytique."
-        primaryLabel="Demander un devis"
-        secondaryLabel="Découvrir le CEP"
-        secondaryTo="/cep"
+       
       />
     </>
   )

@@ -6,8 +6,9 @@ import HistoryTimeline from './sections/HistoryTimeline'
 import TeamGrid from './sections/TeamGrid'
 import Methodology from './sections/Methodology'
 import { CtaBanner } from '@/components/sections/CtaBanner'
-
+import { useTranslation } from 'react-i18next'
 export default function AboutPage() {
+  const { t } = useTranslation('about')
   return (
     <>
       <Helmet>
@@ -15,12 +16,10 @@ export default function AboutPage() {
         <meta name="description" content="Découvrez Panval Consilium International : notre vision, mission, valeurs et équipe dirigeante." />
       </Helmet>
       <PageHero
-        title="À propos de nous"
-        subtitle="Panval Consilium International est un cabinet de conseil et de services
-stratégiques spécialisé dans l’accompagnement des entreprises publiques et
-privées, des organisations et des particuliers ayant des responsabilités."
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
         image="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80"
-        breadcrumbs={[{ label: 'À propos' }]}
+        breadcrumbs={[{ label: t('hero.breadcrumbs.0') }]}
       />
       <AdminWord />
       <VisionMissionValues />

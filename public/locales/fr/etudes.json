@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Études & Diagnostics Stratégiques",
+    "subtitle": "Éclairer la décision stratégique par une intelligence managériale fondée sur l'analyse, les données et la compréhension des contextes africains et internationaux.",
+    "breadcrumbs": ["Études & Diagnostics"]
+  },
+  "services": {
+    "eyebrow": "Nos prestations",
+    "title": "20 services d'analyse et d'appui stratégique",
+    "subtitle": "Une offre complète pour éclairer, diagnostiquer et orienter toutes vos décisions stratégiques."
+  },
+  "methodologies": {
+    "eyebrow": "Méthodologies",
+    "title": "Notre approche rigoureuse",
+    "subtitle": "Nous combinons des méthodes éprouvées pour garantir des analyses fiables et des recommandations actionnables."
+  },
+  "results": {
+    "eyebrow": "Résultats attendus",
+    "title": "Ce que nos analyses vous apportent"
+  },
+  "cta": {
+    "askStudy": "Demander un devis",
+    "seeCEP": "Découvrir le CEP"
+  }
+}

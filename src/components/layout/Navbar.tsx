@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Sun, Moon, ChevronDown, Globe } from 'lucide-react'
+import { Menu, X, Sun, Moon, ChevronDown } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import { navItems } from '@/data/navigation.data'
 import { cn } from '@/utils/cn'
 import Button from '../ui/Button'
+import LanguageSwitcher from '../ui/LanguageSwitcher'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,16 +20,7 @@ export default function Navbar() {
     }
     return 'panvallight'
   })
-  const [language, setLanguage] = useState<'fr' | 'en'>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('panval-language')
-      if (saved === 'fr' || saved === 'en') return saved
-      // Détecter la langue du navigateur
-      const browserLang = navigator.language.split('-')[0]
-      return browserLang === 'en' ? 'en' : 'fr'
-    }
-    return 'fr'
-  })
+  const { i18n, t } = useTranslation()
   
   const location = useLocation()
 
@@ -37,10 +30,13 @@ export default function Navbar() {
   }, [theme])
 
   useEffect(() => {
-    localStorage.setItem('panval-language', language)
-    // Déclencher la traduction automatique du navigateur
-    triggerPageTranslation(language)
-  }, [language])
+    // keep html attrs in sync for SSR/initial load
+    if (typeof document !== 'undefined') {
+      const lng = (i18n.resolvedLanguage ?? i18n.language ?? 'fr').split('-')[0]
+      document.documentElement.lang = lng
+      document.documentElement.dir = lng === 'ar' ? 'rtl' : 'ltr'
+    }
+  }, [i18n])
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40)
@@ -52,83 +48,12 @@ export default function Navbar() {
     setIsOpen(false)
   }, [location])
 
-  // Fonction pour déclencher la traduction automatique du navigateur
-  const triggerPageTranslation = (lang: 'fr' | 'en') => {
-    if (typeof window === 'undefined') return
-    
-    // Méthode 1: Utiliser l'API de traduction de Google (si disponible)
-    const googleTranslateElement = document.querySelector('.goog-te-combo') as HTMLSelectElement
-    if (googleTranslateElement) {
-      googleTranslateElement.value = lang === 'fr' ? 'fr' : 'en'
-      googleTranslateElement.dispatchEvent(new Event('change'))
-      return
-    }
-    
-    // Méthode 2: Stocker la préférence et recharger la page avec paramètre
-    // Le script Google Translate lira ce meta tag
-    let meta = document.querySelector('meta[name="google"]')
-    if (!meta) {
-      meta = document.createElement('meta')
-      meta.setAttribute('name', 'google')
-      meta.setAttribute('content', 'notranslate')
-      document.head.appendChild(meta)
-    }
-    
-    // Méthode 3: Pour Microsoft Translator
-    const msTranslateElement = document.querySelector('#MicrosoftTranslatorWidget') as any
-    if (msTranslateElement && msTranslateElement.SetLanguage) {
-      msTranslateElement.SetLanguage(lang === 'fr' ? 'fr' : 'en')
-    }
-  }
-
-  // Charger le script Google Translate une seule fois
-  useEffect(() => {
-    if (typeof window === 'undefined') return
-    
-    // Éviter de charger plusieurs fois
-    if (document.querySelector('#google-translate-script')) return
-    
-    const script = document.createElement('script')
-    script.id = 'google-translate-script'
-    script.src = '//translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback'
-    script.async = true
-    
-    // Définir la fonction callback globalement
-    ;(window as any).GoogleTranslateInitCallback = () => {
-      new (window as any).google.translate.TranslateElement(
-        {
-          pageLanguage: 'fr',
-          includedLanguages: 'fr,en',
-          layout: (window as any).google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false,
-        },
-        'google_translate_element'
-      )
-      
-      // Appliquer la langue sauvegardée après l'initialisation
-      const savedLang = localStorage.getItem('panval-language')
-      if (savedLang && savedLang !== 'fr') {
-        setTimeout(() => triggerPageTranslation(savedLang as 'fr' | 'en'), 500)
-      }
-    }
-    
-    document.head.appendChild(script)
-    
-    // Nettoyage
-    return () => {
-      const scriptElement = document.querySelector('#google-translate-script')
-      if (scriptElement) scriptElement.remove()
-      delete (window as any).GoogleTranslateInitCallback
-    }
-  }, [])
+  // Note: translations are lazy-loaded via i18next http backend
 
   const toggleTheme = () =>
     setTheme(t => (t === 'panvallight' ? 'panvaldark' : 'panvallight'))
 
-  const toggleLanguage = () => {
-    const newLang = language === 'fr' ? 'en' : 'fr'
-    setLanguage(newLang)
-  }
+  // language is handled by LanguageSwitcher; kept helper for small toggles if needed
 
   const isActive = (path: string) =>
     path === '/' ? location.pathname === '/' : location.pathname.startsWith(path)
@@ -143,20 +68,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Élément caché pour Google Translate */}
-      <div id="google_translate_element" style={{ display: 'none' }} />
-      
-      {/* Style pour masquer les éléments par défaut de Google Translate */}
-      <style>{`
-        .goog-te-banner-frame.skiptranslate,
-        .goog-te-gadget-simple,
-        .goog-te-menu-frame {
-          display: none !important;
-        }
-        body {
-          top: 0 !important;
-        }
-      `}</style>
+      {/* Language handling via react-i18next */}
       
       <motion.header
         initial={{ y: -80, opacity: 0 }}
@@ -196,7 +108,7 @@ export default function Navbar() {
                             : 'text-white/80 hover:text-white hover:bg-white/10'
                         )}
                       >
-                        {item.label}
+                        {t((item as any).labelKey ?? item.label)}
                         <ChevronDown size={12} className="transition-transform duration-200 group-hover:rotate-180" />
                       </button>
 
@@ -215,7 +127,7 @@ export default function Navbar() {
                                     : 'text-base-content/70 hover:text-primary hover:bg-base-200'
                                 )}
                               >
-                                {child.label}
+                                {t((child as any).labelKey ?? child.label)}
                               </Link>
                             )
                           })}
@@ -239,7 +151,7 @@ export default function Navbar() {
                           : 'text-white/80 hover:text-white hover:bg-white/10'
                     )}
                   >
-                    {item.label}
+                    {t((item as any).labelKey ?? item.label)}
                   </Link>
                 )
               })}
@@ -247,20 +159,7 @@ export default function Navbar() {
 
             {/* Right actions */}
             <div className="flex items-center gap-2">
-              {/* Language Toggle Button */}
-              <button
-                onClick={toggleLanguage}
-                className={cn(
-                  'btn btn-ghost btn-sm gap-1 rounded-sm transition-all duration-200',
-                  !scrolled ? 'text-white hover:bg-white/10' : 'text-base-content/70 hover:bg-base-200'
-                )}
-                aria-label="Toggle language"
-              >
-                <Globe size={16} />
-                <span className="text-xs font-body font-medium uppercase">
-                  {language === 'fr' ? 'EN' : 'FR'}
-                </span>
-              </button>
+              <LanguageSwitcher />
 
               {/* Theme Toggle Button */}
               <button
@@ -274,7 +173,7 @@ export default function Navbar() {
                 {theme === 'panvallight' ? <Moon size={16} /> : <Sun size={16} />}
               </button>
 
-              <Button to="/contact" label="Diagnostic premium" variant="secondary" className='hidden md:flex border border-white/40' />
+              <Button to="/contact" label={t('cta.diagnostic')} variant="secondary" className='hidden md:flex border border-white/40' />
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className={cn(
@@ -392,13 +291,9 @@ export default function Navbar() {
               {/* Mobile footer avec langue */}
               <div className="p-4 border-t border-base-300 space-y-3">
                 <div className="flex items-center justify-between">
-                  <button
-                    onClick={toggleLanguage}
-                    className="flex items-center gap-2 px-4 py-2 rounded-sm text-sm font-body hover:bg-base-200 transition-colors"
-                  >
-                    <Globe size={16} />
-                    <span className="uppercase">{language === 'fr' ? 'Français' : 'English'}</span>
-                  </button>
+                  <div>
+                    <LanguageSwitcher />
+                  </div>
                   <button
                     onClick={toggleTheme}
                     className="btn btn-ghost btn-sm btn-circle"
@@ -407,7 +302,7 @@ export default function Navbar() {
                   </button>
                 </div>
                 <Link to="/contact" className="btn btn-primary w-full rounded-sm text-sm uppercase tracking-wider font-body">
-                  Diagnostic premium
+                  {t('cta.diagnostic')}
                 </Link>
               </div>
             </motion.nav>

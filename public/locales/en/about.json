@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "title": "About Us",
+    "subtitle": "Panval Consilium International is a strategic consulting and services firm specialized in supporting public and private companies, organizations and individuals with responsibilities.",
+    "breadcrumbs": ["About"]
+  },
+  "admin": {
+    "eyebrow": "Word from the Managing Director",
+    "name": "TCHIAMA Paijos Clauva",
+    "role": "Managing Director",
+    "portraitAlt": "TCHIAMA Paijos Clauva — Managing Director of Panval Consilium International",
+    "paragraphs": [
+      "In a world marked by uncertainty, complexity and increased competition, the success of companies and institutions no longer relies solely on financial or technical resources, but on the quality of information, the relevance of strategy and the mastery of action.",
+      "Panval Consilium International was born from this conviction: a firm designed to support decision-makers in understanding their environment, anticipating risks and making informed strategic decisions.",
+      "Our ambition is clear: to bring clarity where confusion reigns, method where improvisation dominates, and strategic rigor where the stakes are high.",
+      "Through our three pillars — strategic consulting and competitive intelligence, strategic training, and comprehensive support for companies and institutions — we commit to being a trusted partner, able to combine vision, expertise and concrete action.",
+      "Panval Consilium International aims to be more than a service provider: a strategic ally serving decision-making, skills and sustainable impact.",
+      "I thank all our partners, clients and collaborators for their trust, and reaffirm our commitment to work with excellence, integrity and responsibility, in the service of organizational and territorial development."
+    ],
+    "signature": {
+      "name": "TCHIAMA Paijos Clauva",
+      "role": "Managing Director — Panval Consilium International"
+    }
+  },
+  "visionMission": {
+    "visionTitle": "Our Vision",
+    "visionText": "To be an internationally recognized reference firm for excellence in training, reliable market studies and innovative concierge services, contributing sustainably to the performance and competitiveness of our clients.",
+    "missionTitle": "Our Mission",
+    "missionPoints": [
+      "Strategic and professional training to develop leadership and key skills",
+      "Reliable market studies and diagnostics to inform strategic decisions",
+      "Tailored concierge services to optimize daily operations"
+    ]
+  },
+  "values": {
+    "eyebrow": "Our values",
+    "title": "What guides us every day"
+  },
+  "timeline": {
+    "eyebrow": "Our journey",
+    "title": "From 2021 to today",
+    "subtitle": "A growth trajectory built on excellence and trust."
+  },
+  "methodology": {
+    "eyebrow": "Our methodology",
+    "title": "A common framework for our 3 sectors",
+    "subtitle": "Our approach relies on a structuring triptych that guarantees coherence and effectiveness in each of our interventions.",
+    "steps": [
+      { "num": "01", "title": "Deep reflection", "desc": "Rigorous strategic analysis. Fine understanding of human and institutional issues." },
+      { "num": "02", "title": "Structured action", "desc": "Practical, concrete and applicable tools. Solutions adapted to local and international realities." },
+      { "num": "03", "title": "Sustainable transformation", "desc": "Long-term support. Monitoring, evaluation and continuous adjustments." }
+    ]
+  },
+  "timeline": {
+  "eyebrow": "Our journey",
+  "title": "From 2021 to today",
+  "subtitle": "A growth trajectory built on excellence and trust.",
+  "events": [
+    {
+      "year": "2021",
+      "title": "Launch of activities",
+      "description": "First training programs launched in Brazzaville, Republic of Congo. Structuring of the 3 service pillars."
+    },
+    {
+      "year": "2022",
+      "title": "Sector expansion",
+      "description": "Deployment of market studies and strategic diagnostics. First major clients: financial and telecom sectors."
+    },
+    {
+      "year": "2023",
+      "title": "International recognition",
+      "description": "Support for international organizations. Partnerships with MTN, Airtel and major institutions."
+    },
+    {
+      "year": "2024",
+      "title": "Growth & impact",
+      "description": "More than 1,500 people trained. Launch of institutional concierge services."
+    },
+    {
+      "year": "2025",
+      "title": "Consolidation",
+      "description": "2,250 people trained. Over 250 organizations supported. Positioning as a leading African consulting firm."
+    },
+    {
+      "year": "2026",
+      "title": "2026 ambitions",
+      "description": "150 new organizations in training. 120 study missions. 80 executives supported in concierge services."
+    }
+  ]
+},
+  "team": {
+    "eyebrow": "Our leadership team",
+    "title": "Expertise at the service of your success",
+    "subtitle": "Multidisciplinary professionals committed to your sustainable performance",
+    "insightButton": "Read insight"
+  }
+}

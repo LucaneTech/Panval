@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Our Clients & Partners",
+    "subtitle": "They trust us since 2021. Over 2,250 people and organizations supported towards excellence.",
+    "breadcrumbs": ["Clients"]
+  },
+  "stats": {
+    "eyebrow": "Achievements 2021–2025",
+    "title": "Our impact in numbers"
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What they say about us",
+    "filters": { "all": "All", "entreprise": "Private companies", "partenaire": "Sponsors & Partners" }
+  },
+  "perspectives": {
+    "eyebrow": "Outlook",
+    "title": "Goals & estimates for 2026"
+  }
+}

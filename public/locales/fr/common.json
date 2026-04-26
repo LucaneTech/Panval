@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "formations": "Formations",
+    "accompagnement": {
+      "title": "Accompagnement",
+      "strategy": "Accompagnement Stratégique",
+      "cep": "Conseil en Évolution Professionnelle (CEP)"
+    },
+    "etudes": "Etudes",
+    "clients": "Clients",
+    "contact": "Contact"
+  },
+  "cta": {
+    "diagnostic": "Diagnostic premium"
+  },
+  "language": {
+    "label": "Langue",
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  }
+}

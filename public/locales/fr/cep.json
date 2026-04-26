@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "Réveiller les ambitions, révéler les potentiels",
+    "subtitle": "Une approche bienveillante, neutre et résolument tournée vers l'action",
+    "breadcrumbs": ["Conseil en Évolution Professionnelle"]
+  },
+  "intro": {
+    "eyebrow": "Pourquoi le CEP",
+    "title": "Construire et sécuriser l'avenir professionnel",
+    "points": [
+      "Le Conseil en Évolution Professionnelle (CEP) est un dispositif d'accompagnement personnalisé qui permet à chaque collaborateur de piloter activement son parcours professionnel.",
+      "Notre approche, à la fois bienveillante et exigeante, aide les talents à réussir leurs transitions, à développer leur employabilité et à trouver un sens durable à leur carrière."
+    ]
+  },
+  "steps": {
+    "eyebrow": "Notre méthodologie",
+    "title": "Déroulé type d'un parcours CEP",
+    "subtitle": "Un accompagnement structuré en 4 étapes, adapté à chaque profil et objectif",
+    "items": [
+      { "num": "01", "title": "Cadrage", "duration": "1h30", "desc": "Analyse approfondie de la situation et des besoins spécifiques du bénéficiaire." },
+      { "num": "02", "title": "Exploration", "duration": "2-4 sessions", "desc": "Diagnostic complet des compétences, valeurs, motivations et freins potentiels." },
+      { "num": "03", "title": "Construction", "duration": "1-2 sessions", "desc": "Formalisation d'un plan d'action concret et personnalisé." },
+      { "num": "04", "title": "Suivi", "duration": "3-6 mois", "desc": "Accompagnement pas à pas, ajustements et évaluation des résultats." }
+    ]
+  },
+  "services": {
+    "eyebrow": "Nos Services",
+    "title": "Pour l'Individu & Pour l'Entreprise",
+    "items": [
+      { "title": "Bilans de compétences", "description": "Analyse approfondie des aptitudes professionnelles et personnelles pour révéler les potentiels cachés." },
+      { "title": "Évaluations de potentiel", "description": "Identification des talents à fort potentiel pour anticiper les évolutions et successions." },
+      { "title": "Ateliers collectifs", "description": "Sessions collaboratives de networking et développement professionnel." },
+      { "title": "Accompagnement mobilité", "description": "Soutien personnalisé pour les transitions internes et externes." }
+    ]
+  },
+  "cta": {
+    "title": "Prêt à faire évoluer vos talents ?",
+    "subtitle": "Bénéficiez d'un diagnostic premium pour évaluer vos besoins en accompagnement CEP",
+    "primaryLabel": "Demander un devis",
+    "secondaryLabel": "Voir les études"
+  }
+}

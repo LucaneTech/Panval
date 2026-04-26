@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "title": "Let's talk about your project",
+    "subtitle": "A diagnostic in one click. Our team responds within 24 hours.",
+    "breadcrumbs": ["Contact"]
+  },
+  "form": {
+    "eyebrow": "Form",
+    "title": "Send us your request",
+    "labels": {
+      "fullName": "Full name *",
+      "company": "Company *",
+      "role": "Role *",
+      "phone": "Phone *",
+      "email": "Email *",
+      "subject": "Request subject *",
+      "services": "Service(s) concerned *",
+      "message": "Message *"
+    },
+    "placeholders": {
+      "fullName": "Jean Dupont",
+      "company": "My Company",
+      "role": "CEO",
+      "phone": "+242 06 000 00 00",
+      "email": "your@email.com",
+      "message": "Describe your need, context or questions..."
+    },
+    "subjectOptions": {
+      "empty": "Select a subject",
+      "diagnostic": "Strategic diagnostic",
+      "rdv": "Schedule a meeting",
+      "devis": "Request a quote",
+      "autre": "Other"
+    },
+    "serviceLabels": {
+      "formation": "Trainings",
+      "etudes": "Studies & Diagnostics",
+      "cep": "Concierge (CEP)"
+    },
+    "buttons": {
+      "send": "Send my request",
+      "sending": "Sending…",
+      "sendAnother": "Send another request"
+    },
+    "status": {
+      "successTitle": "Message sent successfully!",
+      "successDesc": "Our team will contact you within 24 business hours.",
+      "error": "An error occurred. Please try again or contact us by phone."
+    }
+  },
+  "contactInfo": {
+    "title": "Our contacts",
+    "workingHours": "Monday — Friday · 8:00 — 18:00",
+    "diagnosticPremium": {
+      "label": "Premium Diagnostic",
+      "title": "Strategic diagnostic",
+      "desc": "An in-depth expert analysis — From €100 / 118 USD / 65 000 FCFA. A high value service to secure your decisions."
+    }
+  }
+}
