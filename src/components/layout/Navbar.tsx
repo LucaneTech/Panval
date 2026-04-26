@@ -30,7 +30,6 @@ export default function Navbar() {
   }, [theme])
 
   useEffect(() => {
-    // keep html attrs in sync for SSR/initial load
     if (typeof document !== 'undefined') {
       const lng = (i18n.resolvedLanguage ?? i18n.language ?? 'fr').split('-')[0]
       document.documentElement.lang = lng
@@ -48,12 +47,8 @@ export default function Navbar() {
     setIsOpen(false)
   }, [location])
 
-  // Note: translations are lazy-loaded via i18next http backend
-
   const toggleTheme = () =>
     setTheme(t => (t === 'panvallight' ? 'panvaldark' : 'panvallight'))
-
-  // language is handled by LanguageSwitcher; kept helper for small toggles if needed
 
   const isActive = (path: string) =>
     path === '/' ? location.pathname === '/' : location.pathname.startsWith(path)
@@ -66,10 +61,16 @@ export default function Navbar() {
     return children.some(child => child.path && isActive(child.path))
   }
 
+  // Fonction pour obtenir le label traduit d'un item
+  const getTranslatedLabel = (item: any) => {
+    if (item.labelKey) {
+      return t(item.labelKey)
+    }
+    return item.label
+  }
+
   return (
     <>
-      {/* Language handling via react-i18next */}
-      
       <motion.header
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -108,7 +109,7 @@ export default function Navbar() {
                             : 'text-white/80 hover:text-white hover:bg-white/10'
                         )}
                       >
-                        {t((item as any).labelKey ?? item.label)}
+                        {getTranslatedLabel(item)}
                         <ChevronDown size={12} className="transition-transform duration-200 group-hover:rotate-180" />
                       </button>
 
@@ -127,7 +128,7 @@ export default function Navbar() {
                                     : 'text-base-content/70 hover:text-primary hover:bg-base-200'
                                 )}
                               >
-                                {t((child as any).labelKey ?? child.label)}
+                                {getTranslatedLabel(child)}
                               </Link>
                             )
                           })}
@@ -151,7 +152,7 @@ export default function Navbar() {
                           : 'text-white/80 hover:text-white hover:bg-white/10'
                     )}
                   >
-                    {t((item as any).labelKey ?? item.label)}
+                    {getTranslatedLabel(item)}
                   </Link>
                 )
               })}
@@ -232,7 +233,7 @@ export default function Navbar() {
                               : 'text-base-content/70 hover:bg-base-200 hover:text-base-content'
                           )}
                         >
-                          <span>{item.label}</span>
+                          <span>{getTranslatedLabel(item)}</span>
                           <motion.div
                             animate={{ rotate: openDropdowns.includes(item.label) ? 180 : 0 }}
                             transition={{ duration: 0.2 }}
@@ -263,7 +264,7 @@ export default function Navbar() {
                                     : 'text-base-content/60 hover:bg-base-200 hover:text-base-content pl-6'
                                 )}
                               >
-                                {child.label}
+                                {getTranslatedLabel(child)}
                               </Link>
                             )
                           })}
@@ -280,7 +281,7 @@ export default function Navbar() {
                               : 'text-base-content/70 hover:bg-base-200 hover:text-base-content'
                           )}
                         >
-                          {item.label}
+                          {getTranslatedLabel(item)}
                         </Link>
                       )
                     )}
@@ -297,6 +298,7 @@ export default function Navbar() {
                   <button
                     onClick={toggleTheme}
                     className="btn btn-ghost btn-sm btn-circle"
+                    aria-label="Toggle theme"
                   >
                     {theme === 'panvallight' ? <Moon size={16} /> : <Sun size={16} />}
                   </button>
