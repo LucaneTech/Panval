@@ -9,6 +9,16 @@
     "title": "A freed leader is a high-performing leader",
     "subtitle": "Our global strategic support handles everything that distracts leaders from their core mission."
   },
+  "introCards": [
+    { "label": "For leaders", "desc": "Personalized executive support" },
+    { "label": "For organizations", "desc": "High-level institutional support" },
+    { "label": "Tailored", "desc": "Adapted to each context" },
+    { "label": "Confidential", "desc": "Discretion and integrity guaranteed" }
+  ],
+  "stepper": {
+    "eyebrow": "Typical flow",
+    "title": "How does strategic support work?"
+  },
   "benefits": {
     "eyebrow": "CEP services",
     "title": "A comprehensive offering for leaders and organizations",

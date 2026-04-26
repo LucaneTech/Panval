@@ -5,23 +5,31 @@ import { User, Building2, CheckCircle } from 'lucide-react'
 import PageHero from '@/components/layout/PageHero'
 import SectionTitle from '@/components/ui/SectionTitle'
 import { CtaBanner } from '@/components/sections/CtaBanner'
-import { cepServices, cepSteps } from '@/data/cep.data'
+import { useTranslation } from 'react-i18next'
+import { useCepData } from '@/hooks/useCepData'
 
 export default function AccompagnementStrategique() {
+  const { t } = useTranslation('acstrategique')
+  const { services, steps } = useCepData()
   const [activeTab, setActiveTab] = useState<'dirigeant' | 'organisation'>('dirigeant')
-  const filtered = cepServices.filter(s => s.category === activeTab)
+  
+  const filtered = services.filter(s => s.category === activeTab)
+
+  const breadcrumbs = t('hero.breadcrumbs', { returnObjects: true }) as string[]
+  const introCards = t('introCards', { returnObjects: true }) as Array<{ label: string; desc: string }>
+  const tabsLabels = t('benefits.tabs', { returnObjects: true }) as string[]
 
   return (
     <>
       <Helmet>
-        <title>Accompagnement Stratégique Global — Panval Consilium International</title>
-        <meta name="description" content="Accompagnement stratégique global pour dirigeants et organisations. Libérez votre potentiel de leadership et concentrez-vous sur la vision et la prise de décision stratégique." />
+        <title>{t('hero.title')} — Panval Consilium International</title>
+        <meta name="description" content={t('hero.subtitle')} />
       </Helmet>
       <PageHero
-        title="Accompagnement Stratégique Global"
-        subtitle="Libérer les dirigeants et cadres des tâches secondaires afin de leur permettre de se concentrer sur le leadership, la vision et la prise de décision stratégique."
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
         image="https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&w=1400&q=80"
-        breadcrumbs={[{ label: 'Accompagnement Stratégique' }]}
+        breadcrumbs={breadcrumbs.map(label => ({ label }))}
       />
 
       {/* Intro */}
@@ -30,17 +38,12 @@ export default function AccompagnementStrategique() {
           <div className="grid md:grid-cols-2 gap-14 items-center">
             <div>
               <SectionTitle
-                eyebrow="Notre finalité"
-                title="Un dirigeant libéré est un dirigeant performant"
-                subtitle="Notre accompagnement stratégique global prend en charge tout ce qui détourne le dirigeant de sa mission essentielle."
+                eyebrow={t('intro.eyebrow')}
+                title={t('intro.title')}
+                subtitle={t('intro.subtitle')}
               />
               <div className="mt-8 grid grid-cols-2 gap-4">
-                {[
-                  { icon: User, label: 'Pour les dirigeants', desc: 'Accompagnement exécutif personnalisé' },
-                  { icon: Building2, label: 'Pour les organisations', desc: 'Support institutionnel de haut niveau' },
-                  { icon: CheckCircle, label: 'Sur mesure', desc: 'Adapté à chaque contexte' },
-                  { icon: CheckCircle, label: 'Confidentiel', desc: 'Discrétion et intégrité garanties' },
-                ].map((b, i) => (
+                {introCards.map((b, i) => (
                   <motion.div
                     key={b.label}
                     initial={{ opacity: 0, y: 12 }}
@@ -49,7 +52,9 @@ export default function AccompagnementStrategique() {
                     transition={{ delay: i * 0.08 }}
                     className="flex gap-3 p-4 bg-base-200 rounded-md border border-base-300"
                   >
-                    <b.icon size={16} className="text-accent mt-0.5 shrink-0" />
+                    {i === 0 && <User size={16} className="text-accent mt-0.5 shrink-0" />}
+                    {i === 1 && <Building2 size={16} className="text-accent mt-0.5 shrink-0" />}
+                    {i >= 2 && <CheckCircle size={16} className="text-accent mt-0.5 shrink-0" />}
                     <div>
                       <p className="text-xs font-body font-semibold text-base-content">{b.label}</p>
                       <p className="text-xs text-base-content/50 font-body">{b.desc}</p>
@@ -78,11 +83,11 @@ export default function AccompagnementStrategique() {
       {/* Services tabs */}
       <section className="section-padding bg-base-200">
         <div className="container-custom">
-          <SectionTitle eyebrow="Nos services CEP" title="Une offre complète pour dirigeants et organisations" centered />
+          <SectionTitle eyebrow={t('benefits.eyebrow')} title={t('benefits.title')} centered />
           <div className="flex gap-3 justify-center mt-8 mb-10">
             {[
-              { key: 'dirigeant' as const, label: 'Pour les dirigeants', icon: User },
-              { key: 'organisation' as const, label: 'Pour les organisations', icon: Building2 },
+              { key: 'dirigeant' as const, label: tabsLabels[0] ?? 'Pour les dirigeants', icon: User },
+              { key: 'organisation' as const, label: tabsLabels[1] ?? 'Pour les organisations', icon: Building2 },
             ].map(tab => (
               <button
                 key={tab.key}
@@ -119,9 +124,9 @@ export default function AccompagnementStrategique() {
       {/* Stepper */}
       <section className="section-padding bg-base-100">
         <div className="container-custom">
-          <SectionTitle eyebrow="Déroulé type" title="Comment se passe un accompagnement CEP ?" centered />
+          <SectionTitle eyebrow={t('stepper.eyebrow')} title={t('stepper.title')} centered />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
-            {cepSteps.map((step, i) => (
+            {steps.map((step, i) => (
               <motion.div
                 key={step.step}
                 initial={{ opacity: 0, y: 20 }}
@@ -130,7 +135,7 @@ export default function AccompagnementStrategique() {
                 transition={{ delay: i * 0.1 }}
                 className="relative bg-base-200 border border-base-300 rounded-md p-6"
               >
-                {i < cepSteps.length - 1 && (
+                {i < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-8 -right-2.5 w-5 h-px bg-base-300" />
                 )}
                 <div className="w-10 h-10 bg-primary rounded-md flex items-center justify-center mb-4">
@@ -145,9 +150,7 @@ export default function AccompagnementStrategique() {
         </div>
       </section>
 
-      <CtaBanner
-       
-      />
+      <CtaBanner />
     </>
   )
 }

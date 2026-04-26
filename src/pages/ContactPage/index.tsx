@@ -5,23 +5,26 @@ import PageHero from '@/components/layout/PageHero'
 import SectionTitle from '@/components/ui/SectionTitle'
 import { useContactForm } from '@/hooks/useContactForm'
 import { CONTACT_EMAIL, CONTACT_PHONE_1, CONTACT_PHONE_2, CONTACT_ADDRESS, SITE_URL } from '@/utils/constants'
+import { useTranslation } from 'react-i18next'
 
 export default function ContactPage() {
   const { form, onSubmit, status, setStatus } = useContactForm()
   const { register, handleSubmit, formState: { errors }, watch } = form
   const selectedServices = watch('services') ?? []
+  const { t } = useTranslation('contact')
+  const breadcrumbs = t('hero.breadcrumbs', { returnObjects: true }) as string[]
 
   return (
     <>
       <Helmet>
-        <title>Contact — Panval Consilium International</title>
-        <meta name="description" content="Contactez Panval Consilium International. Diagnostic Stratégique. Brazzaville, République du Congo." />
+        <title>{t('hero.title')} — Panval Consilium International</title>
+        <meta name="description" content={t('hero.subtitle')} />
       </Helmet>
       <PageHero
-        title="Parlons de votre projet"
-        subtitle="Un diagnostic en un clic. Notre équipe vous répond dans les 24h."
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
         image="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1400&q=80"
-        breadcrumbs={[{ label: 'Contact' }]}
+        breadcrumbs={breadcrumbs.map(label => ({ label }))}
       />
 
       <section className="section-padding bg-base-100">
@@ -30,15 +33,15 @@ export default function ContactPage() {
 
             {/* Form — 3 cols */}
             <div className="lg:col-span-3">
-              <SectionTitle eyebrow="Formulaire" title="Envoyez-nous votre demande" />
+              <SectionTitle eyebrow={t('form.eyebrow')} title={t('form.title')} />
 
               {status === 'success' && (
                 <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="mt-6 p-4 bg-success/10 border border-success/30 rounded-md flex items-start gap-3">
                   <CheckCircle size={18} className="text-success mt-0.5 shrink-0" />
                   <div>
-                    <p className="font-body font-semibold text-sm text-success">Message envoyé avec succès !</p>
-                    <p className="text-xs text-base-content/60 font-body mt-0.5">Notre équipe vous contactera dans les 24h ouvrées.</p>
-                    <button onClick={() => setStatus('idle')} className="text-xs text-primary underline mt-2">Envoyer une autre demande</button>
+                    <p className="font-body font-semibold text-sm text-success">{t('form.status.successTitle')}</p>
+                    <p className="text-xs text-base-content/60 font-body mt-0.5">{t('form.status.successDesc')}</p>
+                    <button onClick={() => setStatus('idle')} className="text-xs text-primary underline mt-2">{t('form.buttons.sendAnother')}</button>
                   </div>
                 </motion.div>
               )}
@@ -46,7 +49,7 @@ export default function ContactPage() {
               {status === 'error' && (
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-6 p-4 bg-error/10 border border-error/30 rounded-md flex items-start gap-3">
                   <AlertCircle size={18} className="text-error mt-0.5 shrink-0" />
-                  <p className="text-sm text-error font-body">Une erreur s'est produite. Veuillez réessayer ou nous contacter directement par téléphone.</p>
+                  <p className="text-sm text-error font-body">{t('form.status.error')}</p>
                 </motion.div>
               )}
 
@@ -54,55 +57,55 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit(onSubmit)} className="mt-8 space-y-5" noValidate>
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Nom complet *</label>
-                      <input {...register('fullName')} placeholder="Jean Dupont" className={`input input-bordered w-full rounded-md text-sm font-body ${errors.fullName ? 'input-error' : ''}`} />
+                      <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">{t('form.labels.fullName')}</label>
+                      <input {...register('fullName')} placeholder={t('form.placeholders.fullName')} className={`input input-bordered w-full rounded-md text-sm font-body ${errors.fullName ? 'input-error' : ''}`} />
                       {errors.fullName && <p className="text-xs text-error mt-1 font-body">{errors.fullName.message}</p>}
                     </div>
                     <div>
-                      <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Entreprise *</label>
-                      <input {...register('company')} placeholder="Ma Société" className={`input input-bordered w-full rounded-md text-sm font-body ${errors.company ? 'input-error' : ''}`} />
+                      <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">{t('form.labels.company')}</label>
+                      <input {...register('company')} placeholder={t('form.placeholders.company')} className={`input input-bordered w-full rounded-md text-sm font-body ${errors.company ? 'input-error' : ''}`} />
                       {errors.company && <p className="text-xs text-error mt-1 font-body">{errors.company.message}</p>}
                     </div>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Fonction *</label>
-                      <input {...register('role')} placeholder="Directeur Général" className={`input input-bordered w-full rounded-md text-sm font-body ${errors.role ? 'input-error' : ''}`} />
+                      <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">{t('form.labels.role')}</label>
+                      <input {...register('role')} placeholder={t('form.placeholders.role')} className={`input input-bordered w-full rounded-md text-sm font-body ${errors.role ? 'input-error' : ''}`} />
                       {errors.role && <p className="text-xs text-error mt-1 font-body">{errors.role.message}</p>}
                     </div>
                     <div>
-                      <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Téléphone *</label>
-                      <input {...register('phone')} placeholder="+242 06 000 00 00" className={`input input-bordered w-full rounded-md text-sm font-body ${errors.phone ? 'input-error' : ''}`} />
+                      <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">{t('form.labels.phone')}</label>
+                      <input {...register('phone')} placeholder={t('form.placeholders.phone')} className={`input input-bordered w-full rounded-md text-sm font-body ${errors.phone ? 'input-error' : ''}`} />
                       {errors.phone && <p className="text-xs text-error mt-1 font-body">{errors.phone.message}</p>}
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Email *</label>
-                    <input {...register('email')} type="email" placeholder="votre@email.com" className={`input input-bordered w-full rounded-md text-sm font-body ${errors.email ? 'input-error' : ''}`} />
+                    <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">{t('form.labels.email')}</label>
+                    <input {...register('email')} type="email" placeholder={t('form.placeholders.email')} className={`input input-bordered w-full rounded-md text-sm font-body ${errors.email ? 'input-error' : ''}`} />
                     {errors.email && <p className="text-xs text-error mt-1 font-body">{errors.email.message}</p>}
                   </div>
 
                   <div>
-                    <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Objet de la demande *</label>
+                    <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">{t('form.labels.subject')}</label>
                     <select {...register('subject')} className={`select select-bordered w-full rounded-md text-sm font-body ${errors.subject ? 'select-error' : ''}`}>
-                      <option value="">Sélectionnez un objet</option>
-                      <option value="diagnostic">Diagnostic Stratégique</option>
-                      <option value="rdv">Prise de rendez-vous</option>
-                      <option value="devis">Demande de devis</option>
-                      <option value="autre">Autre</option>
+                      <option value="">{t('form.subjectOptions.empty')}</option>
+                      <option value="diagnostic">{t('form.subjectOptions.diagnostic')}</option>
+                      <option value="rdv">{t('form.subjectOptions.rdv')}</option>
+                      <option value="devis">{t('form.subjectOptions.devis')}</option>
+                      <option value="autre">{t('form.subjectOptions.autre')}</option>
                     </select>
                     {errors.subject && <p className="text-xs text-error mt-1 font-body">{errors.subject.message}</p>}
                   </div>
 
                   <div>
-                    <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-2">Service(s) concerné(s) *</label>
+                    <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-2">{t('form.labels.services')}</label>
                     <div className="flex flex-wrap gap-3">
                       {[
-                        { val: 'formation', label: 'Formations' },
-                        { val: 'etudes', label: 'Études & Diagnostics' },
-                        { val: 'cep', label: 'Conciergerie (CEP)' },
+                        { val: 'formation', label: t('form.serviceLabels.formation') },
+                        { val: 'etudes', label: t('form.serviceLabels.etudes') },
+                        { val: 'cep', label: t('form.serviceLabels.cep') },
                       ].map(s => (
                         <label key={s.val} className={`flex items-center gap-2 px-4 py-2.5 rounded-md border cursor-pointer text-sm font-body transition-all ${selectedServices.includes(s.val as 'formation' | 'etudes' | 'cep') ? 'border-primary bg-primary/10 text-primary font-medium' : 'border-base-300 text-base-content/60 hover:border-base-content/30'}`}>
                           <input type="checkbox" value={s.val} {...register('services')} className="hidden" />
@@ -114,8 +117,8 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">Message *</label>
-                    <textarea {...register('message')} rows={5} placeholder="Décrivez votre besoin, votre contexte ou vos questions..." className={`textarea textarea-bordered w-full rounded-md text-sm font-body resize-none ${errors.message ? 'textarea-error' : ''}`} />
+                    <label className="block text-xs font-body font-semibold uppercase tracking-wider text-base-content/50 mb-1.5">{t('form.labels.message')}</label>
+                    <textarea {...register('message')} rows={5} placeholder={t('form.placeholders.message')} className={`textarea textarea-bordered w-full rounded-md text-sm font-body resize-none ${errors.message ? 'textarea-error' : ''}`} />
                     {errors.message && <p className="text-xs text-error mt-1 font-body">{errors.message.message}</p>}
                   </div>
 
@@ -125,8 +128,8 @@ export default function ContactPage() {
                     className="btn btn-primary w-full rounded-md font-body font-medium uppercase tracking-wider text-sm"
                   >
                     {status === 'loading' ? (
-                      <><Loader2 size={16} className="animate-spin mr-2" /> Envoi en cours…</>
-                    ) : 'Envoyer ma demande'}
+                      <><Loader2 size={16} className="animate-spin mr-2" /> {t('form.buttons.sending')}</>
+                    ) : t('form.buttons.send')}
                   </button>
                 </form>
               )}
@@ -135,33 +138,43 @@ export default function ContactPage() {
             {/* Info — 2 cols */}
             <div className="lg:col-span-2 space-y-6">
               {/* Highlight card */}
-             <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  className="bg-primary rounded-md p-7 text-white"
->
-  <p className="text-accent text-xs font-body font-semibold uppercase tracking-widest mb-3">Diagnostic Premium</p>
-  <h3 className="font-heading text-2xl font-bold mb-3">Diagnostic stratégique</h3>
-  <p className="text-white/65 font-body text-sm leading-relaxed">
-    Une analyse experte en profondeur — À partir de 100€ / 118 USD / 65 000 FCFA. Une prestation à forte valeur ajoutée pour sécuriser vos décisions.
-  </p>
-  <div className="mt-4 flex items-center gap-2">
-    <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">100€</span>
-    <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">118 USD</span>
-    <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">65 000 FCFA</span>
-  </div>
-</motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-primary rounded-md p-7 text-white"
+              >
+                <p className="text-accent text-xs font-body font-semibold uppercase tracking-widest mb-3">
+                  {t('diagnostic.badge')}
+                </p>
+                <h3 className="font-heading text-2xl font-bold mb-3">
+                  {t('diagnostic.title')}
+                </h3>
+                <p className="text-white/65 font-body text-sm leading-relaxed">
+                  {t('diagnostic.description')}
+                </p>
+                <div className="mt-4 flex items-center gap-2 flex-wrap">
+                  <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">
+                    {t('diagnostic.prices.eur')}
+                  </span>
+                  <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">
+                    {t('diagnostic.prices.usd')}
+                  </span>
+                  <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">
+                    {t('diagnostic.prices.fcfa')}
+                  </span>
+                </div>
+              </motion.div>
 
               {/* Contact info */}
               <div className="bg-base-200 border border-base-300 rounded-md p-7 space-y-5">
-                <h4 className="font-heading font-bold text-base-content">Nos coordonnées</h4>
+                <h4 className="font-heading font-bold text-base-content">{t('contactInfo.title')}</h4>
                 {[
                   { icon: MapPin, content: CONTACT_ADDRESS },
                   { icon: Phone, content: `${CONTACT_PHONE_1}\n${CONTACT_PHONE_2}` },
                   { icon: Mail, content: CONTACT_EMAIL },
                   { icon: Globe, content: SITE_URL.replace(/^https?:\/\//, '') },
-                  { icon: Clock, content: 'Lundi — Vendredi · 8h00 — 18h00' },
+                  { icon: Clock, content: t('contactInfo.workingHours') },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <item.icon size={15} className="text-accent mt-0.5 shrink-0" />

@@ -1,25 +1,139 @@
 {
   "hero": {
-    "title": "Études & Diagnostics Stratégiques",
-    "subtitle": "Éclairer la décision stratégique par une intelligence managériale fondée sur l'analyse, les données et la compréhension des contextes africains et internationaux.",
-    "breadcrumbs": ["Études & Diagnostics"]
+    "title": "Études & Analyses Stratégiques",
+    "subtitle": "Des diagnostics rigoureux pour éclairer vos décisions stratégiques",
+    "breadcrumbs": ["Accueil", "Études"]
   },
   "services": {
-    "eyebrow": "Nos prestations",
-    "title": "20 services d'analyse et d'appui stratégique",
-    "subtitle": "Une offre complète pour éclairer, diagnostiquer et orienter toutes vos décisions stratégiques."
+    "eyebrow": "Nos expertises",
+    "title": "Prestations d'études",
+    "subtitle": "Des analyses sur mesure pour comprendre, anticiper et décider",
+    "items": {
+      "e1": {
+        "title": "Études de marché sectorielles et multisectorielles",
+        "description": "Analyse approfondie d'un ou plusieurs secteurs afin d'identifier les tendances, opportunités, risques et dynamiques du marché."
+      },
+      "e2": {
+        "title": "Analyses de faisabilité économique et stratégique",
+        "description": "Évaluation de la viabilité financière, organisationnelle et stratégique d'un projet avant sa mise en œuvre."
+      },
+      "e3": {
+        "title": "Diagnostics organisationnels et institutionnels",
+        "description": "Analyse globale du fonctionnement interne pour identifier forces, faiblesses et axes d'amélioration."
+      },
+      "e4": {
+        "title": "Audits managériaux et de gouvernance",
+        "description": "Évaluation des pratiques de leadership, de gouvernance et de prise de décision."
+      },
+      "e5": {
+        "title": "Études de positionnement stratégique",
+        "description": "Détermination de la position optimale d'une organisation sur son marché ou dans son environnement institutionnel."
+      },
+      "e6": {
+        "title": "Analyses concurrentielles et benchmarking",
+        "description": "Comparaison avec les acteurs de référence pour identifier les écarts et bonnes pratiques."
+      },
+      "e7": {
+        "title": "Études de comportements des usagers, clients et parties prenantes",
+        "description": "Analyse des attentes, perceptions et comportements pour améliorer l'offre et la stratégie."
+      },
+      "e8": {
+        "title": "Diagnostics de performance organisationnelle",
+        "description": "Évaluation de l'efficacité globale à travers des indicateurs de performance clairs et mesurables."
+      },
+      "e9": {
+        "title": "Analyses des risques stratégiques, opérationnels et humains",
+        "description": "Identification et hiérarchisation des risques pouvant impacter les résultats."
+      },
+      "e10": {
+        "title": "Études d'impact des politiques, projets et programmes",
+        "description": "Mesure des effets réels et potentiels sur les bénéficiaires et l'organisation."
+      },
+      "e11": {
+        "title": "Veille stratégique, économique et réglementaire",
+        "description": "Suivi continu des évolutions du contexte afin d'anticiper les changements."
+      },
+      "e12": {
+        "title": "Études prospectives et scénarios d'évolution",
+        "description": "Projection des tendances futures pour appuyer la planification stratégique."
+      },
+      "e13": {
+        "title": "Diagnostics de maturité organisationnelle et digitale",
+        "description": "Évaluation du niveau de structuration et de transformation digitale."
+      },
+      "e14": {
+        "title": "Analyses de chaînes de valeur et de processus",
+        "description": "Identification des leviers d'optimisation des activités et des coûts."
+      },
+      "e15": {
+        "title": "Enquêtes qualitatives et quantitatives",
+        "description": "Collecte et analyse de données fiables pour appuyer les décisions."
+      },
+      "e16": {
+        "title": "Évaluations stratégiques pré-décisionnelles",
+        "description": "Appui analytique avant toute décision majeure ou investissement."
+      },
+      "e17": {
+        "title": "Notes conceptuelles et recommandations stratégiques",
+        "description": "Formalisation de propositions claires pour projets, réformes ou transformations."
+      },
+      "e18": {
+        "title": "Tableaux de bord d'aide à la décision",
+        "description": "Outils synthétiques pour suivre la performance et orienter l'action."
+      },
+      "e19": {
+        "title": "Études institutionnelles pour réformes et transformations",
+        "description": "Appui analytique aux processus de réforme et de modernisation."
+      },
+      "e20": {
+        "title": "Suivi, évaluation et capitalisation des données stratégiques",
+        "description": "Mesure continue des résultats et valorisation des enseignements stratégiques."
+      }
+    }
   },
   "methodologies": {
     "eyebrow": "Méthodologies",
-    "title": "Notre approche rigoureuse",
-    "subtitle": "Nous combinons des méthodes éprouvées pour garantir des analyses fiables et des recommandations actionnables."
+    "title": "Approches rigoureuses",
+    "subtitle": "Des méthodes éprouvées pour des résultats fiables",
+    "items": {
+      "qualitative": {
+        "title": "Approche Qualitative",
+        "description": "Entretiens approfondis, focus groups, observation directe et analyse de contenu pour une compréhension fine des dynamiques humaines."
+      },
+      "quantitative": {
+        "title": "Approche Quantitative",
+        "description": "Sondages structurés, analyses statistiques, modélisation et benchmarking sectoriel pour une vision objective et chiffrée."
+      },
+      "mixed": {
+        "title": "Approche Mixte 360°",
+        "description": "Combinaison des deux approches pour une vision complète, rigoureuse et nuancée des enjeux analysés."
+      }
+    }
   },
   "results": {
-    "eyebrow": "Résultats attendus",
-    "title": "Ce que nos analyses vous apportent"
-  },
-  "cta": {
-    "askStudy": "Demander un devis",
-    "seeCEP": "Découvrir le CEP"
+    "eyebrow": "Impact",
+    "title": "Des résultats concrets",
+    "items": [
+      {
+        "value": "100%",
+        "label": "Données fiables",
+        "desc": "Recommandations fondées sur des analyses rigoureuses"
+      },
+      {
+        "value": "360°",
+        "label": "Vision complète",
+        "desc": "Panorama stratégique, opérationnel et humain"
+      },
+      {
+        "value": "20+",
+        "label": "Types d'analyses",
+        "desc": "Du diagnostic organisationnel à la veille stratégique"
+      },
+      {
+        "value": "48h",
+        "label": "Réactivité",
+        "desc": "Premières conclusions rapides pour les décisions urgentes"
+      }
+    ]
   }
 }

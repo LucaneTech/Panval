@@ -1,25 +1,139 @@
 {
   "hero": {
-    "title": "Studies & Strategic Diagnostics",
-    "subtitle": "Informing strategic decisions through managerial intelligence based on analysis, data and an understanding of African and international contexts.",
-    "breadcrumbs": ["Studies & Diagnostics"]
+    "title": "Studies & Strategic Analysis",
+    "subtitle": "Rigorous diagnostics to inform your strategic decisions",
+    "breadcrumbs": ["Home", "Studies"]
   },
   "services": {
-    "eyebrow": "Our services",
-    "title": "20 analysis and strategic support services",
-    "subtitle": "A complete offering to inform, diagnose and guide all your strategic decisions."
+    "eyebrow": "Our expertise",
+    "title": "Study services",
+    "subtitle": "Tailored analyses to understand, anticipate and decide",
+    "items": {
+      "e1": {
+        "title": "Sectoral and multi-sectoral market studies",
+        "description": "In-depth analysis of one or more sectors to identify trends, opportunities, risks and market dynamics."
+      },
+      "e2": {
+        "title": "Economic and strategic feasibility analyses",
+        "description": "Assessment of the financial, organizational and strategic viability of a project before implementation."
+      },
+      "e3": {
+        "title": "Organizational and institutional diagnostics",
+        "description": "Comprehensive analysis of internal operations to identify strengths, weaknesses and areas for improvement."
+      },
+      "e4": {
+        "title": "Managerial and governance audits",
+        "description": "Evaluation of leadership, governance and decision-making practices."
+      },
+      "e5": {
+        "title": "Strategic positioning studies",
+        "description": "Determining the optimal position of an organization in its market or institutional environment."
+      },
+      "e6": {
+        "title": "Competitive analysis and benchmarking",
+        "description": "Comparison with reference players to identify gaps and best practices."
+      },
+      "e7": {
+        "title": "User, customer and stakeholder behavior studies",
+        "description": "Analysis of expectations, perceptions and behaviors to improve offerings and strategy."
+      },
+      "e8": {
+        "title": "Organizational performance diagnostics",
+        "description": "Assessment of overall effectiveness through clear and measurable performance indicators."
+      },
+      "e9": {
+        "title": "Strategic, operational and human risk analyses",
+        "description": "Identification and prioritization of risks that may impact results."
+      },
+      "e10": {
+        "title": "Impact studies of policies, projects and programs",
+        "description": "Measurement of actual and potential effects on beneficiaries and the organization."
+      },
+      "e11": {
+        "title": "Strategic, economic and regulatory monitoring",
+        "description": "Continuous monitoring of contextual changes to anticipate changes."
+      },
+      "e12": {
+        "title": "Prospective studies and evolution scenarios",
+        "description": "Projection of future trends to support strategic planning."
+      },
+      "e13": {
+        "title": "Organizational and digital maturity diagnostics",
+        "description": "Assessment of structuring level and digital transformation."
+      },
+      "e14": {
+        "title": "Value chain and process analyses",
+        "description": "Identification of levers for optimizing activities and costs."
+      },
+      "e15": {
+        "title": "Qualitative and quantitative surveys",
+        "description": "Collection and analysis of reliable data to support decisions."
+      },
+      "e16": {
+        "title": "Pre-decision strategic evaluations",
+        "description": "Analytical support before any major decision or investment."
+      },
+      "e17": {
+        "title": "Concept notes and strategic recommendations",
+        "description": "Formalization of clear proposals for projects, reforms or transformations."
+      },
+      "e18": {
+        "title": "Decision-support dashboards",
+        "description": "Synthetic tools to monitor performance and guide action."
+      },
+      "e19": {
+        "title": "Institutional studies for reforms and transformations",
+        "description": "Analytical support for reform and modernization processes."
+      },
+      "e20": {
+        "title": "Monitoring, evaluation and capitalization of strategic data",
+        "description": "Continuous measurement of results and valorization of strategic lessons."
+      }
+    }
   },
   "methodologies": {
     "eyebrow": "Methodologies",
-    "title": "Our rigorous approach",
-    "subtitle": "We combine proven methods to ensure reliable analyses and actionable recommendations."
+    "title": "Rigorous approaches",
+    "subtitle": "Proven methods for reliable results",
+    "items": {
+      "qualitative": {
+        "title": "Qualitative Approach",
+        "description": "In-depth interviews, focus groups, direct observation and content analysis for a fine understanding of human dynamics."
+      },
+      "quantitative": {
+        "title": "Quantitative Approach",
+        "description": "Structured surveys, statistical analyses, modeling and sectoral benchmarking for an objective and quantified vision."
+      },
+      "mixed": {
+        "title": "Mixed 360° Approach",
+        "description": "Combination of both approaches for a complete, rigorous and nuanced vision of the issues analyzed."
+      }
+    }
   },
   "results": {
-    "eyebrow": "Expected outcomes",
-    "title": "What our analyses bring you"
-  },
-  "cta": {
-    "askStudy": "Request a quote",
-    "seeCEP": "Discover CEP"
+    "eyebrow": "Impact",
+    "title": "Concrete results",
+    "items": [
+      {
+        "value": "100%",
+        "label": "Reliable data",
+        "desc": "Recommendations based on rigorous analyses"
+      },
+      {
+        "value": "360°",
+        "label": "Complete vision",
+        "desc": "Strategic, operational and human panorama"
+      },
+      {
+        "value": "20+",
+        "label": "Analysis types",
+        "desc": "From organizational diagnosis to strategic monitoring"
+      },
+      {
+        "value": "48h",
+        "label": "Responsiveness",
+        "desc": "Rapid initial findings for urgent decisions"
+      }
+    ]
   }
 }

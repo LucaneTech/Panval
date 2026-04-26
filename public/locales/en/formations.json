@@ -10,11 +10,404 @@
     "subtitle": "Each group addresses a specific strategic axis, with concrete modules and measurable benefits.",
     "publicLabel": "Target audience",
     "modulesAvailable": "modules available",
+    "benefitsLabel": "Benefits:",
     "formatsEyebrow": "Modalities",
     "formatsTitle": "Intervention formats",
+    "formats": {
+      "items": [
+        { "key": "executive", "label": "Executive trainings", "desc": "Short, targeted sessions" },
+        { "key": "seminar", "label": "Strategic seminars", "desc": "2–3 days immersive" },
+        { "key": "workshop", "label": "Institutional workshops", "desc": "Group, tailored" },
+        { "key": "coaching", "label": "Leadership coaching", "desc": "Individual & group" }
+      ]
+    },
+    "groups": {
+      "items": [
+        {
+          "id": "A",
+          "label": "Group A",
+          "subtitle": "Strategy, Vision & Institutional Steering",
+          "description": "Provide a clear direction, decide intelligently, and manage with rigor.",
+          "audience": ["Leaders", "Senior managers", "Strategic decision-makers"]
+        },
+        {
+          "id": "B",
+          "label": "Group B",
+          "subtitle": "Human Capital, Leadership & Performance",
+          "description": "Align teams, strengthen leadership and boost performance.",
+          "audience": ["Senior managers", "Emerging leaders", "High-potential staff"]
+        },
+        {
+          "id": "C",
+          "label": "Group C",
+          "subtitle": "Organization, Processes & Operational Transformation",
+          "description": "Optimize processes, modernize the organization and strengthen resilience.",
+          "audience": ["Operational managers", "Department heads", "Project teams"]
+        },
+        {
+          "id": "D",
+          "label": "Group D",
+          "subtitle": "Communication, Relations, Ethics & Partnerships",
+          "description": "Enhance reputation, relationships and institutional impact.",
+          "audience": ["All levels", "Communication leads", "Partnership officers"]
+        }
+      ]
+    },
     "cta": {
       "requestQuote": "Request a quote",
       "seeStudies": "See studies"
     }
+  },
+
+  "groups": {
+    "A": {
+      "label": "Group A",
+      "subtitle": "Strategy, Vision & Institutional Governance",
+      "description": "Provide clear direction, decide wisely, manage with rigor.",
+      "audience": {
+        "0": "Executives",
+        "1": "Senior Managers",
+        "2": "Strategic Decision Makers"
+      },
+      "modules": {
+        "A1": {
+          "title": "Clarifying Vision and Strategic Orientations",
+          "points": {
+            "0": "Define the organization's mission",
+            "1": "Identify short, medium and long-term strategic priorities",
+            "2": "Map strengths and opportunities",
+            "3": "Set clear and measurable objectives",
+            "4": "Harmonize vision with stakeholder expectations",
+            "5": "Ensure consistency between strategy and institutional values"
+          },
+          "benefits": "Clear vision, aligned objectives, better organizational cohesion, relevant strategic decisions."
+        },
+        "A2": {
+          "title": "Aligning Organizational Objectives",
+          "points": {
+            "0": "Define operational objectives for each department",
+            "1": "Ensure consistency across all hierarchical levels",
+            "2": "Establish performance indicators",
+            "3": "Regularly monitor achievement of objectives",
+            "4": "Identify gaps and adjust action plans",
+            "5": "Create a strategic dashboard"
+          },
+          "benefits": "Better coordination, effective results monitoring, resource optimization, goal achievement."
+        },
+        "A3": {
+          "title": "Improving Governance and Management",
+          "points": {
+            "0": "Strengthen internal governance practices",
+            "1": "Establish control and monitoring bodies",
+            "2": "Define roles and responsibilities of leaders",
+            "3": "Develop effective decision-making processes",
+            "4": "Ensure transparency and accountability",
+            "5": "Train teams in good governance practices"
+          },
+          "benefits": "Transparent and accountable decisions, risk reduction, effective activity management."
+        },
+        "A4": {
+          "title": "Decision-Making Support",
+          "points": {
+            "0": "Analyze strategic issues",
+            "1": "Identify risks and opportunities",
+            "2": "Present decision scenarios",
+            "3": "Develop anticipation capacity",
+            "4": "Establish structured decision-making processes",
+            "5": "Monitor results and adjust decisions"
+          },
+          "benefits": "Informed decisions, risk anticipation, better organizational efficiency."
+        },
+        "A5": {
+          "title": "Operational Strategic Planning",
+          "points": {
+            "0": "Define concrete actions to achieve objectives",
+            "1": "Prioritize initiatives according to impact and feasibility",
+            "2": "Develop annual and multi-year plans",
+            "3": "Define necessary resources",
+            "4": "Ensure regular monitoring of plans",
+            "5": "Adjust plans according to results and changes"
+          },
+          "benefits": "Concrete plans, rigorous monitoring, effective actions and measurable results."
+        },
+        "A6": {
+          "title": "Managing Organizational Change",
+          "points": {
+            "0": "Identify change needs",
+            "1": "Define an appropriate transformation strategy",
+            "2": "Communicate effectively about change",
+            "3": "Train and prepare teams for new practices",
+            "4": "Monitor implementation and measure results",
+            "5": "Encourage buy-in and reduce resistance"
+          },
+          "benefits": "Successful change, rapid adoption of new practices, agile organization."
+        }
+      }
+    },
+    "B": {
+      "label": "Group B",
+      "subtitle": "Human Capital, Leadership & Performance",
+      "description": "Align employees, strengthen leadership and boost performance.",
+      "audience": {
+        "0": "Senior Managers",
+        "1": "Emerging Leaders",
+        "2": "High Institutional Potentials"
+      },
+      "modules": {
+        "B1": {
+          "title": "Human Capital Development and Alignment",
+          "points": {
+            "0": "Identify skill needs",
+            "1": "Align employees with the organization's vision",
+            "2": "Develop internal talent",
+            "3": "Establish career and training plans",
+            "4": "Encourage empowerment and autonomy",
+            "5": "Create an environment conducive to engagement"
+          },
+          "benefits": "Motivated and engaged employees, optimized talent, better collective performance."
+        },
+        "B2": {
+          "title": "Promoting a Sustainable Performance Culture",
+          "points": {
+            "0": "Define performance standards",
+            "1": "Reward results and innovation",
+            "2": "Encourage collaboration and teamwork",
+            "3": "Develop sustainable management practices",
+            "4": "Regularly monitor individual and collective performance",
+            "5": "Encourage continuous improvement"
+          },
+          "benefits": "Sustained performance, encouraged innovation, increased accountability, organizational excellence."
+        },
+        "B3": {
+          "title": "Strategic Training and Conferences",
+          "points": {
+            "0": "Early-year conferences on vision and alignment",
+            "1": "Motivation and team cohesion seminars",
+            "2": "Practical workshops on professional performance",
+            "3": "Training on institutional strategy",
+            "4": "Interactive and participatory sessions",
+            "5": "Post-training follow-up to measure impact"
+          },
+          "benefits": "Skills enhancement, team cohesion, better understanding of strategy and vision."
+        },
+        "B4": {
+          "title": "Leadership and Professional Effectiveness Training",
+          "points": {
+            "0": "Develop management skills",
+            "1": "Strengthen ethical and transformational leadership",
+            "2": "Improve decision-making",
+            "3": "Encourage responsibility and autonomy",
+            "4": "Develop persuasive communication",
+            "5": "Support managers in team management"
+          },
+          "benefits": "Effective and inspiring leaders, more relevant decisions, optimized team management."
+        },
+        "B5": {
+          "title": "Strategic Coaching for Leaders and Managers",
+          "points": {
+            "0": "Support leaders in defining their objectives",
+            "1": "Develop personal and organizational leadership",
+            "2": "Strengthen decision-making skills",
+            "3": "Encourage personal and professional transformation",
+            "4": "Provide individualized and regular follow-up",
+            "5": "Encourage exemplary team leadership"
+          },
+          "benefits": "Strategic leaders, greater confidence in decision-making, lasting positive impact."
+        },
+        "B6": {
+          "title": "Organizational Performance Management",
+          "points": {
+            "0": "Define clear and measurable KPIs",
+            "1": "Regularly evaluate institutional results",
+            "2": "Identify gaps and correct failures",
+            "3": "Encourage innovation and continuous improvement",
+            "4": "Reward successes and good practices",
+            "5": "Align performance with strategic objectives"
+          },
+          "benefits": "Optimal performance, culture of excellence, strengthened strategic alignment."
+        }
+      }
+    },
+    "C": {
+      "label": "Group C",
+      "subtitle": "Organization, Processes & Operational Transformation",
+      "description": "Optimize processes, modernize the organization and strengthen resilience.",
+      "audience": {
+        "0": "Operational Managers",
+        "1": "Department Heads",
+        "2": "Project Teams"
+      },
+      "modules": {
+        "C1": {
+          "title": "Public Service Optimization",
+          "points": {
+            "0": "Improve efficiency of administrative processes",
+            "1": "Develop client and user orientation",
+            "2": "Strengthen transparency and accountability",
+            "3": "Define service quality standards",
+            "4": "Establish performance indicators",
+            "5": "Train staff in good public service practices"
+          },
+          "benefits": "More efficient public services, increased citizen satisfaction, modernized organization."
+        },
+        "C2": {
+          "title": "Innovation and Digital Transformation",
+          "points": {
+            "0": "Identify digitalization opportunities",
+            "1": "Develop appropriate technological solutions",
+            "2": "Train teams in digital tools",
+            "3": "Monitor performance of digital initiatives",
+            "4": "Integrate innovation into existing processes",
+            "5": "Ensure sustainability and optimization of solutions"
+          },
+          "benefits": "Modernized organization, optimized processes, enhanced competitiveness."
+        },
+        "C3": {
+          "title": "Monitoring, Evaluation and Continuous Improvement",
+          "points": {
+            "0": "Establish regular monitoring mechanisms",
+            "1": "Measure the impact of initiatives and training",
+            "2": "Identify areas for improvement",
+            "3": "Adjust plans and strategies according to results",
+            "4": "Encourage a culture of learning and continuous progress",
+            "5": "Ensure effectiveness and sustainability of implemented actions"
+          },
+          "benefits": "Continuous improvement, proactive and effective organization, sustainable results."
+        },
+        "C4": {
+          "title": "Institutional Risk Management",
+          "points": {
+            "0": "Identify strategic, operational and financial risks",
+            "1": "Assess probability and impact of risks",
+            "2": "Develop mitigation and contingency plans",
+            "3": "Train teams in proactive risk management",
+            "4": "Establish monitoring and alert mechanisms",
+            "5": "Regularly review risk management strategies"
+          },
+          "benefits": "Loss reduction, problem anticipation, resilient organization."
+        },
+        "C5": {
+          "title": "Developing Organizational Resilience",
+          "points": {
+            "0": "Identify internal and external vulnerabilities",
+            "1": "Develop emergency plans and business continuity",
+            "2": "Train teams in resilience and adaptability",
+            "3": "Establish resilience monitoring indicators",
+            "4": "Integrate resilience into institutional strategy",
+            "5": "Monitor feedback and adjust practices"
+          },
+          "benefits": "Organization capable of facing crises, ensured business continuity, strengthened stability."
+        },
+        "C6": {
+          "title": "Strategic Financial Resource Management",
+          "points": {
+            "0": "Analyze financial flows and budget needs",
+            "1": "Optimize resource allocation",
+            "2": "Establish monitoring and financial control systems",
+            "3": "Train managers in good financial practices",
+            "4": "Prepare short and long-term financial plans",
+            "5": "Identify financing opportunities and financial partnerships"
+          },
+          "benefits": "Optimal resource utilization, cost control, informed financial decisions."
+        }
+      }
+    },
+    "D": {
+      "label": "Group D",
+      "subtitle": "Communication, Relations, Ethics & Partnerships",
+      "description": "Strengthen image, relationships and institutional impact.",
+      "audience": {
+        "0": "All levels",
+        "1": "Communications Managers",
+        "2": "Partnership Officers"
+      },
+      "modules": {
+        "D1": {
+          "title": "Institutional Communication",
+          "points": {
+            "0": "Develop internal and external communication strategies",
+            "1": "Optimize messages for maximum impact",
+            "2": "Develop crisis communication",
+            "3": "Train in professional communication techniques",
+            "4": "Strengthen institutional visibility and reputation",
+            "5": "Ensure message consistency at all levels"
+          },
+          "benefits": "Better organizational image, clear and consistent communication, effective crisis management."
+        },
+        "D2": {
+          "title": "Conflict Management and Mediation",
+          "points": {
+            "0": "Identify potential sources of conflict",
+            "1": "Develop prevention mechanisms",
+            "2": "Train teams in peaceful conflict resolution",
+            "3": "Establish mediation mechanisms",
+            "4": "Support resolution of complex disputes",
+            "5": "Foster a harmonious work environment"
+          },
+          "benefits": "Reduced tensions, healthy organizational climate, increased productivity."
+        },
+        "D3": {
+          "title": "Strategic Partnership Development",
+          "points": {
+            "0": "Identify institutional and private partners",
+            "1": "Define common objectives and synergies",
+            "2": "Negotiate agreements and collaborations",
+            "3": "Monitor and evaluate partnership performance",
+            "4": "Encourage exchange of good practices",
+            "5": "Increase visibility and impact of collaborative projects"
+          },
+          "benefits": "Successful partnerships, shared resources, enhanced strategic impact."
+        },
+        "D4": {
+          "title": "Developing Social and Ethical Responsibility",
+          "points": {
+            "0": "Integrate ethical values into governance",
+            "1": "Promote social responsibility within the organization",
+            "2": "Develop awareness and training programs",
+            "3": "Encourage sustainable and responsible practices",
+            "4": "Monitor ethics and compliance indicators",
+            "5": "Enhance positive impact on the community"
+          },
+          "benefits": "Enhanced reputation, stakeholder trust, healthy organizational culture."
+        },
+        "D5": {
+          "title": "Optimizing Stakeholder Relations",
+          "points": {
+            "0": "Identify key stakeholders",
+            "1": "Develop appropriate communication strategies",
+            "2": "Establish consultation and participation mechanisms",
+            "3": "Monitor stakeholder satisfaction and feedback",
+            "4": "Prevent conflicts and anticipate needs",
+            "5": "Enhance strategic relationships and partnerships"
+          },
+          "benefits": "Better collaboration, increased trust, reduced tensions and conflicts."
+        },
+        "D6": {
+          "title": "Digital Skills Development",
+          "points": {
+            "0": "Identify digital skills needs",
+            "1": "Train employees in digital tools",
+            "2": "Develop digital transformation programs",
+            "3": "Monitor technology adoption within the organization",
+            "4": "Encourage digital innovation",
+            "5": "Integrate digital practices into operational processes"
+          },
+          "benefits": "Modernized organization, improved productivity, rapid adaptation to technological changes."
+        },
+        "D7": {
+          "title": "Project and Institutional Program Management",
+          "points": {
+            "0": "Define objectives and deliverables for each project",
+            "1": "Plan and structure activities",
+            "2": "Identify risks and plan mitigation measures",
+            "3": "Ensure regular monitoring and quality control",
+            "4": "Communicate with stakeholders and teams",
+            "5": "Evaluate results and capitalize on good practices"
+          },
+          "benefits": "Successfully completed projects, respect for timelines and budgets, measurable results."
+        }
+      }
+    }
   }
+
 }

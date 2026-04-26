@@ -10,11 +10,372 @@
     "subtitle": "Chaque groupe adresse un axe stratégique précis, avec des modules concrets et des bénéfices mesurables.",
     "publicLabel": "Public cible",
     "modulesAvailable": "modules disponibles",
+    "benefitsLabel": "Bénéfices :",
     "formatsEyebrow": "Modalités",
     "formatsTitle": "Formats d'intervention",
+    "formats": {
+      "items": [
+        { "key": "executive", "label": "Formations exécutives", "desc": "Sessions courtes & ciblées" },
+        { "key": "seminar", "label": "Séminaires stratégiques", "desc": "2 à 3 jours immersifs" },
+        { "key": "workshop", "label": "Ateliers institutionnels", "desc": "Groupes, sur mesure" },
+        { "key": "coaching", "label": "Coaching dirigeants", "desc": "Individuel & collectif" }
+      ]
+    },
     "cta": {
       "requestQuote": "Demander un devis",
       "seeStudies": "Voir les études"
     }
+  },
+  "groups": {
+    "A": {
+      "label": "Groupe A",
+      "subtitle": "Stratégie, Vision & Pilotage Institutionnel",
+      "description": "Donner un cap clair, décider avec intelligence, piloter avec rigueur.",
+      "audience": {
+        "0": "Dirigeants",
+        "1": "Cadres supérieurs",
+        "2": "Décideurs stratégiques"
+      },
+      "modules": {
+        "A1": {
+          "title": "Clarification de la vision et des orientations stratégiques",
+          "points": {
+            "0": "Définir la mission de l'organisation",
+            "1": "Identifier les priorités stratégiques à court, moyen et long terme",
+            "2": "Cartographier les forces et opportunités",
+            "3": "Fixer des objectifs clairs et mesurables",
+            "4": "Harmoniser la vision avec les attentes des parties prenantes",
+            "5": "Assurer la cohérence entre stratégie et valeurs institutionnelles"
+          },
+          "benefits": "Vision claire, objectifs alignés, meilleure cohésion organisationnelle, décisions stratégiques pertinentes."
+        },
+        "A2": {
+          "title": "Alignement des objectifs organisationnels",
+          "points": {
+            "0": "Définir des objectifs opérationnels pour chaque département",
+            "1": "Assurer la cohérence entre tous les niveaux hiérarchiques",
+            "2": "Établir des indicateurs de performance",
+            "3": "Suivre régulièrement l'atteinte des objectifs",
+            "4": "Identifier les écarts et ajuster les plans d'action",
+            "5": "Créer un tableau de bord stratégique"
+          },
+          "benefits": "Meilleure coordination, suivi efficace des résultats, optimisation des ressources, atteinte des objectifs."
+        },
+        "A3": {
+          "title": "Amélioration de la gouvernance et du pilotage",
+          "points": {
+            "0": "Renforcer les pratiques de gouvernance interne",
+            "1": "Mettre en place des organes de contrôle et de suivi",
+            "2": "Définir les rôles et responsabilités des dirigeants",
+            "3": "Développer des processus décisionnels efficaces",
+            "4": "Assurer la transparence et la responsabilité",
+            "5": "Former les équipes aux bonnes pratiques de gouvernance"
+          },
+          "benefits": "Décisions transparentes et responsables, réduction des risques, efficacité dans le pilotage des activités."
+        },
+        "A4": {
+          "title": "Accompagnement à la prise de décision",
+          "points": {
+            "0": "Analyser les enjeux stratégiques",
+            "1": "Identifier les risques et opportunités",
+            "2": "Présenter des scénarios de décision",
+            "3": "Développer la capacité d'anticipation",
+            "4": "Mettre en place des processus décisionnels structurés",
+            "5": "Suivre les résultats et ajuster les décisions"
+          },
+          "benefits": "Décisions éclairées, anticipation des risques, meilleure efficacité organisationnelle."
+        },
+        "A5": {
+          "title": "Planification stratégique opérationnelle",
+          "points": {
+            "0": "Définir les actions concrètes pour atteindre les objectifs",
+            "1": "Prioriser les initiatives selon impact et faisabilité",
+            "2": "Développer des plans annuels et pluriannuels",
+            "3": "Définir les ressources nécessaires",
+            "4": "Assurer le suivi régulier des plans",
+            "5": "Ajuster les plans selon résultats et évolutions"
+          },
+          "benefits": "Plans concrets, suivi rigoureux, actions efficaces et résultats mesurables."
+        },
+        "A6": {
+          "title": "Conduite du changement organisationnel",
+          "points": {
+            "0": "Identifier les besoins de changement",
+            "1": "Définir une stratégie de transformation adaptée",
+            "2": "Communiquer efficacement sur le changement",
+            "3": "Former et préparer les équipes aux nouvelles pratiques",
+            "4": "Suivre la mise en œuvre et mesurer les résultats",
+            "5": "Favoriser l'adhésion et réduire la résistance"
+          },
+          "benefits": "Changement réussi, adoption rapide des nouvelles pratiques, organisation agile."
+        }
+      }
+    },
+    "B": {
+      "label": "Groupe B",
+      "subtitle": "Capital Humain, Leadership & Performance",
+      "description": "Aligner les collaborateurs, renforcer le leadership et stimuler la performance.",
+      "audience": {
+        "0": "Cadres supérieurs",
+        "1": "Leaders émergents",
+        "2": "Hauts potentiels institutionnels"
+      },
+      "modules": {
+        "B1": {
+          "title": "Développement et alignement du capital humain",
+          "points": {
+            "0": "Identifier les besoins en compétences",
+            "1": "Aligner les collaborateurs avec la vision de l'organisation",
+            "2": "Développer les talents internes",
+            "3": "Mettre en place des plans de carrière et de formation",
+            "4": "Encourager la responsabilisation et l'autonomie",
+            "5": "Créer un environnement favorable à l'engagement"
+          },
+          "benefits": "Collaborateurs motivés et engagés, talents optimisés, meilleure performance collective."
+        },
+        "B2": {
+          "title": "Promotion d'une culture de performance durable",
+          "points": {
+            "0": "Définir des standards de performance",
+            "1": "Récompenser les résultats et l'innovation",
+            "2": "Encourager la collaboration et le travail en équipe",
+            "3": "Développer des pratiques managériales durables",
+            "4": "Suivre régulièrement la performance individuelle et collective",
+            "5": "Favoriser l'amélioration continue"
+          },
+          "benefits": "Performance soutenue, innovation encouragée, responsabilisation accrue, excellence organisationnelle."
+        },
+        "B3": {
+          "title": "Formations stratégiques et conférences",
+          "points": {
+            "0": "Conférences de début d'année sur vision et alignement",
+            "1": "Séminaires de motivation et cohésion en équipe",
+            "2": "Ateliers pratiques sur la performance professionnelle",
+            "3": "Formations sur la stratégie institutionnelle",
+            "4": "Sessions interactives et participatives",
+            "5": "Suivi post-formation pour mesurer l'impact"
+          },
+          "benefits": "Renforcement des compétences, cohésion d'équipe, meilleure compréhension de la stratégie et de la vision."
+        },
+        "B4": {
+          "title": "Formations en leadership et efficacité professionnelle",
+          "points": {
+            "0": "Développer les compétences managériales",
+            "1": "Renforcer le leadership éthique et transformationnel",
+            "2": "Améliorer la prise de décision",
+            "3": "Encourager la responsabilité et l'autonomie",
+            "4": "Développer la communication persuasive",
+            "5": "Accompagner les managers dans la gestion d'équipe"
+          },
+          "benefits": "Leaders performants et inspirants, décisions plus pertinentes, gestion d'équipe optimisée."
+        },
+        "B5": {
+          "title": "Coaching stratégique pour leaders et cadres",
+          "points": {
+            "0": "Accompagner les dirigeants dans la définition de leurs objectifs",
+            "1": "Développer le leadership personnel et organisationnel",
+            "2": "Renforcer les compétences décisionnelles",
+            "3": "Favoriser la transformation personnelle et professionnelle",
+            "4": "Offrir un suivi individualisé et régulier",
+            "5": "Encourager l'exemplarité dans la conduite des équipes"
+          },
+          "benefits": "Leaders stratégiques, plus de confiance dans la prise de décision, impact positif durable."
+        },
+        "B6": {
+          "title": "Gestion de la performance organisationnelle",
+          "points": {
+            "0": "Définir des KPIs clairs et mesurables",
+            "1": "Évaluer régulièrement les résultats institutionnels",
+            "2": "Identifier les écarts et corriger les défaillances",
+            "3": "Encourager l'innovation et l'amélioration continue",
+            "4": "Récompenser les succès et bonnes pratiques",
+            "5": "Aligner performance et objectifs stratégiques"
+          },
+          "benefits": "Performance optimale, culture de l'excellence, alignement stratégique renforcé."
+        }
+      }
+    },
+    "C": {
+      "label": "Groupe C",
+      "subtitle": "Organisation, Processus & Transformation Opérationnelle",
+      "description": "Optimiser les processus, moderniser l'organisation et renforcer la résilience.",
+      "audience": {
+        "0": "Managers opérationnels",
+        "1": "Responsables de département",
+        "2": "Équipes projets"
+      },
+      "modules": {
+        "C1": {
+          "title": "Optimisation des services publics",
+          "points": {
+            "0": "Améliorer l'efficacité des processus administratifs",
+            "1": "Développer l'orientation client et usager",
+            "2": "Renforcer la transparence et la redevabilité",
+            "3": "Définir des standards de qualité de service",
+            "4": "Mettre en place des indicateurs de performance",
+            "5": "Former le personnel aux bonnes pratiques du service public"
+          },
+          "benefits": "Services publics plus efficaces, satisfaction des citoyens accrue, organisation modernisée."
+        },
+        "C2": {
+          "title": "Innovation et transformation digitale",
+          "points": {
+            "0": "Identifier les opportunités de digitalisation",
+            "1": "Développer des solutions technologiques adaptées",
+            "2": "Former les équipes aux outils digitaux",
+            "3": "Suivre les performances des initiatives digitales",
+            "4": "Intégrer l'innovation dans les processus existants",
+            "5": "Assurer durabilité et optimisation des solutions"
+          },
+          "benefits": "Organisation modernisée, processus optimisés, compétitivité renforcée."
+        },
+        "C3": {
+          "title": "Suivi, évaluation et amélioration continue",
+          "points": {
+            "0": "Mettre en place des mécanismes de suivi régulier",
+            "1": "Mesurer l'impact des initiatives et formations",
+            "2": "Identifier les axes d'amélioration",
+            "3": "Ajuster les plans et stratégies selon les résultats",
+            "4": "Favoriser une culture d'apprentissage et de progrès continu",
+            "5": "Garantir l'efficacité et la pérennité des actions mises en œuvre"
+          },
+          "benefits": "Amélioration continue, organisation proactive et performante, résultats durables."
+        },
+        "C4": {
+          "title": "Gestion des risques institutionnels",
+          "points": {
+            "0": "Identifier les risques stratégiques, opérationnels et financiers",
+            "1": "Évaluer la probabilité et l'impact des risques",
+            "2": "Développer des plans de mitigation et de contingence",
+            "3": "Former les équipes à la gestion proactive des risques",
+            "4": "Mettre en place des mécanismes de suivi et d'alerte",
+            "5": "Réviser régulièrement les stratégies de gestion des risques"
+          },
+          "benefits": "Réduction des pertes, anticipation des problèmes, organisation résiliente."
+        },
+        "C5": {
+          "title": "Développement de la résilience organisationnelle",
+          "points": {
+            "0": "Identifier les vulnérabilités internes et externes",
+            "1": "Développer des plans d'urgence et continuité des activités",
+            "2": "Former les équipes à la résilience et à l'adaptabilité",
+            "3": "Mettre en place des indicateurs de suivi de la résilience",
+            "4": "Intégrer la résilience dans la stratégie institutionnelle",
+            "5": "Suivre les retours d'expérience et ajuster les pratiques"
+          },
+          "benefits": "Organisation capable de faire face aux crises, continuité des activités assurée, stabilité renforcée."
+        },
+        "C6": {
+          "title": "Gestion stratégique des ressources financières",
+          "points": {
+            "0": "Analyser les flux financiers et les besoins budgétaires",
+            "1": "Optimiser l'allocation des ressources",
+            "2": "Mettre en place des systèmes de suivi et contrôle financier",
+            "3": "Former les responsables aux bonnes pratiques financières",
+            "4": "Préparer des plans financiers à court et long terme",
+            "5": "Identifier les opportunités de financement et partenariats financiers"
+          },
+          "benefits": "Utilisation optimale des ressources, maîtrise des coûts, décisions financières éclairées."
+        }
+      }
+    },
+    "D": {
+      "label": "Groupe D",
+      "subtitle": "Communication, Relations, Éthique & Partenariats",
+      "description": "Renforcer l'image, les relations et l'impact institutionnel.",
+      "audience": {
+        "0": "Tous niveaux",
+        "1": "Responsables communication",
+        "2": "Chargés de partenariats"
+      },
+      "modules": {
+        "D1": {
+          "title": "Communication institutionnelle",
+          "points": {
+            "0": "Élaborer des stratégies de communication interne et externe",
+            "1": "Optimiser les messages pour un impact maximum",
+            "2": "Développer la communication de crise",
+            "3": "Former aux techniques de communication professionnelle",
+            "4": "Renforcer la visibilité et la notoriété institutionnelle",
+            "5": "Assurer la cohérence des messages à tous les niveaux"
+          },
+          "benefits": "Meilleure image de l'organisation, communication claire et cohérente, gestion efficace des crises."
+        },
+        "D2": {
+          "title": "Gestion des conflits et médiation",
+          "points": {
+            "0": "Identifier les sources potentielles de conflits",
+            "1": "Développer des mécanismes de prévention",
+            "2": "Former les équipes à la résolution pacifique des conflits",
+            "3": "Mettre en place des dispositifs de médiation",
+            "4": "Accompagner la résolution des différends complexes",
+            "5": "Favoriser un climat de travail harmonieux"
+          },
+          "benefits": "Réduction des tensions, climat organisationnel sain, productivité accrue."
+        },
+        "D3": {
+          "title": "Développement de partenariats stratégiques",
+          "points": {
+            "0": "Identifier les partenaires institutionnels et privés",
+            "1": "Définir des objectifs communs et des synergies",
+            "2": "Négocier des accords et collaborations",
+            "3": "Suivre et évaluer la performance des partenariats",
+            "4": "Encourager l'échange de bonnes pratiques",
+            "5": "Développer la visibilité et l'impact des projets collaboratifs"
+          },
+          "benefits": "Partenariats fructueux, ressources partagées, impact stratégique renforcé."
+        },
+        "D4": {
+          "title": "Développement de la responsabilité sociale et éthique",
+          "points": {
+            "0": "Intégrer les valeurs éthiques dans la gouvernance",
+            "1": "Promouvoir la responsabilité sociale au sein de l'organisation",
+            "2": "Développer des programmes de sensibilisation et formation",
+            "3": "Encourager les pratiques durables et responsables",
+            "4": "Suivre les indicateurs d'éthique et de conformité",
+            "5": "Valoriser l'impact positif sur la communauté"
+          },
+          "benefits": "Réputation renforcée, confiance des parties prenantes, culture organisationnelle saine."
+        },
+        "D5": {
+          "title": "Optimisation de la relation avec les parties prenantes",
+          "points": {
+            "0": "Identifier les parties prenantes clés",
+            "1": "Développer des stratégies de communication adaptées",
+            "2": "Mettre en place des mécanismes de consultation et participation",
+            "3": "Suivre la satisfaction et les retours des parties prenantes",
+            "4": "Prévenir les conflits et anticiper les besoins",
+            "5": "Valoriser les relations stratégiques et partenariats"
+          },
+          "benefits": "Meilleure collaboration, confiance accrue, réduction des tensions et conflits."
+        },
+        "D6": {
+          "title": "Développement des compétences numériques",
+          "points": {
+            "0": "Identifier les besoins en compétences digitales",
+            "1": "Former les collaborateurs aux outils numériques",
+            "2": "Développer des programmes de transformation digitale",
+            "3": "Suivre l'adoption des technologies au sein de l'organisation",
+            "4": "Encourager l'innovation numérique",
+            "5": "Intégrer les pratiques digitales dans les processus opérationnels"
+          },
+          "benefits": "Organisation modernisée, productivité améliorée, adaptation rapide aux évolutions technologiques."
+        },
+        "D7": {
+          "title": "Gestion de projets et programmes institutionnels",
+          "points": {
+            "0": "Définir les objectifs et livrables de chaque projet",
+            "1": "Planifier et structurer les activités",
+            "2": "Identifier les risques et prévoir des plans de mitigation",
+            "3": "Assurer le suivi régulier et le contrôle qualité",
+            "4": "Communiquer avec les parties prenantes et équipes",
+            "5": "Évaluer les résultats et capitaliser sur les bonnes pratiques"
+          },
+          "benefits": "Projets menés à terme avec succès, respect des délais et budgets, résultats mesurables."
+        }
+      }
+    }
   }
+
+  
 }

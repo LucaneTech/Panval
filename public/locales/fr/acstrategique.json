@@ -9,6 +9,16 @@
     "title": "Un dirigeant libéré est un dirigeant performant",
     "subtitle": "Notre accompagnement stratégique global prend en charge tout ce qui détourne le dirigeant de sa mission essentielle."
   },
+  "introCards": [
+    { "label": "Pour les dirigeants", "desc": "Accompagnement exécutif personnalisé" },
+    { "label": "Pour les organisations", "desc": "Support institutionnel de haut niveau" },
+    { "label": "Sur mesure", "desc": "Adapté à chaque contexte" },
+    { "label": "Confidentiel", "desc": "Discrétion et intégrité garanties" }
+  ],
+  "stepper": {
+    "eyebrow": "Déroulé type",
+    "title": "Comment se passe un accompagnement CEP ?"
+  },
   "benefits": {
     "eyebrow": "Nos services CEP",
     "title": "Une offre complète pour dirigeants et organisations",

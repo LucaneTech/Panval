@@ -38,5 +38,50 @@
     "subtitle": "Bénéficiez d'un diagnostic premium pour évaluer vos besoins en accompagnement CEP",
     "primaryLabel": "Demander un devis",
     "secondaryLabel": "Voir les études"
+  },
+  
+  "benefits": {
+    "title": "Les bénéfices du CEP",
+    "subtitle": "Un accompagnement qui transforme les parcours professionnels",
+    "table": {
+      "headers": {
+        "benefit": "Bénéfice",
+        "individual": "Pour l'individu",
+        "company": "Pour l'entreprise"
+      }
+    },
+    "rows": {
+      "clarity": {
+        "title": "Clarté de carrière",
+        "individual": "Vision claire de son parcours et de ses objectifs",
+        "company": "Meilleure adéquation compétences/postes"
+      },
+      "employability": {
+        "title": "Employabilité",
+        "individual": "Développement continu des compétences",
+        "company": "Réduction du turnover et des coûts de recrutement"
+      },
+      "engagement": {
+        "title": "Engagement",
+        "individual": "Motivation et implication renforcées",
+        "company": "Fidélisation des talents et productivité accrue"
+      },
+      "anticipation": {
+        "title": "Anticipation",
+        "individual": "Préparation proactive aux évolutions du marché",
+        "company": "Gestion prévisionnelle des compétences et succession"
+      }
+    }
+  },
+  "testimonial": {
+    "text": "« Le parcours CEP a été un déclencheur pour plusieurs de nos cadres. Certains ont trouvé une nouvelle mobilité interne, d'autres ont redéfini leur projet professionnel avec une clarté qu'ils n'avaient jamais eue. »",
+    "author": "DRH — Banque internationale"
+  },
+   "servicesFirst": {
+    "titleIndividual": "Pour l'Individu",
+    "individualDesc": "Construire et sécuriser son avenir professionnel, réussir ses transitions, aligner ses aspirations personnelles.",
+    "titleCompany": "Pour l'Entreprise",
+    "companyDesc": "Fidéliser les talents, réduire le turnover, anticiper les successions et les mobilités internes."
   }
+
 }

@@ -15,6 +15,7 @@ import { useTranslation } from 'react-i18next'
 export default function Footer() {
   const year = new Date().getFullYear()
   const { t } = useTranslation('footer')
+  const { t: tCommon } = useTranslation('common')
 
   const services = [
     { key: 's1', path: '/formations' },
@@ -68,7 +69,7 @@ export default function Footer() {
                     className="text-sm text-white/60 hover:text-accent transition-colors duration-200 flex items-center gap-1.5 group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-accent/40 group-hover:bg-accent transition-colors" />
-                    {item.label}
+                    {item.labelKey ? tCommon(item.labelKey) : item.label}
                   </Link>
                 </li>
               ))}

@@ -4,7 +4,7 @@ import { BarChart3, TrendingUp, Search, Target, Users, MessageSquare, Activity, 
 import PageHero from '@/components/layout/PageHero'
 import SectionTitle from '@/components/ui/SectionTitle'
 import { CtaBanner } from '@/components/sections/CtaBanner'
-import { etudeServices, etudeMethodologies } from '@/data/etudes.data'
+import { useTranslation } from 'react-i18next'
 
 const iconMap: Record<string, React.ElementType> = {
   BarChart3, TrendingUp, Search, Target, Users, MessageSquare, Activity, AlertTriangle,
@@ -13,29 +13,76 @@ const iconMap: Record<string, React.ElementType> = {
 }
 
 export default function EtudesPage() {
+  const { t } = useTranslation('etudes')
+  const breadcrumbs = t('hero.breadcrumbs', { returnObjects: true }) as string[]
+  
+  // Récupération des services depuis les traductions
+  const servicesItems = t('services.items', { returnObjects: true }) as Record<string, { title: string; description: string; icon?: string }>
+  const services = Object.entries(servicesItems || {}).map(([id, service]) => ({
+    id,
+    title: service.title,
+    description: service.description,
+    icon: service.icon || getIconFromTitle(service.title)
+  }))
+  
+  // Récupération des méthodologies depuis les traductions
+  const methodologiesItems = t('methodologies.items', { returnObjects: true }) as Record<string, { title: string; description: string; icon: string }>
+  const methodologies = Object.entries(methodologiesItems || {}).map(([_, method]) => ({
+    title: method.title,
+    description: method.description,
+    icon: method.icon
+  }))
+  
+  // Récupération des résultats depuis les traductions
+  const resultsItems = t('results.items', { returnObjects: true }) as Array<{ value: string; label: string; desc: string }>
+  
+  // Fonction helper pour déduire l'icône à partir du titre si non spécifiée
+  function getIconFromTitle(title: string): string {
+    if (title.includes('marché') || title.includes('market')) return 'BarChart3'
+    if (title.includes('faisabilité') || title.includes('feasibility')) return 'TrendingUp'
+    if (title.includes('Diagnostic') || title.includes('Diagnosis')) return 'Search'
+    if (title.includes('positionnement') || title.includes('positioning')) return 'Target'
+    if (title.includes('concurrent') || title.includes('competitive')) return 'Users'
+    if (title.includes('comportement') || title.includes('behavior')) return 'MessageSquare'
+    if (title.includes('performance')) return 'Activity'
+    if (title.includes('risque') || title.includes('risk')) return 'AlertTriangle'
+    if (title.includes('impact')) return 'Layers'
+    if (title.includes('Veille') || title.includes('monitoring')) return 'Eye'
+    if (title.includes('prospective') || title.includes('prospective')) return 'Telescope'
+    if (title.includes('maturité') || title.includes('maturity')) return 'Cpu'
+    if (title.includes('chaîne de valeur') || title.includes('value chain')) return 'GitBranch'
+    if (title.includes('Enquête') || title.includes('Survey')) return 'FileText'
+    if (title.includes('pré-décision') || title.includes('pre-decision')) return 'CheckSquare'
+    if (title.includes('conceptuelle') || title.includes('concept')) return 'PenTool'
+    if (title.includes('Tableau de bord') || title.includes('dashboard')) return 'LayoutDashboard'
+    if (title.includes('institutionnelle') || title.includes('institutional')) return 'Building'
+    if (title.includes('capitalisation') || title.includes('capitalization')) return 'Database'
+    return 'Search'
+  }
+
   return (
     <>
       <Helmet>
-        <title>Études & Diagnostics — Panval Consilium International</title>
-        <meta name="description" content="20 prestations d'études de marché, diagnostics stratégiques et analyses institutionnelles pour éclairer vos décisions." />
+        <title>{t('hero.title')} — Panval Consilium International</title>
+        <meta name="description" content={t('hero.subtitle')} />
       </Helmet>
       <PageHero
-        title="Études & Diagnostics Stratégiques"
-        subtitle="Éclairer la décision stratégique par une intelligence managériale fondée sur l'analyse, les données et la compréhension des contextes africains et internationaux."
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
         image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80"
-        breadcrumbs={[{ label: 'Études & Diagnostics' }]}
+        breadcrumbs={breadcrumbs.map(label => ({ label }))}
       />
 
       {/* Services grid */}
       <section className="section-padding bg-base-100">
         <div className="container-custom">
           <SectionTitle
-            eyebrow="Nos prestations"
-            title="20 services d'analyse et d'appui stratégique"
-            subtitle="Une offre complète pour éclairer, diagnostiquer et orienter toutes vos décisions stratégiques."
+            eyebrow={t('services.eyebrow')}
+            title={t('services.title')}
+            subtitle={t('services.subtitle')}
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12">
-            {etudeServices.map((s, i) => {
+            {services.map((s, i) => {
               const Icon = iconMap[s.icon] ?? Search
               return (
                 <motion.div
@@ -46,10 +93,10 @@ export default function EtudesPage() {
                   transition={{ delay: (i % 8) * 0.06 }}
                   className="group bg-base-100 border border-base-300 rounded-md p-5 hover:shadow-md hover:border-primary/30 transition-all"
                 >
-                  <div className="w-10 h-10 bg-primary/8 border border-gray-400/20 shadow-lg group-hover:bg-primary rounded-md flex items-center  justify-center mb-4 transition-colors">
-                    <Icon size={17} className="text-primary  group-hover:text-white transition-colors" />
+                  <div className="w-10 h-10 bg-primary/8 border border-gray-400/20 shadow-lg group-hover:bg-primary rounded-md flex items-center justify-center mb-4 transition-colors">
+                    <Icon size={17} className="text-primary group-hover:text-white transition-colors" />
                   </div>
-                  <p className=" text-accent font-bold text-sm  mb-2">{s.title}</p>
+                  <p className="text-accent font-bold text-sm mb-2">{s.title}</p>
                   <p className="text-xs text-base-content/55 font-body leading-relaxed">{s.description}</p>
                 </motion.div>
               )
@@ -62,15 +109,15 @@ export default function EtudesPage() {
       <section className="section-padding bg-primary">
         <div className="container-custom">
           <SectionTitle
-            eyebrow="Méthodologies"
-            title="Notre approche rigoureuse"
-            subtitle="Nous combinons des méthodes éprouvées pour garantir des analyses fiables et des recommandations actionnables."
+            eyebrow={t('methodologies.eyebrow')}
+            title={t('methodologies.title')}
+            subtitle={t('methodologies.subtitle')}
             light
             centered
           />
           <div className="grid md:grid-cols-3 gap-6 mt-12">
-            {etudeMethodologies.map((m, i) => {
-              const Icon = iconMap[m.icon] ?? Search
+            {methodologies.map((m, i) => {
+              const Icon = iconMap[m.icon] ?? Compass
               return (
                 <motion.div
                   key={m.title}
@@ -95,14 +142,9 @@ export default function EtudesPage() {
       {/* Results */}
       <section className="section-padding bg-base-200">
         <div className="container-custom">
-          <SectionTitle eyebrow="Résultats attendus" title="Ce que nos analyses vous apportent" centered />
+          <SectionTitle eyebrow={t('results.eyebrow')} title={t('results.title')} centered />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
-            {[
-              { val: '100%', label: 'Données fiables', desc: 'Recommandations fondées sur des analyses rigoureuses' },
-              { val: '360°', label: 'Vision complète', desc: 'Panorama stratégique, opérationnel et humain' },
-              { val: '20+', label: 'Types d\'analyses', desc: 'Du diagnostic organisationnel à la veille stratégique' },
-              { val: '48h', label: 'Réactivité', desc: 'Premières conclusions rapides pour les décisions urgentes' },
-            ].map((r, i) => (
+            {(resultsItems || []).map((r, i) => (
               <motion.div
                 key={r.label}
                 initial={{ opacity: 0, y: 16 }}
@@ -111,7 +153,7 @@ export default function EtudesPage() {
                 transition={{ delay: i * 0.08 }}
                 className="bg-base-100 border border-base-300 rounded-md p-6 text-center"
               >
-                <p className="font-heading text-4xl font-bold text-primary mb-1">{r.val}</p>
+                <p className="font-heading text-4xl font-bold text-primary mb-1">{r.value}</p>
                 <p className="text-xs font-body font-semibold uppercase tracking-wider text-accent mb-2">{r.label}</p>
                 <p className="text-xs text-base-content/55 font-body">{r.desc}</p>
               </motion.div>
@@ -120,9 +162,7 @@ export default function EtudesPage() {
         </div>
       </section>
 
-      <CtaBanner
-       
-      />
+      <CtaBanner />
     </>
   )
 }

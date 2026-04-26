@@ -56,5 +56,16 @@
       "title": "Diagnostic stratégique",
       "desc": "Une analyse experte en profondeur — À partir de 100€ / 118 USD / 65 000 FCFA. Une prestation à forte valeur ajoutée pour sécuriser vos décisions."
     }
+  },
+   "diagnostic": {
+    "badge": "Diagnostic Premium",
+    "title": "Diagnostic stratégique",
+    "description": "Une analyse experte en profondeur — À partir de 100€ / 118 USD / 65 000 FCFA. Une prestation à forte valeur ajoutée pour sécuriser vos décisions.",
+    "prices": {
+      "eur": "100€",
+      "usd": "118 USD",
+      "fcfa": "65 000 FCFA"
+    },
+    "startingFrom": "À partir de"
   }
 }

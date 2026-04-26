@@ -10,7 +10,7 @@ export default function NotFoundPage() {
   return (
     <>
       <Helmet>
-        <title>404 — Panval Consilium International</title>
+        <title>{t('title')} — Panval Consilium International</title>
       </Helmet>
 
       <div className="min-h-screen flex items-center justify-center bg-base-100">

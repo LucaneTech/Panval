@@ -56,5 +56,16 @@
       "title": "Strategic diagnostic",
       "desc": "An in-depth expert analysis — From €100 / 118 USD / 65 000 FCFA. A high value service to secure your decisions."
     }
+  },
+  "diagnostic": {
+    "badge": "Premium Diagnostic",
+    "title": "Strategic Diagnostic",
+    "description": "An in-depth expert analysis — Starting from €100 / $118 / 65,000 FCFA. A high-value service to secure your decisions.",
+    "prices": {
+      "eur": "€100",
+      "usd": "$118",
+      "fcfa": "65,000 FCFA"
+    },
+    "startingFrom": "Starting from"
   }
 }

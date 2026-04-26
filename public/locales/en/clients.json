@@ -1,20 +1,97 @@
 {
   "hero": {
     "title": "Our Clients & Partners",
-    "subtitle": "They trust us since 2021. Over 2,250 people and organizations supported towards excellence.",
-    "breadcrumbs": ["Clients"]
+    "subtitle": "They trust us to transform their organizations",
+    "breadcrumbs": ["Home", "Clients"]
   },
   "stats": {
-    "eyebrow": "Achievements 2021–2025",
-    "title": "Our impact in numbers"
+    "eyebrow": "Our impact",
+    "title": "Key figures",
+    "items": [
+      {
+        "value": 120,
+        "suffix": "",
+        "label": "Local companies",
+        "sub": "Public & private",
+        "color": "text-primary"
+      },
+      {
+        "value": 90,
+        "suffix": "",
+        "label": "National organizations",
+        "sub": "Institutions",
+        "color": "text-crimson-500"
+      },
+      {
+        "value": 40,
+        "suffix": "",
+        "label": "International org.",
+        "sub": "Global partners",
+        "color": "text-gold-500"
+      },
+      {
+        "value": 1850,
+        "suffix": "+",
+        "label": "Individuals trained",
+        "sub": "Executives & managers",
+        "color": "text-primary"
+      }
+    ]
   },
   "testimonials": {
     "eyebrow": "Testimonials",
     "title": "What they say about us",
-    "filters": { "all": "All", "entreprise": "Private companies", "partenaire": "Sponsors & Partners" }
+    "filters": {
+      "all": "All",
+      "entreprise": "Companies",
+      "partenaire": "Partners"
+    }
   },
   "perspectives": {
-    "eyebrow": "Outlook",
-    "title": "Goals & estimates for 2026"
+    "eyebrow": "2026 Perspectives",
+    "title": "Our strategic objectives"
+  },
+  "objectives": {
+    "tableHeaders": {
+      "service": "Service",
+      "goal": "2026 Goal",
+      "target": "Targets"
+    },
+    "items": [
+      {
+        "service": "Training",
+        "goal": "150 new organizations",
+        "target": "Local, national and international companies, individuals",
+        "progress": 0
+      },
+      {
+        "service": "Studies & Diagnostics",
+        "goal": "120 strategic missions",
+        "target": "Public and private organizations",
+        "progress": 0
+      },
+      {
+        "service": "Concierge & Support",
+        "goal": "80 leaders and organizations",
+        "target": "Leaders, executives and institutions",
+        "progress": 0
+      }
+    ]
+  },
+  "kpis": {
+    "items": [
+      {
+        "value": "500+",
+        "label": "Total beneficiaries since 2021"
+      },
+      {
+        "value": "Reference",
+        "label": "African & international"
+      },
+      {
+        "value": "100%",
+        "label": "Personalized services"
+      }
+    ]
   }
 }

@@ -38,5 +38,50 @@
     "subtitle": "Get a premium diagnostic to assess your CEP needs",
     "primaryLabel": "Request a quote",
     "secondaryLabel": "See studies"
+  },
+  
+  "benefits": {
+    "title": "The Benefits of CEP",
+    "subtitle": "A program that transforms professional journeys",
+    "table": {
+      "headers": {
+        "benefit": "Benefit",
+        "individual": "For the Individual",
+        "company": "For the Company"
+      }
+    },
+    "rows": {
+      "clarity": {
+        "title": "Career Clarity",
+        "individual": "Clear vision of career path and objectives",
+        "company": "Better skills/positions alignment"
+      },
+      "employability": {
+        "title": "Employability",
+        "individual": "Continuous skills development",
+        "company": "Reduced turnover and recruitment costs"
+      },
+      "engagement": {
+        "title": "Engagement",
+        "individual": "Enhanced motivation and commitment",
+        "company": "Talent retention and increased productivity"
+      },
+      "anticipation": {
+        "title": "Anticipation",
+        "individual": "Proactive preparation for market changes",
+        "company": "Skills forecasting and succession management"
+      }
+    }
+  },
+  "testimonial": {
+    "text": "« The CEP program was a catalyst for several of our executives. Some found new internal mobility, others redefined their professional project with a clarity they had never had before. »",
+    "author": "HR Director — International Bank"
+  },
+   "servicesFirst": {
+    "titleIndividual": "For the Individual",
+    "individualDesc": "Build and secure your professional future, succeed in your transitions, align your personal aspirations.",
+    "titleCompany": "For the Company",
+    "companyDesc": "Retain talent, reduce turnover, anticipate successions and internal mobility."
   }
+
 }
