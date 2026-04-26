@@ -292,9 +292,7 @@ export default function Navbar() {
               {/* Mobile footer avec langue */}
               <div className="p-4 border-t border-base-300 space-y-3">
                 <div className="flex items-center justify-between">
-                  <div>
-                    <LanguageSwitcher />
-                  </div>
+                  
                   <button
                     onClick={toggleTheme}
                     className="btn btn-ghost btn-sm btn-circle"
