@@ -40,7 +40,7 @@ export default function Footer() {
               {navItems.map(item => (
                 <li key={item.path}>
                   <Link
-                    to={item.path}
+                    to={item.path!}
                     className="text-sm text-white/60 hover:text-accent transition-colors duration-200 flex items-center gap-1.5 group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-accent/40 group-hover:bg-accent transition-colors" />

@@ -4,8 +4,8 @@ export const teamMembers: TeamMember[] = [
   {
     id: 'tpc',
     name: 'TCHIAMA Paijos Clauva',
-    role: 'Fondateur – Formateur transdisciplinaire & Visionnaire',
-    bio: "Fondateur et visionnaire de Panval Consilium International, TCHIAMA Paijos Clauva œuvre depuis plus de cinq ans pour bâtir un cabinet de référence africaine. Sa conviction : la performance durable repose sur la qualité de l'information, la pertinence de la stratégie et la maîtrise de l'action.",
+    role: 'Directeur Général — Panval Consilium International',
+    bio: "Directeur Général de Panval Consilium International, TCHIAMA Paijos Clauva œuvre depuis plus de cinq ans pour bâtir un cabinet de référence africaine. Sa conviction : la performance durable repose sur la qualité de l'information, la pertinence de la stratégie et la maîtrise de l'action.",
     image: '',
     initials: 'TPC',
     insight: {

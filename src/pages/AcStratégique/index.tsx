@@ -7,7 +7,7 @@ import SectionTitle from '@/components/ui/SectionTitle'
 import { CtaBanner } from '@/components/sections/CtaBanner'
 import { cepServices, cepSteps } from '@/data/cep.data'
 
-export default function CepPage() {
+export default function AccompagnementStrategique() {
   const [activeTab, setActiveTab] = useState<'dirigeant' | 'organisation'>('dirigeant')
   const filtered = cepServices.filter(s => s.category === activeTab)
 

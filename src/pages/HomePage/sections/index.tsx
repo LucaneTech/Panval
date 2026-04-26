@@ -54,7 +54,7 @@ export function AboutSnippet() {
             >
               {[
                 'Formations professionnelles et stratégiques sur mesure',
-                'Études de marché et diagnostics institutionnels rigoureux','accompagnement stratégique',
+                'Études de marché et diagnostics institutionnels rigoureux','accompagnement stratégique', 'Conseil en évolution professionnelle (CEP)',
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0" />

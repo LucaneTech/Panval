@@ -16,13 +16,13 @@ export default function AdminWord() {
             <div className="relative rounded-md overflow-hidden aspect-[3/4] max-h-[520px] bg-base-200">
               <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
-                alt="TCHIAMA Paijos Clauva — Administrateur Général"
+                alt="TCHIAMA Paijos Clauva — Directeur Général de Panval Consilium International"
                 className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
                 <p className="font-heading font-bold text-white text-base">TCHIAMA Paijos Clauva</p>
-                <p className="text-accent text-xs font-body uppercase tracking-widest mt-0.5">Administrateur Général</p>
+                <p className="text-accent text-xs font-body uppercase tracking-widest mt-0.5">Directeur Général</p>
               </div>
             </div>
             {/* Accent blocks */}
@@ -81,7 +81,7 @@ export default function AdminWord() {
             <div className="mt-8 pt-6 border-t border-base-300">
               <p className="font-heading font-semibold text-base-content text-lg">TCHIAMA Paijos Clauva</p>
               <p className="text-xs text-base-content/40 font-body uppercase tracking-wider mt-0.5">
-                Administrateur Général — Panval Consilium International
+                Directeur Général — Panval Consilium International
               </p>
             </div>
           </motion.div>
