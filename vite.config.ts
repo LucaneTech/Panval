@@ -13,6 +13,6 @@ export default defineConfig({
 })
 
 
-//https://panval.netlify.app
+
 
 

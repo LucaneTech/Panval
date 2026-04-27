@@ -1,20 +1,29 @@
 {
+  
   "hero": {
-    "eyebrow": "Strategic Excellence",
-    "title": "Know - Think. Act.",
-    "subtitle": "Panval Consilium International supports leaders, executives and organizations toward sustainable performance.",
-        "stats": {
-        "organizations": "Organizations trained",
-        "organisations": "Organizations supported",
-        "pillars": "Service pillars",
-        "experience": "Years of experience"
-        }
+    "eyebrow": "Centre of Strategic Excellence",
+    "title": "Illuminate your decisions, structure your organisations, unleash your potential",
+    "titleAccent": "structure your organisations,",
+    "description": "At Panval Consilium International, we don't sell services — we create value, accelerate your performance and transform your ambitions into tangible, lasting and measurable results. Every mission, every training programme and every support is designed to strengthen your teams' impact, optimise your organisations and generate sustainable growth.",
+    "descriptionBold": "tangible, lasting and measurable",
+    "clientsLabel": "& many more…",
+    "triptych": {
+      "savoir": "Know",
+      "penser": "Think",
+      "faire": "Act"
+    },
+    "stats": {
+      "organizations": "People supported",
+      "organisations": "Partner organisations",
+      "pillars": "Strategic pillars",
+      "experience": "Years of experience"
+    }
   },
   "cta": {
-    "trainings": "Discover our trainings",
-    "contact": "Strategic diagnostic"
-  },
-  
+    "trainings": "Explore our training",
+    "contact": "Request a diagnostic"
+  }
+,
 
   "about": {
     "eyebrow": "About us",

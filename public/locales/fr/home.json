@@ -1,19 +1,29 @@
 {
+  
   "hero": {
     "eyebrow": "Cabinet d'Excellence Stratégique",
-    "title": "Savoir - Penser. Faire.",
-    "subtitle": "Panval Consilium International accompagne les dirigeants, cadres et organisations vers une performance durable",
+    "title": "Éclairer vos décisions, structurer vos organisations, libérer votre potentiel",
+    "titleAccent": "structurer vos organisations,",
+    "description": "Chez Panval Consilium International, nous ne vendons pas des services : nous créons de la valeur, accélérons vos performances et transformons vos ambitions en résultats tangibles, durables et mesurables. Chaque mission, chaque formation et chaque accompagnement est conçu sur mesure pour renforcer l'impact de vos équipes, optimiser vos organisations et générer une croissance pérenne.",
+    "descriptionBold": "tangibles, durables et mesurables",
+    "clientsLabel": "& bien d'autres…",
+    "triptych": {
+      "savoir": "Savoir",
+      "penser": "Penser",
+      "faire": "Faire"
+    },
     "stats": {
-      "organizations": "Organisations formées",
-      "organisations": "Organisations accompagnées",
-      "pillars": "Piliers de services",
+      "organizations": "Personnes accompagnées",
+      "organisations": "Organisations partenaires",
+      "pillars": "Piliers stratégiques",
       "experience": "Années d'expérience"
     }
   },
   "cta": {
     "trainings": "Découvrir nos formations",
-    "contact": "Diagnostic stratégique"
+    "contact": "Demander un diagnostic"
   },
+
 
 
   "about": {
