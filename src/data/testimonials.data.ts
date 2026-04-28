@@ -200,6 +200,6 @@ export const partners: Partner[] = [
   { id: 'p3', name: 'GLOBAL EMPIRE CONGO', category: 'partenaire' },
   { id: 'p4', name: 'IBIS Groupe', category: 'client' },
   { id: 'p5', name: 'MTN', category: 'client' },
-  { id: 'p6', name: 'AIRTEL', category: 'client' },
+  // { id: 'p6', name: 'AIRTEL', category: 'client' },
   
 ]

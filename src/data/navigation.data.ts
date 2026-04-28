@@ -7,17 +7,17 @@ export const navItems: NavItem[] = [
   { label: 'Formations', labelKey: 'nav.formations', path: '/formations' },
 
   {
-    label: 'Accompagnement',
-    labelKey: 'nav.accompagnement.title',
+    label: 'Support',
+    labelKey: 'nav.support.title',
     children: [
       {
         label: 'Accompagnement Stratégique',
-        labelKey: 'nav.accompagnement.strategy',
+        labelKey: 'nav.support.strategy',
         path: '/accompagnement-strategique'
       },
       {
         label: 'CEP',
-        labelKey: 'nav.accompagnement.cep',
+        labelKey: 'nav.support.cep', 
         path: '/conseil-evolution-professionnelle'
       }
     ]

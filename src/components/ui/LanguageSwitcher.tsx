@@ -6,7 +6,7 @@ import { cn } from '@/utils/cn'
 const LANGUAGES: { code: string; labelKey: string }[] = [
   { code: 'fr', labelKey: 'language.fr' },
   { code: 'en', labelKey: 'language.en' },
-  { code: 'ar', labelKey: 'language.ar' },
+  // { code: 'ar', labelKey: 'language.ar' },
 ]
 
 export default function LanguageSwitcher({ className }: { className?: string }) {

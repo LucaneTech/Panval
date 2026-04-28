@@ -26,18 +26,23 @@ export default function HeroSection() {
   ]
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden py-8 sm:py-12 md:py-16">
+    <section className="relative min-h-screen flex items-center overflow-hidden py-8 sm:py-10 md:py-16">
 
       {/* 🎥 VIDEO BACKGROUND */}
-      {/* <video
+      <video
         autoPlay
         muted
         loop
-        playsInline
         className="absolute inset-0 w-full h-full object-cover"
-        src="video.mp4"
+        src="hero.mp4"
+      />
+
+       {/* <img
+          alt="Background"
+        className="absolute inset-0 w-full h-full object-cover"
+        src="https://imgs.search.brave.com/TlqKPdhGB3wff-YXFxfh405mWPGkxJYRHw5oxIWGbKc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNy8w/NS8wNC8xNi8zNy9t/ZWV0aW5nLTIyODQ1/MDFfNjQwLmpwZw"
       /> */}
-      <img src='' alt='image panval hero section'/>
+    
 
       {/* 🎨 OVERLAY (exact même gradient qu'avant) */}
       <div
@@ -66,8 +71,8 @@ export default function HeroSection() {
       </div>
 
       {/* ── Contenu principal ── */}
-      <div className="container-custom relative z-20 pt-24">
-        <div className="max-w-4xl">
+      <div className=" relative mx-auto z-20 pt-24">
+        <div className=" px-6 md:px-10 max-w-7xl">
 
           {/* Eyebrow */}
           <motion.div
@@ -212,13 +217,13 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll */}
-      <motion.div
+      {/* <motion.div
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
       >
         <ChevronDown size={24} className="text-white/30" />
-      </motion.div>
+      </motion.div> */}
     </section>
   )
 }
