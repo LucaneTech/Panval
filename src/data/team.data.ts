@@ -5,9 +5,9 @@ export const teamMembers: Record<'fr' | 'en' | 'ar', TeamMember[]> = {
   fr: [
     {
       id: 'tpc',
-      name: 'TCHIAMA Paijos Clauva',
+      name: 'Paijos Clauva TCHIAMA',
       role: 'Directeur Général — Panval Consilium International',
-      bio: "Directeur Général de Panval Consilium International, TCHIAMA Paijos Clauva œuvre depuis plus de cinq ans pour bâtir un cabinet de référence africaine. Sa conviction : la performance durable repose sur la qualité de l'information, la pertinence de la stratégie et la maîtrise de l'action.",
+      bio: "Directeur Général de Panval Consilium International, Paijos Clauva TCHIAMA œuvre depuis plus de cinq ans pour bâtir un cabinet de référence africaine. Sa conviction : la performance durable repose sur la qualité de l'information, la pertinence de la stratégie et la maîtrise de l'action.",
       image: '',
       initials: 'TPC',
       insight: {
@@ -44,9 +44,9 @@ export const teamMembers: Record<'fr' | 'en' | 'ar', TeamMember[]> = {
   en: [
     {
       id: 'tpc',
-      name: 'TCHIAMA Paijos Clauva',
+      name: 'Paijos Clauva TCHIAMA',
       role: 'Chief Executive Officer — Panval Consilium International',
-      bio: "CEO of Panval Consilium International, TCHIAMA Paijos Clauva has been building a leading African consulting firm for over five years. His belief: sustainable performance relies on information quality, strategic relevance, and action mastery.",
+      bio: "CEO of Panval Consilium International, Paijos Clauva TCHIAMA has been building a leading African consulting firm for over five years. His belief: sustainable performance relies on information quality, strategic relevance, and action mastery.",
       image: '',
       initials: 'TPC',
       insight: {

@@ -7,10 +7,10 @@
 
 
   "admin": {
-    "eyebrow": "Mot de l'Administrateur Général",
-    "name": "TCHIAMA Paijos Clauva",
+    "eyebrow": "Mot du Directeur Général",
+     "name": "Paijos Clauva TCHIAMA",
     "role": "Directeur Général",
-    "portraitAlt": "TCHIAMA Paijos Clauva — Directeur Général de Panval Consilium International",
+    "portraitAlt": "Paijos Clauva TCHIAMA — Directeur Général de Panval Consilium International",
     "paragraphs": [
       "Dans un monde marqué par l'incertitude, la complexité et une concurrence accrue, la réussite des entreprises et des institutions ne repose plus uniquement sur les moyens financiers ou techniques, mais sur la qualité de l'information, la pertinence de la stratégie et la maîtrise de l'action.",
       "C'est dans cette conviction qu'est né Panval Consilium International : un cabinet pensé pour accompagner les décideurs dans la compréhension de leur environnement, l'anticipation des risques et la prise de décisions stratégiques éclairées.",
@@ -20,7 +20,7 @@
       "Je remercie l'ensemble de nos partenaires, clients et collaborateurs pour la confiance accordée, et réaffirme notre engagement à œuvrer avec excellence, intégrité et responsabilité, au service du développement des organisations et des territoires."
     ],
     "signature": {
-      "name": "TCHIAMA Paijos Clauva",
+      "name": "Paijos Clauva TCHIAMA",
       "role": "Directeur Général — Panval Consilium International"
     }
   },
