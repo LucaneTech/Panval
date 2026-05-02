@@ -1,19 +1,439 @@
 <!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Panval Consilium International - Cabinet d'excellence spécialisé en formation opérationnelle, études de marché et diagnostics stratégiques, ainsi qu'en conciergerie d'entreprise." />
-    <meta name="theme-color" content="#1a3a5a" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <meta name="google" content="notranslate" />
-    <title>Panval Consilium International</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="fr" dir="ltr">
+<head>
+  <!-- ═══════════════════════════════════════════════════════════════
+       FONDATION — Encodage & Viewport
+  ═══════════════════════════════════════════════════════════════ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       TITRE & DESCRIPTION PRINCIPALE
+  ═══════════════════════════════════════════════════════════════ -->
+  <title>Panval Consilium International | Cabinet Conseil Stratégique, Formation & CEP — Pointe-Noire, Congo</title>
+  <meta name="description" content="Panval Consilium International — Cabinet d'excellence à Pointe-Noire (Congo). Formations stratégiques, études de marché, diagnostics institutionnels et conseil en évolution professionnelle (CEP). Partenaire de MTN Congo, Airtel Congo, BAD, FMI, Banque mondiale. Savoir · Penser · Faire." />
+  <meta name="keywords" content="cabinet conseil stratégique Congo, formation professionnelle Pointe-Noire, formation leadership Afrique, études de marché Congo, diagnostic institutionnel, conseil évolution professionnelle CEP, bilan de compétences Congo, accompagnement dirigeants Afrique, Panval Consilium International, formation opérationnelle Congo, intelligence économique Afrique centrale, audit organisationnel Congo, séminaire management Brazzaville, consultant RH Afrique, TCHIAMA Paijos Clauva, cabinet formation Pointe-Noire, développement organisationnel Congo, strategic consulting Africa, professional training Congo, market research Central Africa" />
+  <meta name="author" content="Panval Consilium International" />
+  <meta name="copyright" content="© 2026 Panval Consilium International. Tous droits réservés." />
+  <meta name="language" content="fr, en, ar" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="rating" content="general" />
+  <meta name="category" content="Business, Consulting, Training, Education" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       ROBOTS & INDEXATION
+  ═══════════════════════════════════════════════════════════════ -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       URL CANONIQUE & HREFLANG (multilingue FR / EN / AR)
+  ═══════════════════════════════════════════════════════════════ -->
+  <link rel="canonical" href="https://www.panvalconsiliuminter.com/" />
+  <link rel="alternate" hreflang="fr" href="https://www.panvalconsiliuminter.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.panvalconsiliuminter.com/" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       OPEN GRAPH — Facebook / LinkedIn / WhatsApp
+  ═══════════════════════════════════════════════════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Panval Consilium International" />
+  <meta property="og:locale" content="fr_CG" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_SA" />
+  <meta property="og:url" content="https://www.panvalconsiliuminter.com/" />
+  <meta property="og:title" content="Panval Consilium International | Cabinet Conseil Stratégique & Formation — Congo" />
+  <meta property="og:description" content="Cabinet d'excellence à Pointe-Noire. Formations stratégiques, études de marché, diagnostics institutionnels et CEP. Partenaire de MTN Congo, Airtel Congo, BAD, FMI, Banque mondiale. Savoir · Penser · Faire." />
+  <meta property="og:image" content="https://www.panvalconsiliuminter.com/og-image.jpg" />
+  <meta property="og:image:secure_url" content="https://www.panvalconsiliuminter.com/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Panval Consilium International — Savoir · Penser · Faire" />
+
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GÉO-LOCALISATION (très utile pour le référencement local)
+  ═══════════════════════════════════════════════════════════════ -->
+  <meta name="geo.region" content="CG-16" />
+  <meta name="geo.placename" content="Pointe-Noire, République du Congo" />
+  <meta name="geo.position" content="-4.7788;11.8665" />
+  <meta name="ICBM" content="-4.7788, 11.8665" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       THÈME & COULEURS NAVIGATEUR
+  ═══════════════════════════════════════════════════════════════ -->
+  <meta name="theme-color" content="#1a3a5a" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0d2035" media="(prefers-color-scheme: dark)" />
+  <meta name="msapplication-TileColor" content="#1a3a5a" />
+  <meta name="msapplication-navbutton-color" content="#1a3a5a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Panval Consilium" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Panval Consilium International" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FAVICONS — Tous formats pour tous navigateurs
+  ═══════════════════════════════════════════════════════════════ -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c9a227" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <meta name="msapplication-TileImage" content="/mstile-150x150.png" />
+  <meta name="msapplication-config" content="/browserconfig.xml" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PERFORMANCES — Preconnect & Preload critique
+  ═══════════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="preload" href="/images/logo.png" as="image" type="image/png" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       POLICES — Google Fonts
+  ═══════════════════════════════════════════════════════════════ -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SITEMAP & FLUX
+  ═══════════════════════════════════════════════════════════════ -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       STRUCTURED DATA — JSON-LD Schema.org
+       Organisation + LocalBusiness + WebSite + BreadcrumbList + FAQ
+  ═══════════════════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+
+      {
+        "@type": "Organization",
+        "@id": "https://www.panvalconsiliuminter.com/#organization",
+        "name": "Panval Consilium International",
+        "alternateName": ["Panval", "PCI", "Panval Consilium"],
+        "url": "https://www.panvalconsiliuminter.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.panvalconsiliuminter.com/images/logo.png",
+          "width": 400,
+          "height": 200
+        },
+        "image": "https://www.panvalconsiliuminter.com/og-image.jpg",
+        "description": "Cabinet d'excellence spécialisé en formation opérationnelle, études de marché et diagnostics stratégiques, et conseil en évolution professionnelle. Partenaire stratégique de MTN Congo, Airtel Congo, BAD, FMI, Banque mondiale, BEAC et de nombreuses institutions nationales et internationales.",
+        "slogan": "Éclairer vos décisions, structurer vos organisations, libérer votre potentiel",
+        "foundingDate": "2021",
+        "numberOfEmployees": {
+          "@type": "QuantitativeValue",
+          "minValue": 3,
+          "maxValue": 20
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Zone Industrielle, Portail Poaty Bernard, Rue Jean MAHOUKOU N°30",
+          "addressLocality": "Pointe-Noire",
+          "addressRegion": "Kouilou",
+          "addressCountry": "CG",
+          "postalCode": "00242"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -4.7788,
+          "longitude": 11.8665
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+242-06-894-90-94",
+            "contactType": "customer service",
+            "areaServed": ["CG", "CD", "CM", "GA", "CF", "TD"],
+            "availableLanguage": ["French", "English", "Arabic"],
+            "contactOption": "TollFree"
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+242-06-186-36-09",
+            "contactType": "sales",
+            "areaServed": ["CG", "CD", "CM", "GA", "CF", "TD"],
+            "availableLanguage": ["French", "English"]
+          }
+        ],
+        "email": "contact@panvalgroup.com",
+        "sameAs": [
+          "https://www.panvalconsiliuminter.com",
+          "https://www.linkedin.com/company/panval-consilium-international",
+          "https://www.facebook.com/panvalconsilium"
+        ],
+        "legalName": "Panval Consilium International",
+        "taxID": "CG-BRZ-01-A1001842",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "RCCM",
+          "value": "CG-BRZ-01-A1001842"
+        },
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "République du Congo"
+          },
+          {
+            "@type": "Continent",
+            "name": "Afrique"
+          },
+          "Afrique centrale", "Afrique subsaharienne", "International"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catalogue des services Panval Consilium International 2026",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Formations Stratégiques et Professionnelles",
+                "description": "4 groupes de formations couvrant la stratégie, le leadership, la transformation organisationnelle et la communication institutionnelle. Formats : séminaires, ateliers, coaching."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Études de Marché et Diagnostics Institutionnels",
+                "description": "20 prestations d'analyse : études de marché sectorielles, diagnostics organisationnels, audits managériaux, veille stratégique, évaluations d'impact."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Conseil en Évolution Professionnelle (CEP)",
+                "description": "Bilans de compétences, évaluations de potentiel, accompagnement à la mobilité interne et externe, coaching de carrière, orientation professionnelle."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Accompagnement Stratégique des Organisations",
+                "description": "Conseil stratégique sur mesure pour dirigeants, organisations publiques et privées, institutions nationales et internationales."
+              }
+            }
+          ]
+        },
+        "knowsAbout": [
+          "Formation professionnelle",
+          "Leadership et management",
+          "Conseil stratégique",
+          "Études de marché",
+          "Diagnostic organisationnel",
+          "Conseil en évolution professionnelle",
+          "Bilan de compétences",
+          "Intelligence économique",
+          "Gouvernance institutionnelle",
+          "Développement organisationnel",
+          "Audit managérial",
+          "Mobilité professionnelle"
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "TCHIAMA Paijos Clauva",
+          "jobTitle": "Fondateur – Formateur transdisciplinaire & Visionnaire",
+          "worksFor": {
+            "@id": "https://www.panvalconsiliuminter.com/#organization"
+          }
+        },
+        "member": [
+          {
+            "@type": "Person",
+            "name": "TCHIAMA Paijos Clauva",
+            "jobTitle": "Fondateur – Formateur transdisciplinaire & Visionnaire"
+          },
+          {
+            "@type": "Person",
+            "name": "MANANGA Abraham Toussaint",
+            "jobTitle": "Directeur du Développement Stratégique et des Affaires Juridiques"
+          },
+          {
+            "@type": "Person",
+            "name": "FERNANDES Peters Ketsia Manuella",
+            "jobTitle": "Directrice des Opérations et des Projets"
+          }
+        ],
+        "award": "Cabinet de référence en formation stratégique et conseil en Afrique centrale",
+        "keywords": "formation stratégique Congo, conseil entreprise Afrique, études de marché Pointe-Noire, CEP bilan compétences Congo, diagnostic organisationnel, leadership Afrique"
+      },
+
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.panvalconsiliuminter.com/#localbusiness",
+        "name": "Panval Consilium International",
+        "image": "https://www.panvalconsiliuminter.com/og-image.jpg",
+        "url": "https://www.panvalconsiliuminter.com",
+        "telephone": "+242-06-894-90-94",
+        "email": "contact@panvalgroup.com",
+        "priceRange": "€€€",
+        "currenciesAccepted": "XAF, EUR, USD",
+        "paymentAccepted": "Virement bancaire, Espèces, Mobile Money",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Zone Industrielle, Portail Poaty Bernard, Rue Jean MAHOUKOU N°30",
+          "addressLocality": "Pointe-Noire",
+          "addressRegion": "Kouilou",
+          "addressCountry": "CG"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -4.7788,
+          "longitude": 11.8665
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          }
+        ],
+        "hasMap": "https://maps.google.com/?q=Pointe-Noire,Zone+Industrielle,Congo",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "87",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+
+      {
+        "@type": "WebSite",
+        "@id": "https://www.panvalconsiliuminter.com/#website",
+        "url": "https://www.panvalconsiliuminter.com",
+        "name": "Panval Consilium International",
+        "description": "Site officiel de Panval Consilium International — Cabinet conseil stratégique, formation et CEP à Pointe-Noire, Congo.",
+        "publisher": {
+          "@id": "https://www.panvalconsiliuminter.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.panvalconsiliuminter.com/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        },
+        "inLanguage": ["fr", "en", "ar"],
+        "copyrightYear": 2026,
+        "copyrightHolder": {
+          "@id": "https://www.panvalconsiliuminter.com/#organization"
+        }
+      },
+
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.panvalconsiliuminter.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quels services propose Panval Consilium International ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Panval Consilium International propose trois services principaux : des formations stratégiques et professionnelles (4 groupes, 25+ modules), des études de marché et diagnostics institutionnels (20 prestations d'analyse), et du conseil en évolution professionnelle (CEP) incluant bilans de compétences, évaluations de potentiel et accompagnement à la mobilité professionnelle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Où est situé Panval Consilium International ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Panval Consilium International est situé Zone Industrielle, Portail Poaty Bernard, Rue Jean MAHOUKOU N°30, à Pointe-Noire, en République du Congo. Contact : +242 06 894 90 94 | contact@panvalgroup.com"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels sont les clients et partenaires de Panval Consilium International ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Panval Consilium International a accompagné plus de 2 250 personnes et 250+ organisations, dont MTN Congo, Airtel Congo, la Présidence de la République, la Primature, la BAD, le FMI, la Banque mondiale, la BEAC, des ministères, ambassades, institutions financières et entreprises pétrolières."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qu'est-ce que le triptyque Savoir – Penser – Faire de Panval Consilium ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le triptyque Savoir – Penser – Faire est le pilier différenciant de Panval Consilium International : Savoir regroupe les études, analyses et bilans de compétences ; Penser désigne le conseil stratégique et les évaluations de potentiel ; Faire représente l'accompagnement CEP, la mobilité interne et externe et la mise en œuvre concrète."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Panval Consilium International propose-t-il des formations en ligne ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Panval Consilium International propose des formations en présentiel, en distanciel et en format hybride, adaptées aux besoins de chaque organisation. Les modalités incluent séminaires stratégiques, ateliers institutionnels, formations exécutives et coaching individuel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment contacter Panval Consilium International ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Vous pouvez contacter Panval Consilium International par téléphone au +242 06 894 90 94 ou +242 06 186 36 09, par email à contact@panvalgroup.com, ou via le formulaire de contact sur www.panvalconsiliuminter.com. Le cabinet est ouvert du lundi au vendredi de 8h00 à 18h00."
+            }
+          }
+        ]
+      },
+
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil",   "item": "https://www.panvalconsiliuminter.com/" },
+          { "@type": "ListItem", "position": 2, "name": "À propos",  "item": "https://www.panvalconsiliuminter.com/a-propos" },
+          { "@type": "ListItem", "position": 3, "name": "Formations","item": "https://www.panvalconsiliuminter.com/formations" },
+          { "@type": "ListItem", "position": 4, "name": "Études",    "item": "https://www.panvalconsiliuminter.com/etudes" },
+          { "@type": "ListItem", "position": 5, "name": "CEP",       "item": "https://www.panvalconsiliuminter.com/conseil-evolution-professionnelle" },
+          { "@type": "ListItem", "position": 6, "name": "Nos clients","item": "https://www.panvalconsiliuminter.com/nos-clients" },
+          { "@type": "ListItem", "position": 7, "name": "Contact",   "item": "https://www.panvalconsiliuminter.com/contact" }
+        ]
+      },
+
+      {
+        "@type": "ProfessionalService",
+        "name": "Panval Consilium International",
+        "serviceType": [
+          "Cabinet de conseil stratégique",
+          "Formation professionnelle",
+          "Études de marché",
+          "Conseil en évolution professionnelle",
+          "Bilan de compétences",
+          "Diagnostic organisationnel",
+          "Audit managérial"
+        ],
+        "provider": { "@id": "https://www.panvalconsiliuminter.com/#organization" },
+        "areaServed": ["Congo", "Afrique centrale", "International"]
+      }
+
+    ]
+  }
+  </script>
+
+  <meta http-equiv="x-dns-prefetch-control" content="on" />
+
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
 </html>
