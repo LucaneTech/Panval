@@ -96,7 +96,7 @@ export function ServicesGrid() {
 
   const icons = [BookOpen, LineChart, Briefcase]
   const colors = ['bg-navy-800', 'bg-crimson-500', 'bg-gold-500']
-  const links = ['/formations', '/etudes', '/cep']
+  // const links = ['/formations', '/etudes', '/cep']
 
   return (
     <section className="section-padding bg-base-200">
