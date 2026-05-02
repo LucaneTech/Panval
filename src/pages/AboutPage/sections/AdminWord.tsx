@@ -20,7 +20,7 @@ export default function AdminWord() {
           >
             <div className="relative rounded-md overflow-hidden aspect-[3/4] max-h-[520px] bg-base-200">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+                src="images/directeur.jpeg"
                 alt={t('admin.portraitAlt')}
                 className="w-full h-full object-cover object-top"
               />

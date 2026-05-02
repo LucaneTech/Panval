@@ -40,21 +40,12 @@ export default function TeamGrid() {
               >
 
                 {/* Avatar */}
-                <div className="h-56 bg-gradient-to-br from-primary/90 to-navy-900 flex items-center justify-center relative overflow-hidden">
+                <div className="h-48 bg-gradient-to-br from-primary/90 to-navy-900 flex items-center justify-center relative overflow-hidden">
 
-                  {/* Decorative shapes */}
-                  <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-4 right-4 w-24 h-24 rounded-full border border-white/20" />
-                    <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full border border-white/10" />
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full border border-white/5" />
+                  <div>
+                    <img src={member.image} alt={member.name} className="w-full h-full object-contain" />
                   </div>
-
-                  {/* Initials */}
-                  <div className="relative w-28 h-28 rounded-full bg-gradient-to-br from-accent/30 to-accent/10 border-2 border-accent/50 flex items-center justify-center shadow-xl group-hover:scale-105 transition-transform">
-                    <span className="font-heading text-3xl font-bold text-white">
-                      {member.initials}
-                    </span>
-                  </div>
+                
 
                   {/* Role badge */}
                   <div className="absolute top-2 left-2 bg-accent text-white text-[10px] font-body uppercase tracking-wider py-1 px-3 rounded-full">

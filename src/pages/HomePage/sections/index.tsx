@@ -27,7 +27,7 @@ export function AboutSnippet() {
           >
             <div className="relative rounded-md overflow-hidden aspect-[4/3]">
               <img
-                src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=800&q=80"
+               src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=800&q=80"
                 alt="Panval Consilium International"
                 className="w-full h-full object-cover rounded-md"
               />
@@ -134,7 +134,7 @@ export function ServicesGrid() {
                 </p>
 
                 <Link
-                  to={links[i]}
+                  to={"/conseil-evolution-professionnelle"}
                   className="mt-6 text-primary text-xs font-body font-semibold uppercase tracking-wider flex items-center gap-1.5"
                 >
                   {t('services.discover')} <ArrowRight size={13} />
