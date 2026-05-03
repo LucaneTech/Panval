@@ -40,10 +40,10 @@ export default function TeamGrid() {
               >
 
                 {/* Avatar */}
-                <div className="h-48 bg-gradient-to-br from-primary/90 to-navy-900 flex items-center justify-center relative overflow-hidden">
+                <div className="max-h-[350px] bg-gradient-to-br from-primary/90 to-navy-900 flex items-center justify-center relative overflow-hidden">
 
                   <div>
-                    <img src={member.image} alt={member.name} className="w-full h-full object-contain" />
+                    <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                   </div>
                 
 

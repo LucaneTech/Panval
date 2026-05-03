@@ -195,11 +195,18 @@ export const testimonials = [
 ]
 
 export const partners: Partner[] = [
-  { id: 'p1', name: 'HERMON – EXIMIA', category: 'partenaire' },
-  { id: 'p2', name: 'GLOBAL LAND BUSINESS', category: 'partenaire' },
-  { id: 'p3', name: 'GLOBAL EMPIRE CONGO', category: 'partenaire' },
-  { id: 'p4', name: 'IBIS Groupe', category: 'client' },
-  { id: 'p5', name: 'MTN', category: 'client' },
-  // { id: 'p6', name: 'AIRTEL', category: 'client' },
+  // CLIENTS (entreprises privées)
+  { id: 'p1', name: 'HERMON – EXIMIA', category: 'client', logo: 'images/partners/logo.png' },
+   { id: 'p2', name: 'FINANCE INVESTIS', category: 'client'},
+   { id: 'p10', name: 'AIRTEL', category: 'partenaire', logo: '/images/partners/airtel.webp' },
+  { id: 'p3', name: 'BANOS', category: 'client'},
+  { id: 'p4', name: 'AG Groupe', category: 'client' },
+  { id: 'p5', name: 'Fister Alicol', category: 'client' },
+  { id: 'p6', name: 'IBIS Groupe', category: 'client', logo: '/images/partners/ibis.png' },
+  { id: 'p7', name: 'Black Mutual', category: 'client' },
+  { id: 'p8', name: 'Lincon Groupe', category: 'client' },
+
+  // PARTENAIRES / SPONSORS
+  { id: 'p9', name: 'MTN', category: 'partenaire', logo: '/images/partners/mtn.jpg' },
   
 ]

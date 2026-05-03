@@ -92,10 +92,12 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, delay: 0.12 }}
-            className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-6"
+            className="font-heading text-2xl md:text-5xl font-bold text-white leading-[1.08] mb-6 max-w-[90%] lg:max-w-[70%]"
           >
             {title.split(titleAccent)[0]}
-            <span className="text-accent">{titleAccent}</span>
+            <span className="text-accent text-2xl md:text-4xl">
+              {titleAccent}
+            </span>
             {title.split(titleAccent)[1]}
           </motion.h1>
 

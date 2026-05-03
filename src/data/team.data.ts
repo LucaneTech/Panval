@@ -7,7 +7,7 @@ export const teamMembers: Record<'fr' | 'en' | 'ar', TeamMember[]> = {
       id: 'tpc',
       name: 'Paijos Clauva TCHIAMA',
       role: 'Directeur Général — Panval Consilium International',
-      bio: "Directeur Général de Panval Consilium International, Paijos Clauva TCHIAMA œuvre depuis plus de cinq ans pour bâtir un cabinet de référence africaine. Sa conviction : la performance durable repose sur la qualité de l'information, la pertinence de la stratégie et la maîtrise de l'action.",
+      bio: "Chez PANVAL CONSILIUM INTERNATIONAL, nous transformons les ambitions en organisations performantes et durables, en éclairant les décisions, structurant les systèmes et libérant le potentiel des dirigeants. À travers une approche stratégique et analytique, nous accompagnons les institutions et leaders dans l’optimisation de leurs performances, la clarification de leurs choix et l’anticipation des enjeux futurs. PANVAL se positionne comme un partenaire stratégique de haut niveau, au service de la vision, de l’impact et de la transformation organisationnelle.",
       image: 'images/directeur.jpeg',
       initials: 'TPC',
       insight: {
@@ -15,30 +15,31 @@ export const teamMembers: Record<'fr' | 'en' | 'ar', TeamMember[]> = {
         excerpt: "La complexité des défis africains ne peut être résolue par une approche mono-disciplinaire. L'avenir appartient à ceux qui savent croiser les regards, les méthodes et les expertises pour construire des solutions véritablement adaptées aux réalités locales."
       }
     },
-    // {
-    //   id: 'mat',
-    //   name: 'MANANGA Abraham Toussaint',
-    //   role: 'Directeur du Développement Stratégique et des Affaires Juridiques',
-    //   bio: "Expert en droit des affaires et en stratégie organisationnelle, MANANGA Abraham Toussaint pilote le développement stratégique du cabinet et les questions juridiques complexes. Sa mission : transformer la complexité réglementaire en avantage compétitif pour les clients.",
-    //   image: '',
-    //   initials: 'MAT',
-    //   insight: {
-    //     title: "Transformer la complexité juridique en avantage compétitif",
-    //     excerpt: "Dans un environnement réglementaire en constante évolution, la maîtrise des enjeux juridiques n'est plus une contrainte mais un levier stratégique. Notre approche proactive permet aux organisations d'anticiper et de transformer les contraintes en opportunités."
-    //   }
-    // },
     {
       id: 'fpk',
       name: 'FERNANDES Peters Ketsia Manuella',
       role: 'Directrice des Opérations et des Projets',
-      bio: "Spécialiste en gestion de projets et en optimisation opérationnelle, elle assure la coordination et l'efficacité des interventions du cabinet. Son approche : rigueur méthodologique et agilité.",
+      bio: "Chez PANVAL CONSILIUM INTERNATIONAL, nous allons au-delà de l’exécution pour structurer des organisations performantes et résilientes. En tant que Directrice des Opérations, je transforme les visions en systèmes efficaces grâce à une approche fondée sur l’optimisation des processus, l’anticipation stratégique et la mesure de l’impact. À travers HERMON EXIMIA, nous développons une intelligence concierge prédictive qui simplifie la complexité et permet aux décideurs de se concentrer sur l’essentiel : leur performance et leur vision.",
       image: 'images/manuela.jpeg',
       initials: 'FPK',
       insight: {
         title: "L'agilité opérationnelle comme levier de croissance durable",
         excerpt: "La performance durable se construit par des processus agiles et une équipe alignée. Notre mission est de libérer le potentiel de croissance des organisations."
       }
-    }
+    },
+
+    {
+      id: 'mat',
+      name: 'MANANGA Abraham Toussaint',
+      role: 'Directeur du Développement Stratégique et des Affaires Juridiques',
+      bio: "Expert en droit des affaires et en stratégie organisationnelle, MANANGA Abraham Toussaint pilote le développement stratégique du cabinet et les questions juridiques complexes. Sa mission : transformer la complexité réglementaire en avantage compétitif pour les clients.",
+      image: 'images/abraham.jpeg',
+      initials: 'MAT',
+      insight: {
+        title: "Transformer la complexité juridique en avantage compétitif",
+        excerpt: "Dans un environnement réglementaire en constante évolution, la maîtrise des enjeux juridiques n'est plus une contrainte mais un levier stratégique. Notre approche proactive permet aux organisations d'anticiper et de transformer les contraintes en opportunités."
+      }
+    },
   ],
 
   en: [
@@ -46,7 +47,7 @@ export const teamMembers: Record<'fr' | 'en' | 'ar', TeamMember[]> = {
       id: 'tpc',
       name: 'Paijos Clauva TCHIAMA',
       role: 'Chief Executive Officer — Panval Consilium International',
-      bio: "CEO of Panval Consilium International, Paijos Clauva TCHIAMA has been building a leading African consulting firm for over five years. His belief: sustainable performance relies on information quality, strategic relevance, and action mastery.",
+      bio: "At PANVAL CONSILIUM INTERNATIONAL, we transform ambitions into high-performing and sustainable organizations by illuminating decisions, structuring systems, and unlocking leaders’ potential. Through a strategic and analytical approach, we support institutions and leaders in optimizing performance, clarifying decision-making, and anticipating future challenges. PANVAL positions itself as a high-level strategic partner, dedicated to vision, impact, and organizational transformation.",
       image: 'images/directeur.jpeg',
       initials: 'TPC',
       insight: {
@@ -54,30 +55,31 @@ export const teamMembers: Record<'fr' | 'en' | 'ar', TeamMember[]> = {
         excerpt: "Africa's complex challenges cannot be solved through a single-discipline approach. The future belongs to those who combine perspectives, methods, and expertise."
       }
     },
-    // {
-    //   id: 'mat',
-    //   name: 'MANANGA Abraham Toussaint',
-    //   role: 'Director of Strategic Development and Legal Affairs',
-    //   bio: "Expert in business law and organizational strategy, he leads strategic development and legal matters. His mission is to turn regulatory complexity into competitive advantage.",
-    //   image: '',
-    //   initials: 'MAT',
-    //   insight: {
-    //     title: "Turning legal complexity into competitive advantage",
-    //     excerpt: "In a constantly evolving regulatory environment, legal mastery is not a constraint but a strategic lever. Our proactive approach helps organizations transform constraints into opportunities."
-    //   }
-    // },
+   
     {
       id: 'fpk',
       name: 'FERNANDES Peters Ketsia Manuella',
       role: 'Director of Operations and Projects',
-      bio: "Specialist in project management and operational optimization, she ensures coordination and efficiency of all consulting activities.",
+      bio: "At PANVAL CONSILIUM INTERNATIONAL, we go beyond execution to structure high-performing and resilient organizations. As Operations Director, I transform visions into effective systems through an approach based on process optimization, strategic foresight, and impact measurement. Through HERMON EXIMIA, we develop a predictive concierge intelligence that simplifies complexity and enables decision-makers to focus on what matters most: their performance and vision.",
       image: 'images/manuela.jpeg',
       initials: 'FPK',
       insight: {
         title: "Operational agility as a driver of sustainable growth",
         excerpt: "Sustainable performance is built through agile processes and aligned teams. Our mission is to unlock organizational growth potential."
       }
-    }
+    },
+     {
+      id: 'mat',
+      name: 'MANANGA Abraham Toussaint',
+      role: 'Director of Strategic Development and Legal Affairs',
+      bio: "Expert in business law and organizational strategy, he leads strategic development and legal matters. His mission is to turn regulatory complexity into competitive advantage.",
+      image: 'images/abraham.jpeg',
+      initials: 'MAT',
+      insight: {
+        title: "Turning legal complexity into competitive advantage",
+        excerpt: "In a constantly evolving regulatory environment, legal mastery is not a constraint but a strategic lever. Our proactive approach helps organizations transform constraints into opportunities."
+      }
+    },
   ],
 
   ar: [
