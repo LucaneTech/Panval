@@ -42,15 +42,30 @@ export default function TeamGrid() {
                 {/* Avatar */}
                 <div className="max-h-[350px] bg-gradient-to-br from-primary/90 to-navy-900 flex items-center justify-center relative overflow-hidden">
 
-                  <div>
-                    <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
-                  </div>
-                
+                  <div className="relative aspect-[4/3] sm:aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden mx-2 rounded-sm group">
 
-                  {/* Role badge */}
-                  <div className="absolute top-2 left-2 bg-accent text-white text-[10px] font-body uppercase tracking-wider py-1 px-3 rounded-full">
-                    {member.role.split(' ')[0]}
-                  </div>
+                  {/* Background premium gradient */}
+                 
+
+                  {/* Soft glow effect */}
+                  <div className="absolute -inset-10 bg-gold/10 blur-3xl opacity-60 group-hover:opacity-80 transition duration-500" />
+
+                  {/* Subtle noise / texture overlay (optionnel mais très premium) */}
+                  <div className="absolute inset-0 opacity-[0.06] bg-[radial-gradient(circle,_#000_1px,_transparent_1px)] bg-[length:12px_12px]" />
+
+                  {/* Image */}
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="relative z-10 w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 cursor-pointer drop-shadow-xl"
+                    loading="lazy"
+                  />
+
+                 
+                </div>
+                
+&
+                
                 </div>
 
                 {/* Content */}
