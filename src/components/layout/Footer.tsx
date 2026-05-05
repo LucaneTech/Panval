@@ -119,7 +119,7 @@ export default function Footer() {
                     {CONTACT_PHONE_1}
                   </a>
                   <a href={`tel:${CONTACT_PHONE_2.replace(/\s/g, '')}`} className="text-sm text-white/60 hover:text-accent">
-                    {CONTACT_PHONE_2}z
+                    {CONTACT_PHONE_2}
                   </a>
                 </div>
               </li>
